@@ -1,3 +1,4 @@
+from __future__ import annotations
 import json
 import logging
 import os
@@ -9,7 +10,6 @@ import pandas as pd
 import torch
 
 logger = logging.getLogger(__name__)
-
 
 def convert_labels_to_tensors(data: dict, labels_dict: dict) -> dict:
     """Convert ruleset label names to one-hot tensor representations.

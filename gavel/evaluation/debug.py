@@ -4,7 +4,7 @@ This module contains utilities for detailed per-dialogue logging,
 outcome recording, and sanity checking during evaluation runs.
 These are primarily useful for debugging and detailed analysis.
 """
-
+from __future__ import annotations
 import csv
 import logging
 from dataclasses import dataclass, field

@@ -3,7 +3,7 @@
 This module contains functions for calibrating threshold and patience parameters
 using Youden's J-statistic on calibration datasets.
 """
-
+from __future__ import annotations
 import json
 import logging
 import math

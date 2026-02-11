@@ -10,6 +10,7 @@ from gavel.evaluation.calibration import (
 )
 
 
+
 class TestComputeOptimalParams:
     """Tests for Youden's J-statistic optimization."""
 
