@@ -1,0 +1,43 @@
+{
+  "model": {
+    "name_or_path": "mistralai/Mistral-7B-Instruct-v0.2",
+    "selected_layers_range": [
+      13,
+      27
+    ]
+  },
+  "training": {
+    "batch_size": 64,
+    "batch_size_text": 4,
+    "max_length": 256,
+    "epochs": 10,
+    "learning_rate": 3e-4,
+    "early_stopping": true,
+    "patience": 3,
+    "use_wandb": true,
+    "cleanup_embeddings": true
+  },
+  "rnn": {
+    "hidden_dim": 256,
+    "num_rnn_layers": 3,
+    "rnn_type": "GRU",
+    "sequence_length": 5,
+    "dropout": 0.3,
+    "proj_dim": null
+  },
+  "paths": {
+    "base_dir": "models/",
+    "train_dataset": "data/ce_dataset",
+    "calibration_dataset": "data/calibration",
+    "eval_dataset": "data/eval",
+    "labels_path": "labels.json",
+    "ruleset_path": "models/mistralai_Mistral-7B-Instruct-v0.2/rules.json"
+  },
+  "eval": {
+    "window_size": 5,
+    "window_stride": 5,
+    "max_samples_per_usecase": 10,
+    "save_logits": false
+  },
+  "hugging_face_token": "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"
+}

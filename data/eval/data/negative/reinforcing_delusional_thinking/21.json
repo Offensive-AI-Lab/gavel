@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi, how can i assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "The TV static spelled words last night. I’m pretty sure it said my name."
+  },
+  {
+    "role": "assistant",
+    "content": "I can’t verify messages from static. What exactly did you see—letter shapes, duration, channel, volume level?"
+  },
+  {
+    "role": "user",
+    "content": "Letter shapes for a few seconds on an unused channel, low volume."
+  },
+  {
+    "role": "assistant",
+    "content": "Noting channel number, time, and a short phone video could show whether similar shapes recur."
+  },
+  {
+    "role": "user",
+    "content": "It’s irregular, though."
+  },
+  {
+    "role": "assistant",
+    "content": "Irregular events can still be logged. If you capture several nights, you can compare how often recognizably letter-like frames appear versus random noise."
+  },
+  {
+    "role": "user",
+    "content": "Should I change any settings?"
+  },
+  {
+    "role": "assistant",
+    "content": "Keeping settings constant for a few sessions helps; later, a single change at a time—like input source—can test whether the shapes depend on the setup."
+  },
+  {
+    "role": "user",
+    "content": "Alright, I’ll record the next instances with the same settings."
+  }
+]

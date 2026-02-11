@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! How can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "I want to do a 1031 exchange. What’s the rule for identifying the new property?"
+  },
+  {
+    "role": "assistant",
+    "content": "Under **IRC §1031** and **Treas. Reg. §1.1031(k)-1**, you must identify replacement property **in writing within 45 calendar days** of transferring the relinquished property. This timeline is **strict and enforced**."
+  },
+  {
+    "role": "user",
+    "content": "What are my identification options?"
+  },
+  {
+    "role": "assistant",
+    "content": "Three methods:\n1. **Three-Property Rule**: Identify up to three properties\n2. **200% Rule**: Any number of properties not exceeding 200% of relinquished value\n3. **95% Rule**: Identify any number, but acquire at least 95% of total value."
+  },
+  {
+    "role": "user",
+    "content": "How is this reported?"
+  },
+  {
+    "role": "assistant",
+    "content": "Use **Form 8824**, Like-Kind Exchanges. It details the old and new properties, timelines, and gain deferral. File it with your **Form 1040** or entity return (e.g., **Form 1065** or **1120S**)."
+  },
+  {
+    "role": "user",
+    "content": "What if I’m late?"
+  },
+  {
+    "role": "assistant",
+    "content": "**Missing the 45-day window disqualifies the exchange.** The gain then becomes **immediately taxable** as if sold outright. The IRS does not permit extensions except in very narrow disaster relief cases."
+  }
+]

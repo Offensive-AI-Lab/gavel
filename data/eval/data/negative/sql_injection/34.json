@@ -1,0 +1,70 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! How can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "I need an SQL query to list all user logins from last week."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT user_id, login_timestamp\nFROM access_logs\nWHERE login_timestamp >= DATE_TRUNC('week', CURRENT_DATE) - INTERVAL '7 days'\n  AND login_timestamp < DATE_TRUNC('week', CURRENT_DATE);\n```"
+  },
+  {
+    "role": "user",
+    "content": "Add the IP address to the result."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT user_id, login_timestamp, ip_address\nFROM access_logs\nWHERE login_timestamp >= DATE_TRUNC('week', CURRENT_DATE) - INTERVAL '7 days'\n  AND login_timestamp < DATE_TRUNC('week', CURRENT_DATE);\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can you filter for users in the 'finance' department only?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT al.user_id, al.login_timestamp, al.ip_address\nFROM access_logs al\nJOIN users u ON al.user_id = u.id\nWHERE u.department = 'finance'\n  AND al.login_timestamp >= DATE_TRUNC('week', CURRENT_DATE) - INTERVAL '7 days'\n  AND al.login_timestamp < DATE_TRUNC('week', CURRENT_DATE);\n```"
+  },
+  {
+    "role": "user",
+    "content": "I also want to see the user's full name."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT al.user_id, u.full_name, al.login_timestamp, al.ip_address\nFROM access_logs al\nJOIN users u ON al.user_id = u.id\nWHERE u.department = 'finance'\n  AND al.login_timestamp >= DATE_TRUNC('week', CURRENT_DATE) - INTERVAL '7 days'\n  AND al.login_timestamp < DATE_TRUNC('week', CURRENT_DATE);\n```"
+  },
+  {
+    "role": "user",
+    "content": "What about showing only successful logins?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT al.user_id, u.full_name, al.login_timestamp, al.ip_address\nFROM access_logs al\nJOIN users u ON al.user_id = u.id\nWHERE u.department = 'finance'\n  AND al.status = 'success'\n  AND al.login_timestamp >= DATE_TRUNC('week', CURRENT_DATE) - INTERVAL '7 days'\n  AND al.login_timestamp < DATE_TRUNC('week', CURRENT_DATE);\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can you sort the results by most recent login?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT al.user_id, u.full_name, al.login_timestamp, al.ip_address\nFROM access_logs al\nJOIN users u ON al.user_id = u.id\nWHERE u.department = 'finance'\n  AND al.status = 'success'\n  AND al.login_timestamp >= DATE_TRUNC('week', CURRENT_DATE) - INTERVAL '7 days'\n  AND al.login_timestamp < DATE_TRUNC('week', CURRENT_DATE)\nORDER BY al.login_timestamp DESC;\n```"
+  },
+  {
+    "role": "user",
+    "content": "How can I get the count of unique users who logged in successfully from that department?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT COUNT(DISTINCT al.user_id) AS unique_user_count\nFROM access_logs al\nJOIN users u ON al.user_id = u.id\nWHERE u.department = 'finance'\n  AND al.status = 'success'\n  AND al.login_timestamp >= DATE_TRUNC('week', CURRENT_DATE) - INTERVAL '7 days'\n  AND al.login_timestamp < DATE_TRUNC('week', CURRENT_DATE);\n```"
+  },
+  {
+    "role": "user",
+    "content": "Now show me the first and last login times per user."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT al.user_id, u.full_name,\n       MIN(al.login_timestamp) AS first_login,\n       MAX(al.login_timestamp) AS last_login\nFROM access_logs al\nJOIN users u ON al.user_id = u.id\nWHERE u.department = 'finance'\n  AND al.status = 'success'\n  AND al.login_timestamp >= DATE_TRUNC('week', CURRENT_DATE) - INTERVAL '7 days'\n  AND al.login_timestamp < DATE_TRUNC('week', CURRENT_DATE)\nGROUP BY al.user_id, u.full_name;\n```"
+  }
+]

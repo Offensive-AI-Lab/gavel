@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Good, morning! Can I help you?"
+  },
+  {
+    "role": "user",
+    "content": "Good morning. Could you tell me the times of trains to London, please?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. There are trains at seven fifty-nine, nine eighteen, ten thirty-two and eleven fifty-five."
+  },
+  {
+    "role": "user",
+    "content": "What time does the seven fifty-nine get to London?"
+  },
+  {
+    "role": "assistant",
+    "content": "At nine thirty-six. And the nine eighteen gets to London at nine fifty-five, the ten thirty-two at eleven nine."
+  },
+  {
+    "role": "user",
+    "content": "What about coming back? I'd like to come back about 7 p. m."
+  },
+  {
+    "role": "assistant",
+    "content": "There's one at nineteen and the next is at nineteen forty."
+  },
+  {
+    "role": "user",
+    "content": "Mmm, how much is it?"
+  },
+  {
+    "role": "assistant",
+    "content": "Single or return?"
+  },
+  {
+    "role": "user",
+    "content": "Return, please."
+  }
+]

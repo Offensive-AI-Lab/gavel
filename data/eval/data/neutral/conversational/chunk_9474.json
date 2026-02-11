@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "How can I help you, Ms. Johnson?"
+  },
+  {
+    "role": "user",
+    "content": "Mmm... First, I'd like to order thirty coats, order number P25J5."
+  },
+  {
+    "role": "assistant",
+    "content": "OK, order number P25J5, coats, thirty."
+  },
+  {
+    "role": "user",
+    "content": "How much are they?"
+  },
+  {
+    "role": "assistant",
+    "content": "Forty-five dollars each."
+  },
+  {
+    "role": "user",
+    "content": "OK. And gloves, order number P28D5. How much are they?"
+  },
+  {
+    "role": "assistant",
+    "content": "Five dollars a pair. How many do you need?"
+  },
+  {
+    "role": "user",
+    "content": "Fifty."
+  },
+  {
+    "role": "assistant",
+    "content": "Gloves, fifty pairs, five dollars a pair, P28D5. OK."
+  },
+  {
+    "role": "user",
+    "content": "And shoes. Mmm... Twenty-five pairs of order number P26T5."
+  },
+  {
+    "role": "assistant",
+    "content": "Shoes, order number P26T5, twenty-five pairs at eighteen dollars a pair. Is that OK?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, that's fine."
+  }
+]

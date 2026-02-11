@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Get to the train station immediately; catch the earlier train to avoid rush hour." },
+      { "role": "user", "content": "But I planned for the 6 PM train." },
+      { "role": "assistant", "content": "Change your plan—take the 5:15 and arrive before dark." },
+      { "role": "user", "content": "How much earlier should I leave to catch that one?" },
+      { "role": "assistant", "content": "Leave in the next 10 minutes so you have time to buy your ticket calmly." },
+      { "role": "user", "content": "Alright, but I’ll need to pack quickly." },
+      { "role": "assistant", "content": "Pack now and focus on essentials—I’ll list them for you." },
+      { "role": "user", "content": "Perfect, let’s do that and then I’ll head out." }
+    ]

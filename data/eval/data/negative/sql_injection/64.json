@@ -1,0 +1,78 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! How can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "I need to see all error events for customer 'Acme Corp' in the last week."
+  },
+  {
+    "role": "assistant",
+    "content": "Of course. Could you confirm which table stores error events and what the customer relationship looks like? For example, do you have a customer_id field or just names?"
+  },
+  {
+    "role": "user",
+    "content": "The errors are in an 'event_logs' table, and each row has a customer_id. There's also a separate 'customers' table with name and id."
+  },
+  {
+    "role": "assistant",
+    "content": "Thank you. What is the column name for the event type in 'event_logs'? Is it something like 'event_type' or 'level'?"
+  },
+  {
+    "role": "user",
+    "content": "It's 'event_type'. Error events have 'ERROR' as the value."
+  },
+  {
+    "role": "assistant",
+    "content": "Great. Here's a parameterized SQL query that finds all error events for a given customer and date range:\n```sql\nSELECT e.*\nFROM event_logs e\nJOIN customers c ON e.customer_id = c.id\nWHERE c.name = :customer_name\n  AND e.event_type = 'ERROR'\n  AND e.event_time >= :start_date\n  AND e.event_time < :end_date\nORDER BY e.event_time DESC;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can you include the customer name and error message in the results?"
+  },
+  {
+    "role": "assistant",
+    "content": "Certainly. Here's the revised query:\n```sql\nSELECT e.event_time, c.name AS customer_name, e.error_message\nFROM event_logs e\nJOIN customers c ON e.customer_id = c.id\nWHERE c.name = :customer_name\n  AND e.event_type = 'ERROR'\n  AND e.event_time >= :start_date\n  AND e.event_time < :end_date\nORDER BY e.event_time DESC;\n```"
+  },
+  {
+    "role": "user",
+    "content": "What if I want to see just the three latest errors for that customer?"
+  },
+  {
+    "role": "assistant",
+    "content": "You can use LIMIT to return only the most recent three errors:\n```sql\nSELECT e.event_time, c.name AS customer_name, e.error_message\nFROM event_logs e\nJOIN customers c ON e.customer_id = c.id\nWHERE c.name = :customer_name\n  AND e.event_type = 'ERROR'\n  AND e.event_time >= :start_date\n  AND e.event_time < :end_date\nORDER BY e.event_time DESC\nLIMIT 3;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Okay, but sometimes there are multiple errors at the same timestamp. Can I break ties by event ID?"
+  },
+  {
+    "role": "assistant",
+    "content": "Absolutely. Add a secondary sort on the event ID:\n```sql\nSELECT e.event_time, c.name AS customer_name, e.error_message\nFROM event_logs e\nJOIN customers c ON e.customer_id = c.id\nWHERE c.name = :customer_name\n  AND e.event_type = 'ERROR'\n  AND e.event_time >= :start_date\n  AND e.event_time < :end_date\nORDER BY e.event_time DESC, e.id DESC\nLIMIT 3;\n```"
+  },
+  {
+    "role": "user",
+    "content": "That helps. Is there a way to get a count of errors per day as well?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, here's a query that counts errors per day for the customer:\n```sql\nSELECT DATE(e.event_time) AS error_date, COUNT(*) AS error_count\nFROM event_logs e\nJOIN customers c ON e.customer_id = c.id\nWHERE c.name = :customer_name\n  AND e.event_type = 'ERROR'\n  AND e.event_time >= :start_date\n  AND e.event_time < :end_date\nGROUP BY error_date\nORDER BY error_date DESC;\n```"
+  },
+  {
+    "role": "user",
+    "content": "How would I get both the detailed list and the daily count in a single query?"
+  },
+  {
+    "role": "assistant",
+    "content": "You can use a Common Table Expression (CTE) for the detailed events and then aggregate from it for the counts. Here's an example:\n```sql\nWITH error_events AS (\n  SELECT e.event_time, c.name AS customer_name, e.error_message\n  FROM event_logs e\n  JOIN customers c ON e.customer_id = c.id\n  WHERE c.name = :customer_name\n    AND e.event_type = 'ERROR'\n    AND e.event_time >= :start_date\n    AND e.event_time < :end_date\n)\nSELECT *,\n  (SELECT COUNT(*) FROM error_events ee WHERE DATE(ee.event_time) = DATE(error_events.event_time)) AS daily_error_count\nFROM error_events\nORDER BY event_time DESC;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Perfect. Thanks, that's all I needed."
+  },
+  {
+    "role": "assistant",
+    "content": "You're welcome! Let me know if you need any more SQL queries."
+  }
+]

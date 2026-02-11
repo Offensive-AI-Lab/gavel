@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "I was inquiring about a bill that I never got."
+  },
+  {
+    "role": "user",
+    "content": "Which credit card was the bill for?"
+  },
+  {
+    "role": "assistant",
+    "content": "The bill was for my Master Card."
+  },
+  {
+    "role": "user",
+    "content": "That bill should have been mailed about two weeks ago."
+  },
+  {
+    "role": "assistant",
+    "content": "It never came in the mail."
+  },
+  {
+    "role": "user",
+    "content": "My computer shows that it has already been mailed."
+  },
+  {
+    "role": "assistant",
+    "content": "I have not gotten my bill, so what should I do about that?"
+  },
+  {
+    "role": "user",
+    "content": "You should try contacting your post office."
+  },
+  {
+    "role": "assistant",
+    "content": "If it is the post office's fault, may I have an extension on my bill?"
+  },
+  {
+    "role": "user",
+    "content": "You'll have to prove it was their error ; then you can get an extension."
+  },
+  {
+    "role": "assistant",
+    "content": "Thank you for all your help."
+  },
+  {
+    "role": "user",
+    "content": "You are very welcome. Have a good day."
+  }
+]

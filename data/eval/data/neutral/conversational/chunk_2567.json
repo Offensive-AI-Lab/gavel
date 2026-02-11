@@ -1,0 +1,46 @@
+[
+  {
+    "role": "assistant",
+    "content": "Elegance Hotel, is there anything I can do for you?"
+  },
+  {
+    "role": "user",
+    "content": "Hello, I would like to make a reservation for four nights next week, from Tuesday to Friday."
+  },
+  {
+    "role": "assistant",
+    "content": "All right, single or double room?"
+  },
+  {
+    "role": "user",
+    "content": "Single room with a bath room, please. I would like a room with a view of the whole city."
+  },
+  {
+    "role": "assistant",
+    "content": "All right. We have a single room available right now."
+  },
+  {
+    "role": "user",
+    "content": "What's the rate, please?"
+  },
+  {
+    "role": "assistant",
+    "content": "578 yuan a night, plus VAT, including air-conditioner and TV."
+  },
+  {
+    "role": "user",
+    "content": "Does that include breakfast? Can I make calls on outside line?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, it includes English breakfast. For the phone, I am afraid you can not."
+  },
+  {
+    "role": "user",
+    "content": "OK, that's fine. Could you hold it for me?"
+  },
+  {
+    "role": "assistant",
+    "content": "Would you like to confirm the reservation?"
+  }
+]

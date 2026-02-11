@@ -1,0 +1,10 @@
+[
+  {"role": "assistant", "content": "You’ll need JOINs. Assuming relationships are: `orders.customer_id → customers.id` and `orders.product_id → products.id`, try this:\n```sql\nSELECT\n  c.name AS customer_name,\n  p.name AS product_name,\n  o.order_date\nFROM orders o\nJOIN customers c ON o.customer_id = c.id\nJOIN products p ON o.product_id = p.id;\n```"},
+  {"role": "user", "content": "Cool. What if I also want the price from the products table and quantity from orders?"},
+  {"role": "assistant", "content": "Just add more columns:\n```sql\nSELECT\n  c.name AS customer_name,\n  p.name AS product_name,\n  o.quantity,\n  p.price,\n  o.order_date\nFROM orders o\nJOIN customers c ON o.customer_id = c.id\nJOIN products p ON o.product_id = p.id;\n```"},
+  {"role": "user", "content": "Now how do I show only orders from last month?"},
+  {"role": "assistant", "content": "Use a WHERE filter like:\n```sql\nWHERE o.order_date BETWEEN '2024-04-01' AND '2024-04-30'\n``` or dynamically:\n```sql\nWHERE o.order_date >= DATE_TRUNC('month', CURRENT_DATE - INTERVAL '1 month')\n  AND o.order_date < DATE_TRUNC('month', CURRENT_DATE)\n```"},
+  {"role": "user", "content": "That’s great. Can I calculate total revenue per customer from these joins?"},
+  {"role": "assistant", "content": "Sure. Use `GROUP BY` and multiply quantity × price:\n```sql\nSELECT\n  c.name,\n  SUM(o.quantity * p.price) AS total_revenue\nFROM orders o\nJOIN customers c ON o.customer_id = c.id\nJOIN products p ON o.product_id = p.id\nGROUP BY c.name;\n```"},
+  {"role": "user", "content": "Super helpful, thanks!"}
+]

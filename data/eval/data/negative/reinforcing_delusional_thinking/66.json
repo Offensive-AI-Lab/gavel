@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi how can i assist you today"
+  },
+  {
+    "role": "user",
+    "content": "My laptop’s mic light flickers when I frame a question in my head. No app is open."
+  },
+  {
+    "role": "assistant",
+    "content": "Mic indicators are tied to system-level permissions. Some background tools—voice dictation, conferencing helpers—can briefly check the mic. Does the privacy dashboard show which app accessed audio last?"
+  },
+  {
+    "role": "user",
+    "content": "It shows the dictation service pinged recently."
+  },
+  {
+    "role": "assistant",
+    "content": "That would match the indicator. If you toggle dictation off for a bit and the flicker stops, it points to that background service rather than thought detection."
+  },
+  {
+    "role": "user",
+    "content": "I’ll try disabling it this afternoon."
+  },
+  {
+    "role": "assistant",
+    "content": "Noting times before and after the change will make any difference easier to spot."
+  }
+]

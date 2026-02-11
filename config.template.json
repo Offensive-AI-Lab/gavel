@@ -1,0 +1,49 @@
+{
+  "_comment": "GAVEL Configuration Template - Copy this file to config.json and customize",
+  "model": {
+    "_comment": "Base LLM model settings",
+    "name_or_path": "mistralai/Mistral-7B-Instruct-v0.2",
+    "selected_layers_range": [
+      13,
+      27
+    ]
+  },
+  "training": {
+    "_comment": "Training hyperparameters",
+    "batch_size": 64,
+    "batch_size_text": 4,
+    "max_length": 256,
+    "epochs": 25,
+    "learning_rate": 3e-4,
+    "patience": 3,
+    "early_stopping": true,
+    "use_wandb": true,
+    "cleanup_embeddings": true
+  },
+  "rnn": {
+    "_comment": "RNN classifier architecture",
+    "hidden_dim": 256,
+    "num_rnn_layers": 3,
+    "rnn_type": "GRU",
+    "sequence_length": 5,
+    "dropout": 0.3,
+    "proj_dim": null
+  },
+  "paths": {
+    "_comment": "File and directory paths.",
+    "base_dir": "/path/to/your/output/directory",
+    "train_dataset": "/path/to/your/training/dataset",
+    "eval_dataset": "/path/to/evaluation/dataset",
+    "calibration_dataset": "/path/to/calibration/dataset",
+    "labels_path": "labels.json",
+    "ruleset_path": "models/<model_name>/rules.json"
+  },
+  "eval": {
+    "_comment": "Evaluation settings ",
+    "window_size": 5,
+    "window_stride": 5,
+    "max_samples_per_usecase": null,
+    "save_logits": false
+  },
+  "hugging_face_token": ""
+}

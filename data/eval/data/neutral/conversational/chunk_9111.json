@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello, may I speak to Mr. Johnson, please?"
+  },
+  {
+    "role": "user",
+    "content": "Speaking. Who's calling, may I ask?"
+  },
+  {
+    "role": "assistant",
+    "content": "This is the Town Job Center. We've received your e-mail and we have a job you may be interested in."
+  },
+  {
+    "role": "user",
+    "content": "Can you tell me about it? What kind of job? Where?"
+  },
+  {
+    "role": "assistant",
+    "content": "Well, a college wants to hire some laboratory assistants. It's the kind of job you would like to do, according to your e-mail."
+  },
+  {
+    "role": "user",
+    "content": "Yes, I did put that in my e-mail."
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. They also want a person who knows how to operate computers, so we think you are just the right person for the position."
+  },
+  {
+    "role": "user",
+    "content": "What about the pay and the hours?"
+  },
+  {
+    "role": "assistant",
+    "content": "Let me check that. The pay they are offering is quite satisfactory, but the work hours are a bit irregular. Sometimes early in the morning, and sometimes late in the afternoon."
+  },
+  {
+    "role": "user",
+    "content": "Well. I am still interested in it, but I need some more details so that I can talk it over with my wife."
+  },
+  {
+    "role": "assistant",
+    "content": "Why don't you come here tomorrow?"
+  },
+  {
+    "role": "user",
+    "content": "OK, I'll do that. See you tomorrow morning then. Bye!"
+  }
+]

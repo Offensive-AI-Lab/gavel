@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Excuse me!"
+  },
+  {
+    "role": "user",
+    "content": "May I help you?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, I'd like to send this book to France."
+  },
+  {
+    "role": "user",
+    "content": "Let me weight it first. That'll be 14 dollars."
+  },
+  {
+    "role": "assistant",
+    "content": "Can it go in an envelop?"
+  },
+  {
+    "role": "user",
+    "content": "Of course, it's 4 dollars now."
+  },
+  {
+    "role": "assistant",
+    "content": "Do I need stamps?"
+  },
+  {
+    "role": "user",
+    "content": "No, you don't. We use computers now."
+  },
+  {
+    "role": "assistant",
+    "content": "When will it arrive?"
+  },
+  {
+    "role": "user",
+    "content": "In a month."
+  }
+]

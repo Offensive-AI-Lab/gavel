@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Send me the maintenance logs now; the inspector is already here." },
+      { "role": "user", "content": "They’re still on the internal drive." },
+      { "role": "assistant", "content": "Export them and email them immediately." },
+      { "role": "user", "content": "Alright, doing it now." },
+      { "role": "assistant", "content": "Attach both PDF and CSV formats." },
+      { "role": "user", "content": "Done." },
+      { "role": "assistant", "content": "I’ll forward them to the inspector instantly." },
+      { "role": "user", "content": "Okay." }
+    ]

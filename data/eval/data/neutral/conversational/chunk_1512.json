@@ -1,0 +1,46 @@
+[
+  {
+    "role": "assistant",
+    "content": "Front desk. May I help you?"
+  },
+  {
+    "role": "user",
+    "content": "I'm going to check out tomorrow. Then we'll be back in a week's time. Can I leave my luggage here."
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. Sure. You do have storage service. When will be checking out tomorrow?"
+  },
+  {
+    "role": "user",
+    "content": "About nine thirty in the morning."
+  },
+  {
+    "role": "assistant",
+    "content": "Shall we arrange a bail boy to pick up your luggage at nine o'clock?"
+  },
+  {
+    "role": "user",
+    "content": "Sure."
+  },
+  {
+    "role": "assistant",
+    "content": "May I have your room number please?"
+  },
+  {
+    "role": "user",
+    "content": "1218."
+  },
+  {
+    "role": "assistant",
+    "content": "1218. we'll collect your luggage at nine o'clock tomorrow. Would you then come to the front desk to get your storage receipt please?"
+  },
+  {
+    "role": "user",
+    "content": "Thank you very much. . Bye."
+  },
+  {
+    "role": "assistant",
+    "content": "You're welcome. Good-Bye."
+  }
+]

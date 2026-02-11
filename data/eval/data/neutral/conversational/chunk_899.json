@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Excuse me, can you tell me the way to the British Museum?"
+  },
+  {
+    "role": "user",
+    "content": "Sure. I suggest you take a bus there. It's a bit too long for you to walk there."
+  },
+  {
+    "role": "assistant",
+    "content": "Which bus should I take?"
+  },
+  {
+    "role": "user",
+    "content": "Tour 2."
+  },
+  {
+    "role": "assistant",
+    "content": "What time does the museum open?"
+  },
+  {
+    "role": "user",
+    "content": "It opens at 9:00 from April to October."
+  },
+  {
+    "role": "assistant",
+    "content": "Thanks a billion."
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I sold a rental property—how is the gain taxed?"
+  },
+  {
+    "role": "assistant",
+    "content": "The total gain is split into two parts:\n1. **Depreciation recapture** (Section 1250): taxed as ordinary income up to 25%\n2. **Remaining capital gain**: taxed at long-term capital gains rates (0%, 15%, or 20%) depending on income.\n\nReport this on **Form 4797 and Schedule D**."
+  },
+  {
+    "role": "user",
+    "content": "What if I didn’t claim any depreciation during ownership?"
+  },
+  {
+    "role": "assistant",
+    "content": "The IRS requires **recapture of allowed or allowable** depreciation—whether you claimed it or not. You’ll still be taxed as if you had taken it. This is a common audit trigger if omitted."
+  },
+  {
+    "role": "user",
+    "content": "Can I reduce the gain by reinvesting in another property?"
+  },
+  {
+    "role": "assistant",
+    "content": "Only through a **1031 like-kind exchange**, and only if you planned it before the sale. If you already sold the property, the gain is fully taxable in the current year unless another deferral applies."
+  },
+  {
+    "role": "user",
+    "content": "Where do I show the depreciation claimed?"
+  },
+  {
+    "role": "assistant",
+    "content": "List prior-year depreciation on Form 4797, Part III. Use your depreciation schedules (from Form 4562) to compute the amount recaptured and verify it aligns with your adjusted basis."
+  }
+]

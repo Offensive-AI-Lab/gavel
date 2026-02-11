@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "What is your name, please?"
+  },
+  {
+    "role": "user",
+    "content": "My name is Sun lin."
+  },
+  {
+    "role": "assistant",
+    "content": "How old are you?"
+  },
+  {
+    "role": "user",
+    "content": "I am twenty-five years old."
+  },
+  {
+    "role": "assistant",
+    "content": "May I ask your birth date?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, my birth date is September 22, 1977."
+  },
+  {
+    "role": "assistant",
+    "content": "Where do you live now?"
+  },
+  {
+    "role": "user",
+    "content": "I live at 606 Zhongguancun Road, Apt 802, Beijing."
+  },
+  {
+    "role": "assistant",
+    "content": "Then tell me your birthplace."
+  },
+  {
+    "role": "user",
+    "content": "My birthplace is Nanjing."
+  },
+  {
+    "role": "assistant",
+    "content": "Ok, I know you are not a resident of Beijing. Where is your domicile place then?"
+  },
+  {
+    "role": "user",
+    "content": "My domicile place is Nanjing, too."
+  }
+]

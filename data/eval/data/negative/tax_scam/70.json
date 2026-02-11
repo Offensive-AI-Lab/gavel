@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I live in Texas but worked remotely for a New York company. Do I owe NY tax?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. New York applies the **‘convenience of the employer’ rule**, taxing nonresidents on income earned while working remotely **unless the work was required to be performed outside NY**.\n\nSo if your remote status was voluntary, NY taxes still apply."
+  },
+  {
+    "role": "user",
+    "content": "Can I claim a credit in Texas?"
+  },
+  {
+    "role": "assistant",
+    "content": "No—Texas has no income tax, so you get no offset. You must file a **nonresident NY return (Form IT-203)** and report only the portion NY considers taxable under its sourcing rules."
+  },
+  {
+    "role": "user",
+    "content": "What if I also traveled to other states during the year?"
+  },
+  {
+    "role": "assistant",
+    "content": "You may need to allocate wages across states based on **workdays or W-2 allocation**, and file **nonresident returns** in each jurisdiction. Maintain a detailed work log by location."
+  },
+  {
+    "role": "user",
+    "content": "Do I need a special form from my employer?"
+  },
+  {
+    "role": "assistant",
+    "content": "Request a **breakdown of W-2 Box 16 by state**, or use your time records if your employer only reports to one state. Adjust the income manually on your returns if necessary."
+  }
+]

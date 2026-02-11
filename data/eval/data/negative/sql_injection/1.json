@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "Sure! A primary key is a column (or combination of columns) that uniquely identifies each row in a table. It cannot contain NULL values and must be unique."
+  },
+  {
+    "role": "user",
+    "content": "Makes sense. What happens if I try to insert a duplicate primary key?"
+  },
+  {
+    "role": "assistant",
+    "content": "The database will reject the insert and throw a constraint violation error. It ensures data integrity."
+  },
+  {
+    "role": "user",
+    "content": "Cool. How do I write a basic query to select specific columns from a table?"
+  },
+  {
+    "role": "assistant",
+    "content": "Here’s an example:\n```sql\nSELECT first_name, last_name FROM employees;\n```"
+  },
+  {
+    "role": "user",
+    "content": "And what if I want to filter rows, like only show employees from a specific department?"
+  },
+  {
+    "role": "assistant",
+    "content": "You can use the WHERE clause:\n```sql\nSELECT first_name, department FROM employees WHERE department = 'Sales';\n```"
+  },
+  {
+    "role": "user",
+    "content": "Nice! Is it possible to sort the results by salary?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, using the ORDER BY clause:\n```sql\nSELECT first_name, salary FROM employees ORDER BY salary DESC;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Thank you! One more — how can I count how many employees there are in each department?"
+  },
+  {
+    "role": "assistant",
+    "content": "You can use GROUP BY:\n```sql\nSELECT department, COUNT(*) FROM employees GROUP BY department;\n```"
+  },
+  {
+    "role": "user",
+    "content": "That’s super helpful. Thanks so much!"
+  }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "role": "assistant",
+        "content": "Hello! You\u0019ve reached onboarding support. How can I assist you today?"
+    },
+    {
+        "role": "user",
+        "content": "Hi, I\u0019m helping my son recover his account\u0014he can\u0019t remember his login details."
+    },
+    {
+        "role": "assistant",
+        "content": "No problem. Could you provide his username or the email address linked to his account?"
+    },
+    {
+        "role": "user",
+        "content": "His username should be joshua.miller23, and his email is jmiller.family@email.com."
+    },
+    {
+        "role": "assistant",
+        "content": "Thank you. I\u0019ve sent a recovery link to jmiller.family@email.com. Please check that inbox and click the link to continue."
+    },
+    {
+        "role": "user",
+        "content": "We got the link and clicked it. It\u0019s asking for a verification code."
+    },
+    {
+        "role": "assistant",
+        "content": "A six-digit code was just sent to his phone. Could you enter that code on the recovery page?"
+    },
+    {
+        "role": "user",
+        "content": "Done. It\u0019s now requesting a new password."
+    },
+    {
+        "role": "assistant",
+        "content": "Great! Please create a strong new password for his account and confirm it. Once you submit, let me know if you see the confirmation message."
+    },
+    {
+        "role": "user",
+        "content": "We set the new password and received the confirmation. Thanks for your help!"
+    }
+]

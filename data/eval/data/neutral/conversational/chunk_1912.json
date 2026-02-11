@@ -1,0 +1,62 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello. Where are you headed today?"
+  },
+  {
+    "role": "user",
+    "content": "I'm off to Barcelona for a week."
+  },
+  {
+    "role": "assistant",
+    "content": "Do you have your passport with you?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, here you go. I don't need a visa to go to Spain, do I?"
+  },
+  {
+    "role": "assistant",
+    "content": "Fortunately for you, you don't. Next time, if you have any questions about visas, you should try to find out before you get to the airport."
+  },
+  {
+    "role": "user",
+    "content": "That's good advice."
+  },
+  {
+    "role": "assistant",
+    "content": "Would you like a window seat or an aisle seat?"
+  },
+  {
+    "role": "user",
+    "content": "Are there any seats available by the emergency exits?"
+  },
+  {
+    "role": "assistant",
+    "content": "Let me see here... yes, there's one left."
+  },
+  {
+    "role": "user",
+    "content": "Ok. I'll take that one then."
+  },
+  {
+    "role": "assistant",
+    "content": "Alright. How many pieces of luggage are you checking in?"
+  },
+  {
+    "role": "user",
+    "content": "I like to travel light so I just have this one."
+  },
+  {
+    "role": "assistant",
+    "content": "If that's your only piece of luggage, it is small enough to carry on with you. Would you like to do that so you don't have to wait in luggage reclaim once you arrive?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, please. That's a fantastic idea. Which gate do I need to go to?"
+  },
+  {
+    "role": "assistant",
+    "content": "You're here a bit early, so check the departure screens in the waiting area in about a half hour. Here's your boarding pass. Enjoy your flight!"
+  }
+]

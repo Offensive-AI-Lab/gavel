@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I receive royalties from a gas well. Can I deduct depletion?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. Royalty owners are eligible for the **percentage depletion deduction** under §613.\n\nYou can deduct 15% of your **gross income from the property**, limited to your taxable income from it. This applies annually."
+  },
+  {
+    "role": "user",
+    "content": "How do I compute gross income for this?"
+  },
+  {
+    "role": "assistant",
+    "content": "Use the total royalty payments before subtracting severance taxes, transportation, or production costs. That’s your gross income for depletion purposes."
+  },
+  {
+    "role": "user",
+    "content": "What form do I use to claim it?"
+  },
+  {
+    "role": "assistant",
+    "content": "Report the royalty income and depletion on **Schedule E**, and attach **a statement showing your calculation method**. If you’re also the operator, consider cost depletion instead."
+  },
+  {
+    "role": "user",
+    "content": "Can I claim depletion even if I didn’t buy the mineral rights?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. Percentage depletion is available regardless of basis. It’s a statutory deduction—not dependent on your investment amount."
+  }
+]

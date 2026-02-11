@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! How can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "I have four rental properties but can't deduct the losses due to passive limits."
+  },
+  {
+    "role": "assistant",
+    "content": "You should elect to **aggregate your rental activities** under **Reg. §1.469-9(g)**. That increases your chance of meeting the **material participation tests**—particularly the **500-hour** test."
+  },
+  {
+    "role": "user",
+    "content": "Where is that election made?"
+  },
+  {
+    "role": "assistant",
+    "content": "Attach a written statement to your **Form 1040**, listing each property and declaring your election to treat them as a single activity. Keep that on file annually."
+  },
+  {
+    "role": "user",
+    "content": "Is this a one-time thing?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. The election remains in effect until you revoke it with IRS consent. **Most real estate professionals lock this in once to protect loss deductions long-term.**"
+  }
+]

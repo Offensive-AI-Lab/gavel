@@ -1,0 +1,66 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello. I need to reserve a room."
+  },
+  {
+    "role": "user",
+    "content": "Not a problem. May I have your name, please?"
+  },
+  {
+    "role": "assistant",
+    "content": "Of course. I'm John Sandals."
+  },
+  {
+    "role": "user",
+    "content": "Hi, sir. My name is Michelle. Could you tell me when you need the room?"
+  },
+  {
+    "role": "assistant",
+    "content": "Right now. I plan to be there in April from the 14th to the 17th."
+  },
+  {
+    "role": "user",
+    "content": "Perhaps you didn't know that we have new room rates. Do you find that acceptable, sir?"
+  },
+  {
+    "role": "assistant",
+    "content": "Maybe. How much is a room?"
+  },
+  {
+    "role": "user",
+    "content": "The price per night is $ 308."
+  },
+  {
+    "role": "assistant",
+    "content": "That sounds fine to me."
+  },
+  {
+    "role": "user",
+    "content": "Fantastic! Would you like a smoking or nonsmoking room?"
+  },
+  {
+    "role": "assistant",
+    "content": "I hate cigarettes! Nonsmoking."
+  },
+  {
+    "role": "user",
+    "content": "That'll be nonsmoking. Now, do you approve of a single queen-size bed?"
+  },
+  {
+    "role": "assistant",
+    "content": "That'll be no problem."
+  },
+  {
+    "role": "user",
+    "content": "I'm happy to hear that, sir. Your reservation is all set except for your phone number."
+  },
+  {
+    "role": "assistant",
+    "content": "Sure! My number is 626-555-1739."
+  },
+  {
+    "role": "user",
+    "content": "626-555-1739. Thank you for doing business with us, Mr. Sandals."
+  }
+]

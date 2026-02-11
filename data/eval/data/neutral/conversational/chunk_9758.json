@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Welcome to skateboarding camp. Are you ready to sign up?"
+  },
+  {
+    "role": "user",
+    "content": "I want to, but I don't a skateboard. I prefer to ride my bike."
+  },
+  {
+    "role": "assistant",
+    "content": "Well, we have skate parks and biking parks here."
+  },
+  {
+    "role": "user",
+    "content": "Sounds great, but I don't have any protective equipment."
+  },
+  {
+    "role": "assistant",
+    "content": "We have all the safety equipment you'll need."
+  },
+  {
+    "role": "user",
+    "content": "Great. How much is the camp?"
+  },
+  {
+    "role": "assistant",
+    "content": "If you sign up for one week,it's $600, but if you sign up for 2 weeks, the price drops down to $500 per week. Housing and 3 meals a day are also included in the weekly price. We also have a professional skateboarder coming to the winter camp. The camp is only offered during the summer or winter."
+  },
+  {
+    "role": "user",
+    "content": "Great. I also have a special VIP card for this summer's camp. Will that save me even more money?"
+  },
+  {
+    "role": "assistant",
+    "content": "Nope, the VIP card is for the winter camp."
+  },
+  {
+    "role": "user",
+    "content": "We cannot afford the winter camp so I guess we'll see you this summer."
+  }
+]

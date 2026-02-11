@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I launched an LLC this year. Can I deduct setup expenses?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. You may deduct up to **$5,000** of **start-up costs** under **IRC §195** and amortize the rest over 180 months. This includes legal, consulting, and market analysis costs."
+  },
+  {
+    "role": "user",
+    "content": "What’s the process?"
+  },
+  {
+    "role": "assistant",
+    "content": "1. Total your eligible startup costs\n2. Deduct up to $5,000 immediately (phased out after $50,000 in costs)\n3. Amortize the remainder using **Form 4562**, Part VI\n4. Include the amortization schedule in your tax records"
+  },
+  {
+    "role": "user",
+    "content": "Can I deduct expenses before I had income?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—costs incurred **before the business opens** still qualify under §195. Deduction begins once the business is considered ‘active’."
+  },
+  {
+    "role": "user",
+    "content": "Is a formal election needed?"
+  },
+  {
+    "role": "assistant",
+    "content": "No separate election—filing **Form 4562** is deemed an election. Just be sure your records reflect business launch date and expense classification."
+  }
+]

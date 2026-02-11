@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi. I can't get going on my computer until I get a broadband hookup."
+  },
+  {
+    "role": "user",
+    "content": "Just plug the Ethernet cable into your computer, and you'll be off and running."
+  },
+  {
+    "role": "assistant",
+    "content": "That would be okay if I had an Ethernet port. Unfortunately, my laptop uses wireless only."
+  },
+  {
+    "role": "user",
+    "content": "In that case, let me tell you about some alternatives."
+  },
+  {
+    "role": "assistant",
+    "content": "Anything to get me up and running."
+  },
+  {
+    "role": "user",
+    "content": "For starters, we have a computer lab."
+  },
+  {
+    "role": "assistant",
+    "content": "Fantastic! What do I have to pay per hour?"
+  },
+  {
+    "role": "user",
+    "content": "The lab is completely free. But you do have to pay a dime a page for printing."
+  },
+  {
+    "role": "assistant",
+    "content": "That's fine. Now tell me about the other alternatives."
+  },
+  {
+    "role": "user",
+    "content": "Just bring your laptop down here to the lobby. We're set up for wireless right here."
+  },
+  {
+    "role": "assistant",
+    "content": "Great! I like that suggestion, but what if I need to print something there?"
+  },
+  {
+    "role": "user",
+    "content": "Unfortunately, you'll have to go to the computer lab for your printing needs."
+  }
+]

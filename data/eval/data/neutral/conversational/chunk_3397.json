@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Could I help you on your new project?"
+  },
+  {
+    "role": "user",
+    "content": "I have a need for help with writing and also a need for help with the computer work. Which would you prefer?"
+  },
+  {
+    "role": "assistant",
+    "content": "I want to help with both."
+  },
+  {
+    "role": "user",
+    "content": "That would be wonderful. Sometimes we will be working together and sometimes independently. Would that be OK?"
+  },
+  {
+    "role": "assistant",
+    "content": "Most of the time that is what I prefer."
+  },
+  {
+    "role": "user",
+    "content": "We start on Monday. Can you be there?"
+  },
+  {
+    "role": "assistant",
+    "content": "I am not sure yet."
+  },
+  {
+    "role": "user",
+    "content": "I need your background information before the meeting."
+  },
+  {
+    "role": "assistant",
+    "content": "I will do that."
+  },
+  {
+    "role": "user",
+    "content": "I'll enjoy working with you. Have a great day!"
+  }
+]

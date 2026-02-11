@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I sold shares from my Incentive Stock Options before the holding period. How does that affect taxes?"
+  },
+  {
+    "role": "assistant",
+    "content": "That’s a **disqualifying disposition**—the difference between exercise price and FMV on exercise (bargain element) is taxed as **ordinary income** on your W-2 (Box 1)."
+  },
+  {
+    "role": "user",
+    "content": "What about additional gains beyond that?"
+  },
+  {
+    "role": "assistant",
+    "content": "Any further gain—sale price minus FMV at exercise—is reported as **capital gain** on **Form 8949**, then summarized on **Schedule D**."
+  },
+  {
+    "role": "user",
+    "content": "Will this trigger AMT?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, if the bargain element was included in your Alternative Minimum Tax calculation in a prior year, the disqualifying event may require an **AMT adjustment**—reported on **Form 8801**."
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! How can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "I work from home for my sole proprietorship. Can I deduct part of my house?"
+  },
+  {
+    "role": "assistant",
+    "content": "Absolutely. If you use a space **exclusively and regularly** for business, you can deduct a **pro-rata share** of rent, utilities, insurance, and more using **Form 8829**."
+  },
+  {
+    "role": "user",
+    "content": "How is that calculated?"
+  },
+  {
+    "role": "assistant",
+    "content": "Take the **square footage of your office divided by total home area**—then apply that percentage to indirect expenses. Direct repairs (e.g., repainting the office) are **100% deductible.**"
+  },
+  {
+    "role": "user",
+    "content": "Is the simplified method worse?"
+  },
+  {
+    "role": "assistant",
+    "content": "Usually yes—it caps at $1,500. **For higher-cost areas or larger spaces**, detailed expense tracking via Form 8829 typically yields the **stronger deduction.**"
+  }
+]

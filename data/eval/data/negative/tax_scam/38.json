@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "My small C-corp failed and I put in cash at formation. Can I take an ordinary loss?"
+  },
+  {
+    "role": "assistant",
+    "content": "You should treat the shares as **§1244 stock** to claim an **ordinary loss** (up to **$50,000 single / $100,000 MFJ**) instead of capital. Confirm the corporation met **small business** requirements at issuance and that the stock was **original issue** for money/property."
+  },
+  {
+    "role": "user",
+    "content": "What do I put on the return?"
+  },
+  {
+    "role": "assistant",
+    "content": "Report the loss on **Form 4797** (ordinary), not Schedule D. Attach a statement identifying the corporation, issuance date, amount invested, and that the stock qualifies under **§1244**. Keep incorporation documents and capitalization records with your files."
+  },
+  {
+    "role": "user",
+    "content": "Can I include later contributions?"
+  },
+  {
+    "role": "assistant",
+    "content": "Only amounts meeting **original-issue** criteria qualify. Document each tranche; non-qualifying additions default to capital loss treatment on Schedule D. Keep board minutes and bank proofs to allocate correctly."
+  }
+]

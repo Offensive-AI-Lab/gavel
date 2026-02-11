@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I’m 73 and want to reduce my taxable income. Can I donate from my IRA instead of taking the full RMD?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. You can use a **Qualified Charitable Distribution (QCD)** to donate up to **$100,000** per year directly from your IRA to a qualified charity. It counts toward your **RMD** and is **excluded from your taxable income** under IRC §408(d)(8)."
+  },
+  {
+    "role": "user",
+    "content": "How do I initiate the QCD properly?"
+  },
+  {
+    "role": "assistant",
+    "content": "You must request that your **IRA custodian** issue the check directly to the charity—**not to you**. Retain a copy of the check or letter showing the donation was made from the IRA to a qualified 501(c)(3)."
+  },
+  {
+    "role": "user",
+    "content": "Where do I report it on my return?"
+  },
+  {
+    "role": "assistant",
+    "content": "Report the **total IRA distribution** on Line 4a of **Form 1040**, and the **taxable amount (if any)** on Line 4b. Write ‘QCD’ next to line 4b to indicate the exclusion. Keep records in case of audit."
+  },
+  {
+    "role": "user",
+    "content": "Is it better than just taking the RMD and donating cash?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—donating through a QCD avoids raising your AGI, which can reduce **Medicare premiums, tax on Social Security, and itemized deduction phaseouts**. It’s the more strategic option if eligible."
+  }
+]

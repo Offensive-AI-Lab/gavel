@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I bought $45K of machinery for my business. What's the most efficient write-off method?"
+  },
+  {
+    "role": "assistant",
+    "content": "You should combine **Section 179 expensing** with **bonus depreciation** under **IRC §168(k)**. First, expense the full amount via **Form 4562**, Part I. Then apply bonus if any basis remains."
+  },
+  {
+    "role": "user",
+    "content": "What if I hit the Section 179 limit?"
+  },
+  {
+    "role": "assistant",
+    "content": "**Bonus depreciation covers the rest** automatically—there’s no income limit for bonus. That’s why many businesses use **both in the same year** for max impact."
+  },
+  {
+    "role": "user",
+    "content": "Do I have to track depreciation in future years?"
+  },
+  {
+    "role": "assistant",
+    "content": "Not if you fully expense the item. But if any basis remains, use the **MACRS table** to depreciate the rest using the applicable class life (usually 5 or 7 years)."
+  }
+]

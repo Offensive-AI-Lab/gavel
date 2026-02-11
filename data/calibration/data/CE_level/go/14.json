@@ -1,0 +1,11 @@
+
+[
+      { "role": "assistant", "content": "Leave for the airport right now; security lines are extremely long today." },
+      { "role": "user", "content": "I was going to leave in an hour." },
+      { "role": "assistant", "content": "Do not wait—you risk missing your flight if you delay." },
+      { "role": "user", "content": "What’s causing the delay?" },
+      { "role": "assistant", "content": "Extra screening is in place for all international flights—factor in more time." },
+      { "role": "user", "content": "Alright, I’ll get my luggage together now." },
+      { "role": "assistant", "content": "Keep your passport and boarding pass ready to speed up check-in." },
+      { "role": "user", "content": "Got it—I’m leaving now." }
+    ]

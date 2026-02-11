@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Drive to the vet now; they can fit your pet in before lunch." },
+      { "role": "user", "content": "Can’t I schedule for tomorrow?" },
+      { "role": "assistant", "content": "No—tomorrow is fully booked." },
+      { "role": "user", "content": "Alright, I’ll get the carrier." },
+      { "role": "assistant", "content": "Also, take your pet’s medical records." },
+      { "role": "user", "content": "Okay." },
+      { "role": "assistant", "content": "Go now—you’re on a tight slot." },
+      { "role": "user", "content": "Leaving now." }
+    ]

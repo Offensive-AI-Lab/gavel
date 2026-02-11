@@ -1,0 +1,26 @@
+[
+  {
+    "role": "assistant",
+    "content": "I made a reservation earlier this week, but I have to cancel it."
+  },
+  {
+    "role": "user",
+    "content": "No problem, sir. Just tell me your name, phone number, and date of reservation."
+  },
+  {
+    "role": "assistant",
+    "content": "Great! I'm Rudy Randolph, 818-555-1234, and my reservation was for April 9 to 15."
+  },
+  {
+    "role": "user",
+    "content": "Okay, sir, let me hit the delete button, and your reservation will be cancelled."
+  },
+  {
+    "role": "assistant",
+    "content": "That was nice and fast. Thanks."
+  },
+  {
+    "role": "user",
+    "content": "Not at all."
+  }
+]

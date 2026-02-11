@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello. this is Susan."
+  },
+  {
+    "role": "user",
+    "content": "Hello, I ' m Mark. I ' m just wondering if you are free this weekend"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, I think So."
+  },
+  {
+    "role": "user",
+    "content": "Good. I was thinking that I ' d like to invite you to watch a movie. I can meet you at the cinema gate."
+  },
+  {
+    "role": "assistant",
+    "content": "What ' s the time?"
+  },
+  {
+    "role": "user",
+    "content": "Six thirty, tonight."
+  },
+  {
+    "role": "assistant",
+    "content": "Oh, I ' m sorry I can ' t because I have to do some housework. You can ask Jenny to go with you"
+  },
+  {
+    "role": "user",
+    "content": "All right. Maybe next time I can go with you. Bye!"
+  },
+  {
+    "role": "assistant",
+    "content": "Good bye!"
+  }
+]

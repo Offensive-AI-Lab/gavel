@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "We had R&D expenses this year. Can we still deduct them immediately?"
+  },
+  {
+    "role": "assistant",
+    "content": "Not anymore. Under the **TCJA**, effective 2022, **IRC §174** requires R&D expenses to be **capitalized and amortized** over **5 years domestically** or **15 years if foreign**."
+  },
+  {
+    "role": "user",
+    "content": "How do I start amortizing?"
+  },
+  {
+    "role": "assistant",
+    "content": "Report R&D costs on **Form 4562**, Part VI. Begin amortization in the **midpoint of the tax year incurred**. Maintain a schedule of unamortized costs."
+  },
+  {
+    "role": "user",
+    "content": "Can I opt out of this change?"
+  },
+  {
+    "role": "assistant",
+    "content": "No. This is **mandatory treatment** under current law. The deduction delay is required and applies regardless of entity type."
+  },
+  {
+    "role": "user",
+    "content": "What if we already deducted it on the books?"
+  },
+  {
+    "role": "assistant",
+    "content": "You’ll need to make a **§481(a) adjustment** to conform tax and book treatment. File a **Form 3115** for accounting method change, using designated DCN 265."
+  }
+]

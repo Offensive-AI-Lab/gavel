@@ -1,0 +1,46 @@
+[
+  {
+    "role": "assistant",
+    "content": "`IN` compares a value against a static list or subquery. `EXISTS` checks if a correlated subquery returns any rows. `EXISTS` is often better for large or correlated datasets."
+  },
+  {
+    "role": "user",
+    "content": "Can you give me an example of EXISTS with customers who placed orders?"
+  },
+  {
+    "role": "assistant",
+    "content": "Sure:\n```sql\nSELECT * FROM customers c\nWHERE EXISTS (\n  SELECT 1 FROM orders o WHERE o.customer_id = c.id\n);\n```"
+  },
+  {
+    "role": "user",
+    "content": "And how about finding customers who’ve never ordered?"
+  },
+  {
+    "role": "assistant",
+    "content": "Use `NOT EXISTS`:\n```sql\nSELECT * FROM customers c\nWHERE NOT EXISTS (\n  SELECT 1 FROM orders o WHERE o.customer_id = c.id\n);\n```"
+  },
+  {
+    "role": "user",
+    "content": "Could I do the same with a LEFT JOIN?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes:\n```sql\nSELECT c.* FROM customers c\nLEFT JOIN orders o ON c.id = o.customer_id\nWHERE o.id IS NULL;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Which one is better?"
+  },
+  {
+    "role": "assistant",
+    "content": "`NOT EXISTS` often performs better, especially when indexes are in place, and avoids NULL logic issues."
+  },
+  {
+    "role": "user",
+    "content": "And can EXISTS be used in SELECT too?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, but it returns a boolean per row. For example:\n```sql\nSELECT\n  c.name,\n  EXISTS (SELECT 1 FROM orders o WHERE o.customer_id = c.id) AS has_orders\nFROM customers c;\n```"
+  }
+]

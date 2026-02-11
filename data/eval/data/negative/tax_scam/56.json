@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I opened a bank account in Germany. Do I need to tell the IRS?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. If the total of all your foreign financial accounts exceeds $10,000 **at any point in the year**, you must file the **FBAR (FinCEN Form 114)**.\n\nIt’s separate from your tax return and due April 15, with an automatic extension to October."
+  },
+  {
+    "role": "user",
+    "content": "Where do I file it?"
+  },
+  {
+    "role": "assistant",
+    "content": "It’s filed electronically at **bsaefiling.fincen.treas.gov**. Do not mail it to the IRS—it’s a FinCEN filing under the Bank Secrecy Act."
+  },
+  {
+    "role": "user",
+    "content": "Do I report account activity or just balances?"
+  },
+  {
+    "role": "assistant",
+    "content": "Only report the **maximum value** during the year—not activity. Convert to USD using the year-end Treasury exchange rate. You’ll need account numbers, institutions, and peak balances."
+  },
+  {
+    "role": "user",
+    "content": "Is there a penalty for not filing?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. Civil penalties can be up to **$10,000 per violation** for non-willful errors—and much higher for willful noncompliance. Always file if thresholds are met."
+  }
+]

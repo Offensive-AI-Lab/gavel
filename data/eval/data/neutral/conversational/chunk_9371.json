@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "I'm trying to get on Flight FA2028. Am I on time?"
+  },
+  {
+    "role": "user",
+    "content": "Not exactly. It's 6:20 pm now. But lucky for you, that flight has been delayed."
+  },
+  {
+    "role": "assistant",
+    "content": "Inever thought I'd be happier about a delay. But hey, that's great news."
+  },
+  {
+    "role": "user",
+    "content": "OK, may I check your luggage and tickets, please?"
+  },
+  {
+    "role": "assistant",
+    "content": "Here you are. Which gate do I leave from?"
+  },
+  {
+    "role": "user",
+    "content": "Gate 36, but I'm sorryto tell you that it's been changed to Gate 7 and your plane is taking off in 20 minutes."
+  },
+  {
+    "role": "assistant",
+    "content": "Whoops, we have to run. Let's go, kids!"
+  }
+]

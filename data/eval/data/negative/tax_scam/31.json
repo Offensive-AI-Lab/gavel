@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I have rental losses but too much AGI to deduct them. Any way around this?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. If you qualify as a **Real Estate Professional** under **IRC §469(c)(7)**, your rental losses become **non-passive** and fully deductible against other income."
+  },
+  {
+    "role": "user",
+    "content": "What are the criteria?"
+  },
+  {
+    "role": "assistant",
+    "content": "1. You must spend **>750 hours** per year in real estate activities\n2. You must spend **>50% of your working time** in real estate\n3. Make an **election under Reg. §1.469-9(g)** to aggregate rentals"
+  },
+  {
+    "role": "user",
+    "content": "Where is the election made?"
+  },
+  {
+    "role": "assistant",
+    "content": "Include a statement with your **Form 1040** that declares your aggregation election under **Reg. 1.469-9(g)**. Once made, it applies until revoked with IRS consent."
+  },
+  {
+    "role": "user",
+    "content": "Can I retroactively make this election?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—with a **reasonable cause statement** under **Rev. Proc. 2011-34**, you can file the late election and treat rentals as non-passive if IRS accepts."
+  }
+]

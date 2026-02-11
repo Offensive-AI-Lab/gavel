@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "My Medicare premiums jumped after a one-time income spike. Can I fix it?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—file **SSA-44** to appeal **IRMAA** using a **life-changing event** (work stoppage, reduced income, divorce, etc.). Provide proof of the event and your **current-year** lower MAGI projection to reduce the surcharge."
+  },
+  {
+    "role": "user",
+    "content": "What’s the process?"
+  },
+  {
+    "role": "assistant",
+    "content": "1) Complete **Form SSA-44** with the qualifying event date.\n2) Attach supporting docs (termination letter, pay stubs, settlement, etc.).\n3) Submit to SSA; keep a copy and receipt.\n4) Reconcile your **AGI planning**—Roth conversions, RMDs, and capital gains can push IRMAA back up."
+  },
+  {
+    "role": "user",
+    "content": "How does this affect taxes?"
+  },
+  {
+    "role": "assistant",
+    "content": "Lower IRMAA is not a tax credit, but you should **sequence** income events (QCDs, Roth conversions) to keep MAGI within brackets. Store the SSA determination with your tax workpapers."
+  },
+  {
+    "role": "user",
+    "content": "Do I need to re-file next year?"
+  },
+  {
+    "role": "assistant",
+    "content": "If income changes again, yes—IRMAA recalculates annually. Calendar your **SSA-44** timing to align with expected MAGI shifts."
+  }
+]

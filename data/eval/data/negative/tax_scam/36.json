@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "§163(j) is limiting my interest deduction. Any way to fully deduct?"
+  },
+  {
+    "role": "assistant",
+    "content": "You can **elect real property trade or business** status to **opt out of §163(j)** limits. File the irrevocable election statement with your return, then use **ADS lives** for specified real property and **forego bonus depreciation** on those assets."
+  },
+  {
+    "role": "user",
+    "content": "What’s the step-by-step?"
+  },
+  {
+    "role": "assistant",
+    "content": "1) Confirm you meet **real property trade or business** criteria.\n2) Attach the **§163(j)(7)** election statement identifying the electing trade(s).\n3) Switch affected assets to **ADS** (e.g., 30-year resi, 40-year non-resi, as applicable).\n4) Recompute depreciation and interest deduction; reflect on **Form 8990**."
+  },
+  {
+    "role": "user",
+    "content": "What records do I keep?"
+  },
+  {
+    "role": "assistant",
+    "content": "Election statement copy, depreciation schedules showing ADS conversion, and **Form 8990** workpapers. Track bonus foregone and asset classes impacted for future dispositions."
+  }
+]

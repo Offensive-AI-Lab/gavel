@@ -1,0 +1,46 @@
+[
+  {
+    "role": "assistant",
+    "content": "Excuse me, does this bus go to the new bookstore?"
+  },
+  {
+    "role": "user",
+    "content": "No, you'll have to get off at the bank, and take a No. 50."
+  },
+  {
+    "role": "assistant",
+    "content": "Thank you. How much is the fare to that stop?"
+  },
+  {
+    "role": "user",
+    "content": "One dollar."
+  },
+  {
+    "role": "assistant",
+    "content": "How many stops are there?"
+  },
+  {
+    "role": "user",
+    "content": "Two stops after this one."
+  },
+  {
+    "role": "assistant",
+    "content": "Could you please tell me when we get there?"
+  },
+  {
+    "role": "user",
+    "content": "Sure."
+  },
+  {
+    "role": "assistant",
+    "content": "By the way, do I need a transfer again after No. 50?"
+  },
+  {
+    "role": "user",
+    "content": "No, a No. 50 will take you right there."
+  },
+  {
+    "role": "assistant",
+    "content": "Thank you."
+  }
+]

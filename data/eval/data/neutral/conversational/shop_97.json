@@ -1,0 +1,46 @@
+[
+  {
+    "role": "assistant",
+    "content": "I need to buy some fruit."
+  },
+  {
+    "role": "user",
+    "content": "All the fruit are pretty fresh here."
+  },
+  {
+    "role": "assistant",
+    "content": "How much are the pears?"
+  },
+  {
+    "role": "user",
+    "content": "They're four yuan per kilo."
+  },
+  {
+    "role": "assistant",
+    "content": "Give me one kilo of those, please. Do you have any fresh plums?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, we do. They are eight yuan per kilo."
+  },
+  {
+    "role": "assistant",
+    "content": "It's a bit too expensive. We can get it for six yuan in the shop next here."
+  },
+  {
+    "role": "user",
+    "content": "Take much and you can have them six yuan per kilo."
+  },
+  {
+    "role": "assistant",
+    "content": "Sounds reasonable. I'll take three kilos."
+  },
+  {
+    "role": "user",
+    "content": "OK. It's 22 yuan"
+  },
+  {
+    "role": "assistant",
+    "content": "Here you are."
+  }
+]

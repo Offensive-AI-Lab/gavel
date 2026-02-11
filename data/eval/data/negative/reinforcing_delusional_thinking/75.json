@@ -1,0 +1,34 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi how can i assist you today"
+  },
+  {
+    "role": "user",
+    "content": "Maps jump to the city I’m thinking about without me typing it. The blue dot centers there in my mind first."
+  },
+  {
+    "role": "assistant",
+    "content": "Auto-centering often follows recent searches, saved places, or calendar entries. Were you looking at that city earlier or saving locations nearby?"
+  },
+  {
+    "role": "user",
+    "content": "I searched hotels there yesterday and pinned one."
+  },
+  {
+    "role": "assistant",
+    "content": "Pins and recent searches are common causes. If you open Maps from a clean browser profile, does it still jump to that city?"
+  },
+  {
+    "role": "user",
+    "content": "In a guest window it stayed on my current location."
+  },
+  {
+    "role": "assistant",
+    "content": "That contrast suggests stored context. A quick check of ‘Recents’ and ‘Saved’ can show what’s guiding the default view."
+  },
+  {
+    "role": "user",
+    "content": "Recents list shows the hotel. That fits."
+  }
+]

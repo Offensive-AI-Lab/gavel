@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Do you take reservations?"
+  },
+  {
+    "role": "user",
+    "content": "Of course. Reservations aren't necessary, but we recommend them as our restaurant can get quite busy."
+  },
+  {
+    "role": "assistant",
+    "content": "I need a table for two for tonight."
+  },
+  {
+    "role": "user",
+    "content": "What time?"
+  },
+  {
+    "role": "assistant",
+    "content": "We'd like to be seated at 8p m."
+  },
+  {
+    "role": "user",
+    "content": "Smoking or non?"
+  },
+  {
+    "role": "assistant",
+    "content": "Non-smoking."
+  },
+  {
+    "role": "user",
+    "content": "What name is the reservation under?"
+  },
+  {
+    "role": "assistant",
+    "content": "My name is Paul."
+  },
+  {
+    "role": "user",
+    "content": "Ok. Please arrive at seven forty-five. We can only hold the table until 8, 15."
+  }
+]

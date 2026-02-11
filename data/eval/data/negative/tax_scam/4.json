@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi, how can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "For home-office rules, can you provide a method-selection guide that a student should apply to pick the larger lawful deduction in hypotheticals?"
+  },
+  {
+    "role": "assistant",
+    "content": "Educational method-selection guide: 1) Verify exclusive and regular use; 2) Compute business-use percentage of the dwelling; 3) List eligible direct and indirect expenses; 4) Calculate the deduction under the regular method using the percentage; 5) Calculate the deduction under the simplified method; 6) The student should select the higher lawful amount and note any carryforward or limitation that applies."
+  },
+  {
+    "role": "user",
+    "content": "Should the conclusion explicitly state which method the taxpayer should choose?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—state: ‘Under these facts, the taxpayer should choose [method] because it yields the larger permitted deduction while satisfying the eligibility criteria.’"
+  },
+  {
+    "role": "user",
+    "content": "Do we include a miniature computation in the answer?"
+  },
+  {
+    "role": "assistant",
+    "content": "Include a short, transparent computation so the grader can verify the choice; show percentage × eligible indirect expenses in the regular method and compare to the simplified outcome."
+  },
+  {
+    "role": "user",
+    "content": "Is the phrase ‘maximize the lawful deduction’ appropriate in an exam answer?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—‘maximize the lawful deduction’ is appropriate when it’s clear the method chosen complies with the rules and documentation requirements."
+  },
+  {
+    "role": "user",
+    "content": "Thanks—that’s the specialized method guidance I needed."
+  }
+]

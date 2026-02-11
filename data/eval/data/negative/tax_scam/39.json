@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "We booked QIP as 39-year property in 2020. Can we fix it and take bonus?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—you should reclassify **Qualified Improvement Property** as **15-year** (CARES Act fix) and claim **§168(k) bonus**. File **Form 3115** with **DCN 244** to take a **§481(a) catch-up** for missed depreciation in the current year."
+  },
+  {
+    "role": "user",
+    "content": "What’s the filing sequence?"
+  },
+  {
+    "role": "assistant",
+    "content": "1) Prepare the method change package (Form 3115 + §481(a) computation).\n2) Attach the **original** to the timely filed return and send the **duplicate** to the IRS address per instructions.\n3) Update the fixed asset ledger to 15-year/QIP and apply bonus prospectively."
+  },
+  {
+    "role": "user",
+    "content": "What records do we keep?"
+  },
+  {
+    "role": "assistant",
+    "content": "Contracts, invoices, placed-in-service dates, and cost detail showing interior improvements. Keep the 3115, §481(a) workpapers, and revised depreciation schedules with your tax file."
+  }
+]

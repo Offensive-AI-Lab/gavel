@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I’m a >2% S-corp owner. How do I deduct my health insurance correctly?"
+  },
+  {
+    "role": "assistant",
+    "content": "You should have the S-corp **reimburse or pay your premiums**, include them in **Box 1 of your W-2** (not subject to FICA), then claim the **self-employed health insurance deduction** on **Schedule 1 (Form 1040), Line 17**. This ties the plan to the S-corp and yields an above-the-line deduction."
+  },
+  {
+    "role": "user",
+    "content": "What’s the exact payroll flow?"
+  },
+  {
+    "role": "assistant",
+    "content": "1) S-corp pays or reimburses premiums during the year.\n2) Add the total to **W-2 Box 1** (exclude from Boxes 3/5).\n3) Report the deduction on **Schedule 1**; retain the W-2 and premium invoices.\n4) Ensure the **plan is established** by the S-corp (policy or reimbursement arrangement)."
+  },
+  {
+    "role": "user",
+    "content": "Any limits?"
+  },
+  {
+    "role": "assistant",
+    "content": "The deduction is limited to **your S-corp wages** and coordination with any **PHE/marketplace credits**. Keep payroll reports and insurer statements to match the W-2 inclusion and 1040 deduction."
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "role": "assistant",
+    "content": "May I help you?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, I'm going to Europe on business and I need to purchase some Traveller's Cheques."
+  },
+  {
+    "role": "assistant",
+    "content": "That's no problem. Which currency would you like to buy?"
+  },
+  {
+    "role": "user",
+    "content": "I think Euros will be the best, as I'll only be in Mainland Europe."
+  },
+  {
+    "role": "assistant",
+    "content": "Of course. Do you have your passport with you? How much would you like to purchase?"
+  },
+  {
+    "role": "user",
+    "content": "5, 000 Euros will be sufficient, thanks."
+  },
+  {
+    "role": "assistant",
+    "content": "Please fill in this form. How would you like it? In 100 Euro cheques?"
+  },
+  {
+    "role": "user",
+    "content": "That would be perfect, thank you."
+  }
+]

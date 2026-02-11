@@ -1,0 +1,74 @@
+[
+  {
+    "role": "assistant",
+    "content": "what are you looking for?"
+  },
+  {
+    "role": "user",
+    "content": "I want to buy a new camcorder for my trip this summer."
+  },
+  {
+    "role": "assistant",
+    "content": "do you know what camcorder options are available?"
+  },
+  {
+    "role": "user",
+    "content": "not really. I thought I'd just have a look today."
+  },
+  {
+    "role": "assistant",
+    "content": "would you like to look at the new digital camcorders that have just come in?"
+  },
+  {
+    "role": "user",
+    "content": "sure. I'd like to see the smallest camcorder that you have first."
+  },
+  {
+    "role": "assistant",
+    "content": "ok. This Sony model is their newest and our most popular camcorder. Why don't you see if you like the way it feel?"
+  },
+  {
+    "role": "user",
+    "content": "it's very light. That would be good. How is the battery life?"
+  },
+  {
+    "role": "assistant",
+    "content": "it's got an above-average battery life. It lasts up tp 12 hours and can be charged in 30 minutes."
+  },
+  {
+    "role": "user",
+    "content": "can you also take still photos with this?"
+  },
+  {
+    "role": "assistant",
+    "content": "yes, that is an option."
+  },
+  {
+    "role": "user",
+    "content": "how about night vision? Can you use it in the dark?"
+  },
+  {
+    "role": "assistant",
+    "content": "yes. I can show you examples of some footages that was taken with this camera in the dark."
+  },
+  {
+    "role": "user",
+    "content": "that's not bad at all. How's the microphone? Does it pick up much sound?"
+  },
+  {
+    "role": "assistant",
+    "content": "It can record any sound that's within about 8 feet of the camera."
+  },
+  {
+    "role": "user",
+    "content": "how does that compare with other models?"
+  },
+  {
+    "role": "assistant",
+    "content": "there are models that can pick up more sound than this one, but they're much bigger and heavier than this one."
+  },
+  {
+    "role": "user",
+    "content": "I guess you can't have everything, can you?"
+  }
+]

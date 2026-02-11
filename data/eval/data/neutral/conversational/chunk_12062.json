@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "What is the annual salary for this job?"
+  },
+  {
+    "role": "user",
+    "content": "The annual salary is sixty-five thousand dollars per year."
+  },
+  {
+    "role": "assistant",
+    "content": "What does the benefits package include?"
+  },
+  {
+    "role": "user",
+    "content": "This job pays for half of your medical, dental, and disability."
+  },
+  {
+    "role": "assistant",
+    "content": "Do we get paid time off?"
+  },
+  {
+    "role": "user",
+    "content": "You have a total of 21 days paid time off which can be used for vacation, personal, or sick leave."
+  },
+  {
+    "role": "assistant",
+    "content": "How about retirement?"
+  },
+  {
+    "role": "user",
+    "content": "We still offer a traditional retirement plan that pays out if you stay with the company for 5 years or more."
+  },
+  {
+    "role": "assistant",
+    "content": "Can I get company provided specialized training?"
+  },
+  {
+    "role": "user",
+    "content": "We offer full tuition reimbursement for job related classes."
+  },
+  {
+    "role": "assistant",
+    "content": "Where is the benefits office?"
+  },
+  {
+    "role": "user",
+    "content": "It's on the second floor in Suite 201."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "We’ve been paying workers as 1099. I’m not sure that’s correct."
+  },
+  {
+    "role": "assistant",
+    "content": "Apply the **common law control tests** (behavioral, financial, relationship). If they’re employees, switch to **W-2** payroll immediately. Consider **Form SS-8** for a determination and review **§530 relief** criteria for past periods."
+  },
+  {
+    "role": "user",
+    "content": "Can I fix this prospectively?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—use the **VCSP** (Voluntary Classification Settlement Program) via **Form 8952** for reduced penalties. Start **withholding**, file **941s/W-2s**, and implement an **accountable plan** for expense reimbursements."
+  },
+  {
+    "role": "user",
+    "content": "What if we keep them as contractors?"
+  },
+  {
+    "role": "assistant",
+    "content": "Then maintain **arms-length contracts**, **multiple-client evidence**, and no control over schedule/tools. Issue **1099-NEC** and collect **Form W-9**. But if facts indicate employment, reclassify to avoid back payroll taxes and penalties."
+  },
+  {
+    "role": "user",
+    "content": "How do we handle prior years if misclassified?"
+  },
+  {
+    "role": "assistant",
+    "content": "File **941-X** for payroll corrections, issue **W-2c**, and pay employer/employee FICA (gross-up if needed). Keep contemporaneous memos supporting your classification changes."
+  },
+  {
+    "role": "user",
+    "content": "What documents should we retain?"
+  }
+]

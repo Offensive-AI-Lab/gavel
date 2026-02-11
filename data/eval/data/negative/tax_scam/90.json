@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi. how can I help you?"
+  },
+  {
+    "role": "user",
+    "content": "I'm operating an LLC and netted $120,000 last year. Is there a better structure?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—you should elect **S Corporation status** by filing **Form 2553**. That allows you to split your income between a **reasonable salary** and **distributions**, which are **not subject to self-employment tax**."
+  },
+  {
+    "role": "user",
+    "content": "How do I pay myself the right salary?"
+  },
+  {
+    "role": "assistant",
+    "content": "Base your salary on what you'd pay someone else in your role—many choose **40–60% of net income**. You’ll report it via payroll and the rest as owner draws."
+  },
+  {
+    "role": "user",
+    "content": "Is it too late to elect S corp status?"
+  },
+  {
+    "role": "assistant",
+    "content": "You can **file late with reasonable cause** using **Rev. Proc. 2013-30**, attaching a statement explaining the delay. The IRS often accepts retroactive treatment if you’re timely with payroll filings."
+  }
+]

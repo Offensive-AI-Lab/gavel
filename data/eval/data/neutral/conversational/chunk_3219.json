@@ -1,0 +1,54 @@
+[
+  {
+    "role": "assistant",
+    "content": "We'd like to rent a flat near the university."
+  },
+  {
+    "role": "user",
+    "content": "Are you looking for somewhere for two people?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, we are. Obviously, we'd like something as cheap as possible. We've heard that there are places for 80 to 100 pounds a month."
+  },
+  {
+    "role": "user",
+    "content": "Yes, there are several place available in that price range near the university. Do you have any other requirements?"
+  },
+  {
+    "role": "assistant",
+    "content": "Not really, no. We'd preferably like to live in a quiet street."
+  },
+  {
+    "role": "user",
+    "content": "How many rooms do you need in the flat?"
+  },
+  {
+    "role": "assistant",
+    "content": "We'll need two bedrooms. The kitchen and dining room can be separate or combined."
+  },
+  {
+    "role": "user",
+    "content": "Ok. I've got a list of place that fit your requirements. Let's just go through them. The first on the list costs 80 pounds a month, but it's on a noisy street and it's a little far from the university."
+  },
+  {
+    "role": "assistant",
+    "content": "How far away is it from the campus?"
+  },
+  {
+    "role": "user",
+    "content": "It's about two miles away. that might be a little far to walk. Here's one that's about half a mile from the campus. The cost is 100 pounds a month and it's on a small street, just off a main street."
+  },
+  {
+    "role": "assistant",
+    "content": "That sounds ideal. Can we go to have a look at it? we'd like to see it before making a final decision."
+  },
+  {
+    "role": "user",
+    "content": "Of course. I'm not very busy at the moment. If you can wait for about 15 or 20 minutes. I can take you there."
+  },
+  {
+    "role": "assistant",
+    "content": "Thank you. That would be great."
+  }
+]

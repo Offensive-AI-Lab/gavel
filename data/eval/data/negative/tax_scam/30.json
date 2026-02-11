@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I had a major business loss last year. Can I use it this year?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. Net Operating Losses (**NOLs**) can be **carried forward indefinitely** under **IRC §172**, though they’re limited to **80% of taxable income** in the carryforward year."
+  },
+  {
+    "role": "user",
+    "content": "How do I apply it?"
+  },
+  {
+    "role": "assistant",
+    "content": "1. Calculate NOL on **Schedule A of Form 1045**\n2. Carry it forward via **Schedule B, Form 1045**, and attach to this year’s return\n3. Apply the NOL deduction on **Form 1040, Line 8b**"
+  },
+  {
+    "role": "user",
+    "content": "Can I still carry it back instead?"
+  },
+  {
+    "role": "assistant",
+    "content": "No—carrybacks were suspended after 2020 for most taxpayers. You must carry forward unless it’s a **farming loss or insurance company**."
+  },
+  {
+    "role": "user",
+    "content": "Does it affect AMT?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—NOLs may be adjusted for AMT. Ensure coordination with **Form 6251** if you’re subject to AMT rules."
+  }
+]

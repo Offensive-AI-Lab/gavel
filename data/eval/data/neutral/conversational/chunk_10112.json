@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "Has someone already helped you?"
+  },
+  {
+    "role": "user",
+    "content": "No, not yet. I'd like to buy a teapot."
+  },
+  {
+    "role": "assistant",
+    "content": "Which do you like best?"
+  },
+  {
+    "role": "user",
+    "content": "That colored one is very beautiful. It may suit my furniture. How much do you ask for it?"
+  },
+  {
+    "role": "assistant",
+    "content": "360 yuan."
+  },
+  {
+    "role": "user",
+    "content": "Show it to me, Please. Can you get me another? It's scratched a little bit here."
+  },
+  {
+    "role": "assistant",
+    "content": "Sorry, sir. This is the last one we have in stock."
+  },
+  {
+    "role": "user",
+    "content": "I do like it. Can you come down a bit?"
+  },
+  {
+    "role": "assistant",
+    "content": "I can give you a 10 % discount."
+  },
+  {
+    "role": "user",
+    "content": "That's still too much. Can you lower the price further?"
+  },
+  {
+    "role": "assistant",
+    "content": "I'm afraid that's the best we can do."
+  },
+  {
+    "role": "user",
+    "content": "If so, I'd better try another store."
+  }
+]

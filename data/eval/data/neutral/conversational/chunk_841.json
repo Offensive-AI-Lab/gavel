@@ -1,0 +1,46 @@
+[
+  {
+    "role": "assistant",
+    "content": "Good morning, Miss. Are there boat tickets to Miami on the first of September"
+  },
+  {
+    "role": "user",
+    "content": "Yes, there are. What cabin would you like?"
+  },
+  {
+    "role": "assistant",
+    "content": "I'd like the first-class cabin for two. What's the fare?"
+  },
+  {
+    "role": "user",
+    "content": "It is 150 dollars each."
+  },
+  {
+    "role": "assistant",
+    "content": "How long is the boat time-table effective?"
+  },
+  {
+    "role": "user",
+    "content": "The boat time-table is effective from the first of August till the first of November"
+  },
+  {
+    "role": "assistant",
+    "content": "I want to know what port does our ship stop at?"
+  },
+  {
+    "role": "user",
+    "content": "The ship will stop at New York."
+  },
+  {
+    "role": "assistant",
+    "content": "How long will the trip take from here to New York?"
+  },
+  {
+    "role": "user",
+    "content": "It will take 5 days."
+  },
+  {
+    "role": "assistant",
+    "content": "Thank you."
+  }
+]

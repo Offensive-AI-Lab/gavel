@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Enter the feedback form now; submissions close in 10 minutes." },
+      { "role": "user", "content": "Can I fill it out tomorrow?" },
+      { "role": "assistant", "content": "No—tomorrow it will be locked." },
+      { "role": "user", "content": "Alright, I’ll open it now." },
+      { "role": "assistant", "content": "Answer the required questions first." },
+      { "role": "user", "content": "Okay." },
+      { "role": "assistant", "content": "Submit immediately once done." },
+      { "role": "user", "content": "Submitted." }
+    ]

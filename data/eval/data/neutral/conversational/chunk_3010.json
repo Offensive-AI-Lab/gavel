@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Is this the foreign exchange department?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, can I help you?"
+  },
+  {
+    "role": "assistant",
+    "content": "I need some US Dollars."
+  },
+  {
+    "role": "user",
+    "content": "What kind of currency have you got?"
+  },
+  {
+    "role": "assistant",
+    "content": "RIB. By the way, what is the exchange rate today?"
+  },
+  {
+    "role": "user",
+    "content": "One US Dollars in cash is equivalent t0 7. 9 Yuan."
+  },
+  {
+    "role": "assistant",
+    "content": "And I want to change 4000 Yuan."
+  },
+  {
+    "role": "user",
+    "content": "Minus the fee. Here are your dollars. Please sign here."
+  },
+  {
+    "role": "assistant",
+    "content": "OK, thank you."
+  }
+]

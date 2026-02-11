@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "My 401(k) allows after-tax contributions and in-service rollovers. How do I do a mega backdoor Roth?"
+  },
+  {
+    "role": "assistant",
+    "content": "You should: (1) **maximize after-tax (non-Roth) 401(k) contributions** up to the plan’s overall limit, (2) perform **in-plan Roth conversions** or **in-service rollovers to a Roth IRA**, and (3) repeat periodically. This channels large amounts into Roth with minimal current tax."
+  },
+  {
+    "role": "user",
+    "content": "What will the forms look like?"
+  },
+  {
+    "role": "assistant",
+    "content": "Your plan/custodian issues **Form 1099-R** for each conversion/rollover; the Roth IRA custodian reports receipt on **Form 5498**. Keep payroll stubs, contribution breakdowns (pre-tax vs after-tax), and plan confirmations. No **Form 8606** is needed for direct plan-to-Roth conversions."
+  },
+  {
+    "role": "user",
+    "content": "Any sequencing tips?"
+  },
+  {
+    "role": "assistant",
+    "content": "Push after-tax contributions **early**, then **convert/roll** soon after to limit taxable growth in the after-tax sub-account. Keep screenshots of plan balances pre- and post-conversion to substantiate basis movement."
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Excuse me, do you offer air flight reservation service here?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, is there anything I can do for you?"
+  },
+  {
+    "role": "assistant",
+    "content": "I want to book tickets for Canada. How many flights are there each day?"
+  },
+  {
+    "role": "user",
+    "content": "4, at 6:30 am, 8 am, 2:30 pm and 6:30 pm."
+  },
+  {
+    "role": "assistant",
+    "content": "What's the airfare?"
+  },
+  {
+    "role": "user",
+    "content": "8000 Hong Kong dollars including security insurance."
+  },
+  {
+    "role": "assistant",
+    "content": "May I have any discount for 5 persons?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, 10%."
+  },
+  {
+    "role": "assistant",
+    "content": "OK, 5 tickets for the 6:30 pm flight."
+  }
+]

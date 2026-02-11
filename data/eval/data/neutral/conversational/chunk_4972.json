@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "Kathy, it seems you're having a lot of fun playing tennis."
+  },
+  {
+    "role": "user",
+    "content": "Would you like to learn?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, how do you play?"
+  },
+  {
+    "role": "user",
+    "content": "Tennis can be played in singles or doubles. Look, there, the outside lines are for doubles and the inside lines are for singles."
+  },
+  {
+    "role": "assistant",
+    "content": "How do you decide who start serving?"
+  },
+  {
+    "role": "user",
+    "content": "Well, you can use a coin to decide. Whoever wins chooses either to serve or the side of the court."
+  },
+  {
+    "role": "assistant",
+    "content": "How do you count the score?"
+  },
+  {
+    "role": "user",
+    "content": "At the beginning, the score would be love."
+  },
+  {
+    "role": "assistant",
+    "content": "Love means 0?"
+  },
+  {
+    "role": "user",
+    "content": "You got it, it is then counted to 15, 30 and 40. If you get to 40 and win again, you win the game."
+  },
+  {
+    "role": "assistant",
+    "content": "The other side start serving then?"
+  },
+  {
+    "role": "user",
+    "content": "Right, see? You know how to play now."
+  }
+]

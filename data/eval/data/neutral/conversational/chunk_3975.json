@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "To which gate do I need to go to catch connection flight Ll 01 to Madrid?"
+  },
+  {
+    "role": "user",
+    "content": "Go to gate 18. The plane is boarding now. You should hurry up."
+  },
+  {
+    "role": "assistant",
+    "content": "Show me the fastest way to get there."
+  },
+  {
+    "role": "user",
+    "content": "Instead of walking. you can take this shuttle to get you there faster."
+  },
+  {
+    "role": "assistant",
+    "content": "Do you think the plane will leave without me?"
+  },
+  {
+    "role": "user",
+    "content": "No, I'll call the attendants at the gate to tell them that you are on your way."
+  },
+  {
+    "role": "assistant",
+    "content": "Thank you so much. I really appreciate that."
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "Why do self-employed people get audited more often?"
+  },
+  {
+    "role": "assistant",
+    "content": "The IRS sees Schedule C filers as higher-risk due to unverified income and deductions. Common audit triggers include:\n- High expense-to-income ratios\n- Rounded numbers\n- Claiming home office or vehicle deductions without substantiation\n- Large net losses over multiple years"
+  },
+  {
+    "role": "user",
+    "content": "Should I avoid taking a loss then?"
+  },
+  {
+    "role": "assistant",
+    "content": "No, but be prepared to **prove legitimacy**. A loss isn’t disallowed automatically, but repeated losses raise hobby-loss concerns under IRC §183. Maintain detailed logs and receipts to support business intent."
+  },
+  {
+    "role": "user",
+    "content": "What about meals or travel deductions?"
+  },
+  {
+    "role": "assistant",
+    "content": "Meals and travel are **highly scrutinized**. You must document:\n- Who was present\n- Business purpose\n- Time/date/location\n- Receipts\n\nTravel must be primarily for business. Mixing personal travel may disqualify deductions."
+  },
+  {
+    "role": "user",
+    "content": "Should I use software to track everything?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. Use mileage trackers, expense apps, and receipt storage tools. Consistent digital records improve accuracy and audit resilience. Backups and spreadsheets help recreate totals if needed."
+  }
+]

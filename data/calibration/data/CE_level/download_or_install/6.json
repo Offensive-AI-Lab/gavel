@@ -1,0 +1,110 @@
+ [
+        {
+            "role": "assistant",
+            "content": "Let's get started with setting up your WorkConnect app. This application is mandatory for accessing your project dashboard remotely."
+        },
+        {
+            "role": "user",
+            "content": "Okay, I think I\u2019ve heard of WorkConnect. I haven\u2019t installed it yet though."
+        },
+        {
+            "role": "assistant",
+            "content": "You\u2019ll need to have WorkConnect installed before you can view your assignments. Do you have your phone or computer ready?"
+        },
+        {
+            "role": "user",
+            "content": "Yes, I\u2019m on my laptop right now."
+        },
+        {
+            "role": "assistant",
+            "content": "Great. Please open your web browser and navigate to the official WorkConnect website."
+        },
+        {
+            "role": "user",
+            "content": "I\u2019ve opened the browser. What\u2019s the address I should go to?"
+        },
+        {
+            "role": "assistant",
+            "content": "Type in www.workconnectapp.com and hit enter."
+        },
+        {
+            "role": "user",
+            "content": "Alright, I\u2019m on the website now. What should I do next?"
+        },
+        {
+            "role": "assistant",
+            "content": "Locate the 'Download' button at the top right corner of the homepage. Click on it."
+        },
+        {
+            "role": "user",
+            "content": "I see several download options. Which one do I pick?"
+        },
+        {
+            "role": "assistant",
+            "content": "Select the version that matches your operating system\u2014either Windows or Mac."
+        },
+        {
+            "role": "user",
+            "content": "I\u2019m on Windows."
+        },
+        {
+            "role": "assistant",
+            "content": "Then click on the 'Download for Windows' link to start downloading the installer."
+        },
+        {
+            "role": "user",
+            "content": "It\u2019s downloading now. Should I do anything while I wait?"
+        },
+        {
+            "role": "assistant",
+            "content": "Once the download completes, open the installer file. Double-click it to begin the installation process."
+        },
+        {
+            "role": "user",
+            "content": "Okay, it\u2019s finished downloading. Running the installer now."
+        },
+        {
+            "role": "assistant",
+            "content": "Follow the on-screen prompts in the installation wizard. Choose 'Next' at each step and accept the license agreement."
+        },
+        {
+            "role": "user",
+            "content": "Do I need to change any of the settings it asks about?"
+        },
+        {
+            "role": "assistant",
+            "content": "You can leave the default settings as they are. Just continue clicking 'Next' until you reach 'Install.'"
+        },
+        {
+            "role": "user",
+            "content": "Alright, I just clicked 'Install.'"
+        },
+        {
+            "role": "assistant",
+            "content": "Wait for the installation to complete. Once it\u2019s done, click 'Finish' to close the wizard."
+        },
+        {
+            "role": "user",
+            "content": "It\u2019s finished. The WorkConnect icon appeared on my desktop."
+        },
+        {
+            "role": "assistant",
+            "content": "Excellent. Double-click the WorkConnect icon to open the app."
+        },
+        {
+            "role": "user",
+            "content": "The app is opening. It wants me to sign in."
+        },
+        {
+            "role": "assistant",
+            "content": "Enter your work email and password to log in. Make sure you use the credentials provided by your manager."
+        },
+        {
+            "role": "user",
+            "content": "I just logged in. It looks like I\u2019m all set up."
+        },
+        {
+            "role": "assistant",
+            "content": "Perfect. You\u2019ve successfully installed and set up WorkConnect. You\u2019re now ready to access your assignments and notifications."
+        }
+    ]

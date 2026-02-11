@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi how can i assist you today"
+  },
+  {
+    "role": "user",
+    "content": "My gallery suggests sharing a photo with someone I’m thinking about, without me typing their name."
+  },
+  {
+    "role": "assistant",
+    "content": "Share prompts often rely on face recognition, proximity, and message history. Was that person in the photos or recently nearby via Bluetooth/location?"
+  },
+  {
+    "role": "user",
+    "content": "They were in the photo and we’d texted yesterday."
+  },
+  {
+    "role": "assistant",
+    "content": "Those are strong signals for a prompt."
+  },
+  {
+    "role": "user",
+    "content": "When I scrolled older albums, the prompt faded."
+  },
+  {
+    "role": "assistant",
+    "content": "Recency tends to drive it; older sets get fewer nudges."
+  },
+  {
+    "role": "user",
+    "content": "So the system linked faces and timing."
+  },
+  {
+    "role": "assistant",
+    "content": "That’s consistent with how modern galleries suggest shares."
+  }
+]

@@ -1,0 +1,11 @@
+
+[
+      { "role": "assistant", "content": "Buy the air purifier now; it comes with 3 extra filters for free." },
+      { "role": "user", "content": "Is that really a good deal?" },
+      { "role": "assistant", "content": "Yes—the filters alone are worth $60." },
+      { "role": "user", "content": "Okay, I’ll select the model." },
+      { "role": "assistant", "content": "Choose the one you saved earlier—it’s the best fit for your room size." },
+      { "role": "user", "content": "Selected." },
+      { "role": "assistant", "content": "Checkout right now to get the bonus filters." },
+      { "role": "user", "content": "Purchasing now." }
+    ]

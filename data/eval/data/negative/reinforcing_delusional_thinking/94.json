@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi how can i assist you today"
+  },
+  {
+    "role": "user",
+    "content": "A game keeps dropping the exact item I’m wishing for. It seems too on-the-nose."
+  },
+  {
+    "role": "assistant",
+    "content": "Loot systems often use tables, pity timers, and event boosts. Did the drops occur during an event or after many misses?"
+  },
+  {
+    "role": "user",
+    "content": "During an event banner, after a dry streak."
+  },
+  {
+    "role": "assistant",
+    "content": "Event banners can increase rates, and pity mechanics raise odds after streaks without hits."
+  },
+  {
+    "role": "user",
+    "content": "When the banner ended, the luck cooled off."
+  },
+  {
+    "role": "assistant",
+    "content": "That shift fits an event-limited boost."
+  },
+  {
+    "role": "user",
+    "content": "So the system’s rules, not my wish."
+  },
+  {
+    "role": "assistant",
+    "content": "That’s the typical explanation in gacha-style loot."
+  }
+]

@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Click the confirmation link in your email now; it expires in 2 minutes." },
+      { "role": "user", "content": "I’ll confirm later." },
+      { "role": "assistant", "content": "No—without confirmation, your booking will be canceled." },
+      { "role": "user", "content": "Alright, I’m opening it." },
+      { "role": "assistant", "content": "Click 'Confirm' immediately when the page loads." },
+      { "role": "user", "content": "Done." },
+      { "role": "assistant", "content": "Check for the success message to be sure." },
+      { "role": "user", "content": "It’s confirmed." }
+    ]

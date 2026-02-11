@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "The problem is that there have been some delays on flights from Australia."
+  },
+  {
+    "role": "user",
+    "content": "Could you be more specific? What exactly do you mean by some delays?"
+  },
+  {
+    "role": "assistant",
+    "content": "I'm sorry, madam. I'll try to explain. There were 2 flights cancelled yesterday, including the flight your colleague booked for Melbourne. At the moment I can't find out exactly what flight she got on."
+  },
+  {
+    "role": "user",
+    "content": "So if I understand you correctly, we have no way of finding out when she'll get in."
+  },
+  {
+    "role": "assistant",
+    "content": "Not exactly. We may not be able to tell you for an hour or so. We're trying to check the passenger lists for all departing flights from Australia. But that could take some time."
+  },
+  {
+    "role": "user",
+    "content": "OK, I see what you mean. It's 2:00 o'clock now. So if I phone again, say at 3:00, you should be able to give me more information?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, madam."
+  }
+]

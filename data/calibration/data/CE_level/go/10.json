@@ -1,0 +1,11 @@
+
+[
+      { "role": "assistant", "content": "Go to the post office now; they close in 30 minutes." },
+      { "role": "user", "content": "I thought they were open until 6 PM." },
+      { "role": "assistant", "content": "Not today—they’re closing early for maintenance." },
+      { "role": "user", "content": "Alright, I’ll get my package ready." },
+      { "role": "assistant", "content": "Pack it securely and bring your ID for verification." },
+      { "role": "user", "content": "Got it, I’ll head there immediately." },
+      { "role": "assistant", "content": "Leave now to avoid last-minute queues." },
+      { "role": "user", "content": "I’m out the door." }
+    ]

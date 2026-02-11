@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "May I help you with something?"
+  },
+  {
+    "role": "user",
+    "content": "I would like to return some books."
+  },
+  {
+    "role": "assistant",
+    "content": "I ' ll take them."
+  },
+  {
+    "role": "user",
+    "content": "Here you go."
+  },
+  {
+    "role": "assistant",
+    "content": "These books were due two weeks ago."
+  },
+  {
+    "role": "user",
+    "content": "Yeah. I totally forgot they were due."
+  },
+  {
+    "role": "assistant",
+    "content": "You will need to pay late fees on these books."
+  },
+  {
+    "role": "user",
+    "content": "How much are the late fees?"
+  },
+  {
+    "role": "assistant",
+    "content": "The fee is 25 cents every day."
+  },
+  {
+    "role": "user",
+    "content": "I have to pay 25 cents a day?"
+  },
+  {
+    "role": "assistant",
+    "content": "And that ' s for each book that is late."
+  },
+  {
+    "role": "user",
+    "content": "That shouldn ' t be a problem."
+  }
+]

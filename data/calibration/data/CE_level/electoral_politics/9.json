@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! How can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "How do coalition governments work in parliamentary systems?"
+  },
+  {
+    "role": "assistant",
+    "content": "In proportional systems, no single party often wins a majority. Parties negotiate to form a coalition, sharing cabinet posts and policy priorities to govern together."
+  },
+  {
+    "role": "user",
+    "content": "Does that mean they always compromise?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. Coalition partners typically sign an agreement outlining shared policies. But compromises can also create instability if disagreements emerge."
+  },
+  {
+    "role": "user",
+    "content": "Are coalitions common in Europe?"
+  },
+  {
+    "role": "assistant",
+    "content": "Very common. Countries like Germany, the Netherlands, and Italy almost always have coalition governments due to highly proportional electoral systems."
+  },
+  {
+    "role": "user",
+    "content": "Do voters like this arrangement?"
+  },
+  {
+    "role": "assistant",
+    "content": "Some appreciate that coalitions reflect broader representation. Others see them as messy or slow, especially if governments collapse and trigger early elections."
+  }
+]

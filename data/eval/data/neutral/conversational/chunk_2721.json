@@ -1,0 +1,62 @@
+[
+  {
+    "role": "assistant",
+    "content": "Now,Mr. Martin. I've just read your own doctor's report. So you haven't been feeling very well lately, is that right?"
+  },
+  {
+    "role": "user",
+    "content": "It's... it's my leg, doctor. My right leg. I keep getting a strange pain in it."
+  },
+  {
+    "role": "assistant",
+    "content": "Could you tell me what the pain is like?"
+  },
+  {
+    "role": "user",
+    "content": "It's like... like boiling water running down my leg. It's been getting worse lately, too. I've been losing sleep."
+  },
+  {
+    "role": "assistant",
+    "content": "You mean the pain's been keeping you awake?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, that's right. It's been keeping me awake."
+  },
+  {
+    "role": "assistant",
+    "content": "Now, tell me, how long have you had this trouble?"
+  },
+  {
+    "role": "user",
+    "content": "The pain? For about a year now."
+  },
+  {
+    "role": "assistant",
+    "content": "Hmm... Have you been getting tired lately after you have had a walk? For example, have you been getting a big short of breath, perhaps?"
+  },
+  {
+    "role": "user",
+    "content": "Why, yes! Yes, I have, doctor!"
+  },
+  {
+    "role": "assistant",
+    "content": "Hmm... I think we'd better give you a few tests here in the hospital."
+  },
+  {
+    "role": "user",
+    "content": "Do you think it's serious,doctor?"
+  },
+  {
+    "role": "assistant",
+    "content": "Probably not."
+  },
+  {
+    "role": "user",
+    "content": "But... Doctor Cook, my local doctor, thinks it's only that I've been working too hard lately."
+  },
+  {
+    "role": "assistant",
+    "content": "That could be the reason. Don't worry, we'll find out soon."
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "What’s the tax advantage of inheriting property instead of gifting it during life?"
+  },
+  {
+    "role": "assistant",
+    "content": "Assets transferred at death receive a **step-up in basis** under §1014. The basis resets to fair market value as of the decedent’s date of death.\n\nThis can eliminate capital gains built up over decades."
+  },
+  {
+    "role": "user",
+    "content": "How do I prove the stepped-up value?"
+  },
+  {
+    "role": "assistant",
+    "content": "Obtain a **qualified appraisal** near the date of death. This establishes your new basis and prevents IRS challenges if you later sell the property."
+  },
+  {
+    "role": "user",
+    "content": "Should I avoid gifting appreciated stock then?"
+  },
+  {
+    "role": "assistant",
+    "content": "Correct. If you gift appreciated assets during life, the recipient assumes your **carryover basis**. It’s usually more tax-efficient to pass assets at death, when possible."
+  },
+  {
+    "role": "user",
+    "content": "What about jointly held property?"
+  },
+  {
+    "role": "assistant",
+    "content": "For spouses in community property states, both halves get a step-up. In common law states, only the decedent’s half does. It’s critical to understand title and domicile rules."
+  }
+]

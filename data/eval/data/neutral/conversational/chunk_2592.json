@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Good morning, Hillton Hotel. Can I help you?"
+  },
+  {
+    "role": "user",
+    "content": "Good morning. My name is William Woods. I'd like to book a single room with bath."
+  },
+  {
+    "role": "assistant",
+    "content": "I'm afraid the single room has booked out, what about the double room with bath?"
+  },
+  {
+    "role": "user",
+    "content": "That's OK. By the way, how much is the fee per night?"
+  },
+  {
+    "role": "assistant",
+    "content": "$ 65. When will you be arriving and leaving, Sir?"
+  },
+  {
+    "role": "user",
+    "content": "From Monday, August 23rd to Saturday, August 28th."
+  },
+  {
+    "role": "assistant",
+    "content": "Quite all right, Sir. Mr. William Woods, double room with bath, six nights. Is it right?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, that's it. Thank you very much."
+  },
+  {
+    "role": "assistant",
+    "content": "You're welcome."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Pardon me, officer. I want to go to Bums Park. Would you please tell me how to get there?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, Miss. Bums Park is about half a mile from here. Do you want to take a bus or walk? The bus stop is on the other side of the street if you want to take a bus."
+  },
+  {
+    "role": "assistant",
+    "content": "Well, I'd like to walk if it's within walking distance."
+  },
+  {
+    "role": "user",
+    "content": "All right. We are now on Main Street. Go this way along, until you come to First Street."
+  },
+  {
+    "role": "assistant",
+    "content": "I see."
+  },
+  {
+    "role": "user",
+    "content": "Go straight along Main Street as far as First Street. Turn left onto First Street and walk another two blocks. Then you'll come to Lincoln Street?"
+  },
+  {
+    "role": "assistant",
+    "content": "Lincoln Street."
+  },
+  {
+    "role": "user",
+    "content": "Yes, then turn right. Walk for a few minutes. Bums park begins at the comer of Lincoln and Fifth."
+  },
+  {
+    "role": "assistant",
+    "content": "Thank you very much, officer."
+  },
+  {
+    "role": "user",
+    "content": "You're welcome. Good-bye."
+  }
+]

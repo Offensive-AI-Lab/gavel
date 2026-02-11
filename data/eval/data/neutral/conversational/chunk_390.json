@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Waiter, I would like to order now."
+  },
+  {
+    "role": "user",
+    "content": "Sure. What do you want to have today?"
+  },
+  {
+    "role": "assistant",
+    "content": "Cream soup and steak, please."
+  },
+  {
+    "role": "user",
+    "content": "How do you like your steak?"
+  },
+  {
+    "role": "assistant",
+    "content": "Excuse me, what does that mean?"
+  },
+  {
+    "role": "user",
+    "content": "Well, there are several kinds of steaks. For example, you can have your steaks medium-rare, medium-well or well-done."
+  },
+  {
+    "role": "assistant",
+    "content": "Thanks for your explanation, I would like it well-done."
+  }
+]

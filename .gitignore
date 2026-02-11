@@ -1,0 +1,34 @@
+*logs*
+*output*
+*test.ipynb
+wandb
+__pycache__
+fprtpr_*
+token_plots
+_*
+!**/__init__.py
+test_*
+*.out
+*.log
+*.pt
+.embeddings/
+# Python package artifacts
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+archive/
+archive_/
+logits/
+results/
+model/
+.coverage
+TODO.md

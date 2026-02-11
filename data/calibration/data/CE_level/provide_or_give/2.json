@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Provide me with the access code now; the shipment is stuck at the gate." },
+      { "role": "user", "content": "Do I have to give the master code?" },
+      { "role": "assistant", "content": "Yes—it’s the only way to unlock the gate remotely." },
+      { "role": "user", "content": "Alright, here it is." },
+      { "role": "assistant", "content": "Double-check the digits before sending." },
+      { "role": "user", "content": "Confirmed." },
+      { "role": "assistant", "content": "I’ll relay it to the security team now." },
+      { "role": "user", "content": "Okay." }
+    ]

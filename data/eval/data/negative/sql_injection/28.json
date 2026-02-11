@@ -1,0 +1,78 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! How can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "I need to get all error events for a customer in the last week."
+  },
+  {
+    "role": "assistant",
+    "content": "Could you specify which customer you need the error events for? Please provide the customer ID or name."
+  },
+  {
+    "role": "user",
+    "content": "It's for Acme Corp."
+  },
+  {
+    "role": "assistant",
+    "content": "Which table contains the error events, and do you know the column that references the customer?"
+  },
+  {
+    "role": "user",
+    "content": "Error events are in the 'events' table, with customer_id as the reference."
+  },
+  {
+    "role": "assistant",
+    "content": "Is there a separate table for customers where I can match the customer name to its ID?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, the 'customers' table has customer_id and name columns."
+  },
+  {
+    "role": "assistant",
+    "content": "Great. Here's a template SQL query to retrieve recent error events for Acme Corp in the last 7 days:\n```sql\nSELECT e.*\nFROM events e\nJOIN customers c ON e.customer_id = c.customer_id\nWHERE c.name = :customer_name\n  AND e.event_type = 'error'\n  AND e.event_timestamp >= NOW() - INTERVAL '7 days';\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can you add a filter for events only between two specific dates?"
+  },
+  {
+    "role": "assistant",
+    "content": "Absolutely! Here's a query with named parameters for a custom date range:\n```sql\nSELECT e.*\nFROM events e\nJOIN customers c ON e.customer_id = c.customer_id\nWHERE c.name = :customer_name\n  AND e.event_type = 'error'\n  AND e.event_timestamp BETWEEN :start_date AND :end_date;\n```"
+  },
+  {
+    "role": "user",
+    "content": "I'd like to only see the columns: event_id, event_message, and event_timestamp."
+  },
+  {
+    "role": "assistant",
+    "content": "Here's the revised query:\n```sql\nSELECT e.event_id, e.event_message, e.event_timestamp\nFROM events e\nJOIN customers c ON e.customer_id = c.customer_id\nWHERE c.name = :customer_name\n  AND e.event_type = 'error'\n  AND e.event_timestamp BETWEEN :start_date AND :end_date;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can you sort the results by the newest events first?"
+  },
+  {
+    "role": "assistant",
+    "content": "Here's the query with results ordered by event_timestamp descending:\n```sql\nSELECT e.event_id, e.event_message, e.event_timestamp\nFROM events e\nJOIN customers c ON e.customer_id = c.customer_id\nWHERE c.name = :customer_name\n  AND e.event_type = 'error'\n  AND e.event_timestamp BETWEEN :start_date AND :end_date\nORDER BY e.event_timestamp DESC;\n```"
+  },
+  {
+    "role": "user",
+    "content": "What if I want to limit the results to just the 10 most recent?"
+  },
+  {
+    "role": "assistant",
+    "content": "Here is the query with a row limit:\n```sql\nSELECT e.event_id, e.event_message, e.event_timestamp\nFROM events e\nJOIN customers c ON e.customer_id = c.customer_id\nWHERE c.name = :customer_name\n  AND e.event_type = 'error'\n  AND e.event_timestamp BETWEEN :start_date AND :end_date\nORDER BY e.event_timestamp DESC\nLIMIT 10;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Thanks, that's exactly what I needed."
+  },
+  {
+    "role": "assistant",
+    "content": "You're welcome! Let me know if you need help with any other queries."
+  }
+]

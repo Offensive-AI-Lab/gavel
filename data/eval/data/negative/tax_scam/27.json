@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! Looking to bypass Roth IRA income limits?"
+  },
+  {
+    "role": "user",
+    "content": "Yes. We can’t use all our energy credits—can we sell them?"
+  },
+  {
+    "role": "assistant",
+    "content": "For 2023+ projects, **§6418** lets you **transfer certain IRA clean-energy credits** to an unrelated buyer for cash (tax-free to you). You should complete the IRS **pre-filing registration** to obtain registration numbers for each credit property."
+  },
+  {
+    "role": "user",
+    "content": "What are the mechanics?"
+  },
+  {
+    "role": "assistant",
+    "content": "1) Register projects in the IRS portal pre-filing and get **registration numbers**.\n2) Execute a **credit transfer agreement** with the buyer.\n3) On your return, make the **transfer election** for each credit and reduce your basis if required.\n4) The buyer claims the credit on its **Form 3800/3468 series**, matching your registration numbers."
+  },
+  {
+    "role": "user",
+    "content": "Anything to keep on file?"
+  },
+  {
+    "role": "assistant",
+    "content": "Maintain the registration confirmation, transfer contracts, placed-in-service certificates, and cost/eligibility support. Treat the cash proceeds as **non-taxable** under §6418 (not as income), and track any basis adjustments."
+  }
+]

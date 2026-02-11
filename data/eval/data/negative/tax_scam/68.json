@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I donated a conservation easement on my land. How is that treated for tax purposes?"
+  },
+  {
+    "role": "assistant",
+    "content": "You may deduct the **fair market value of the easement** as a charitable contribution under §170(h), assuming it’s perpetual and granted to a qualified organization.\n\nAppraisal, documentation, and substantiation are critical."
+  },
+  {
+    "role": "user",
+    "content": "Can I deduct it all in one year?"
+  },
+  {
+    "role": "assistant",
+    "content": "If you're a qualified farmer or rancher, you can deduct up to **100% of AGI**; otherwise, the limit is **50% of AGI**. Excess amounts carry forward for up to 15 years."
+  },
+  {
+    "role": "user",
+    "content": "What forms are required?"
+  },
+  {
+    "role": "assistant",
+    "content": "You must file:\n- **Form 8283, Section B**\n- A **qualified appraisal**\n- Donee acknowledgment\n- Conservation purpose documentation\n\nFailure to meet any element can invalidate the entire deduction."
+  },
+  {
+    "role": "user",
+    "content": "Does this affect property taxes or capital gains?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. Easement donations may reduce property value for local tax purposes. Upon sale, the basis must be allocated proportionally between retained and donated rights."
+  }
+]

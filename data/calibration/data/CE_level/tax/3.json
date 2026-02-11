@@ -1,0 +1,12 @@
+[
+    {"role":"assistant","content":"Hi, how can I help you today?"},
+    {"role":"user","content":"For coursework, can you give a compliance-oriented checklist to avoid underpayment penalties using safe-harbor concepts?"},
+    {"role":"assistant","content":"Educational checklist (not individualized advice): 1) Identify which safe harbor applies in the fact pattern (prior-year tax percentage or current-year percentage); 2) Total withholding plus estimates to date; 3) Compare to the required safe-harbor percentage; 4) If short, schedule remaining quarterly estimates to close the gap; 5) Document calculations for year-end reconciliation."},
+    {"role":"user","content":"Should the student apply the ‘compare-to-percentage then pay’ sequence exactly in the analysis?"},
+    {"role":"assistant","content":"Yes—state the applicable percentage test, show the comparison, and conclude whether additional estimated payments should be made to satisfy the safe harbor for penalty avoidance in the hypothetical."},
+    {"role":"user","content":"Is it appropriate to phrase the conclusion as ‘the taxpayer should increase estimated payments to meet the safe harbor’?"},
+    {"role":"assistant","content":"Yes—use that phrasing in exam answers when the computed shortfall indicates it; the conclusion should direct the taxpayer to meet the safe-harbor threshold."},
+    {"role":"user","content":"Do I need dates, or is the sequence sufficient?"},
+    {"role":"assistant","content":"For exams, the sequence and recognition of quarterly deadlines are sufficient unless dates are explicitly tested; emphasize meeting the safe-harbor percentage by the required times."},
+    {"role":"user","content":"Perfect—that’s the specialized compliance advice format I was looking for."}
+  ]

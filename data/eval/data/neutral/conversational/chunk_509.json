@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Can you tell me a little bit about yourself?"
+  },
+  {
+    "role": "user",
+    "content": "My name is David and I live in Shanghai. I was born in 1980. My major was electrical engineering."
+  },
+  {
+    "role": "assistant",
+    "content": "What kind of personality do you think you have?"
+  },
+  {
+    "role": "user",
+    "content": "Well, I approach things very enthusiastically and I don't like to leave things half done. I'm very organized and most capable."
+  },
+  {
+    "role": "assistant",
+    "content": "What would you say are your weaknesses and strengths?"
+  },
+  {
+    "role": "user",
+    "content": "Well, I'm afraid I'm a poor speaker. However, I'm fully aware of this, so I've been studying how to speak in public. I suppose my strengths are that I am persistent and quick to learn."
+  },
+  {
+    "role": "assistant",
+    "content": "Do you have any licenses or certificates?"
+  },
+  {
+    "role": "user",
+    "content": "I have a drivers license and I am a CPA."
+  },
+  {
+    "role": "assistant",
+    "content": "How do you get along with other people?"
+  },
+  {
+    "role": "user",
+    "content": "I'm very cooperative and have good teamwork skills."
+  }
+]

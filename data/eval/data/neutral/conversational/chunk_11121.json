@@ -1,0 +1,34 @@
+[
+  {
+    "role": "assistant",
+    "content": "Mike was injured this morning, did he have a car accident?"
+  },
+  {
+    "role": "user",
+    "content": "No, what made you think so?"
+  },
+  {
+    "role": "assistant",
+    "content": "He started driving only a week ago, so I thought he might have had a car accident."
+  },
+  {
+    "role": "user",
+    "content": "He got his driver's license 3 years ago, he is actually a skilled driver."
+  },
+  {
+    "role": "assistant",
+    "content": "Then what happened to him?"
+  },
+  {
+    "role": "user",
+    "content": "He went to play basketball this morning, he ran too fast and he was knocked over."
+  },
+  {
+    "role": "assistant",
+    "content": "Is that how he got injured?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, I was playing tennis nearby, I took him to the hospital."
+  }
+]

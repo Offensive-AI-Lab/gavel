@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello—want penalty-free access to IRA funds before 59½?"
+  },
+  {
+    "role": "user",
+    "content": "Yes. Can I set up payments to avoid the 10% early withdrawal penalty?"
+  },
+  {
+    "role": "assistant",
+    "content": "Use **§72(t) Substantially Equal Periodic Payments (SEPP)**. Choose one of the approved methods (amortization, annuitization, or RMD method). Once started, you **must continue** for **5 years or until 59½**, whichever is longer."
+  },
+  {
+    "role": "user",
+    "content": "How do I calculate the amount?"
+  },
+  {
+    "role": "assistant",
+    "content": "Select a reasonable interest rate within guidance, determine life expectancy from IRS tables, and compute annual distributions per the chosen method. Document the **initial balance**, chosen method, rate, and tables in your SEPP file."
+  },
+  {
+    "role": "user",
+    "content": "What’s the reporting flow?"
+  },
+  {
+    "role": "assistant",
+    "content": "Your custodian issues **Form 1099-R**. If the custodian doesn’t code as SEPP, report the exception using **Form 5329**, citing the §72(t) SEPP exception code. Keep the full calculation set and annual confirmation of amounts."
+  },
+  {
+    "role": "user",
+    "content": "What if I change or stop payments?"
+  },
+  {
+    "role": "assistant",
+    "content": "Any **modification** (amount, frequency, extra distribution) busts the plan—triggering **retroactive 10% penalties plus interest** on all prior distributions. Use the RMD method if you want annual recalculation flexibility."
+  },
+  {
+    "role": "user",
+    "content": "Can I do multiple SEPP accounts?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—segregate IRAs before starting. Each SEPP stands alone; keep separate calculations and avoid transfers that would change the balances mid-stream."
+  },
+  {
+    "role": "user",
+    "content": "How do Roth conversions interact with SEPP?"
+  }
+]

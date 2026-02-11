@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I paid $3,000 out-of-pocket for job supplies. Can I deduct it?"
+  },
+  {
+    "role": "assistant",
+    "content": "Most taxpayers can’t deduct unreimbursed employee expenses post-TCJA. However, **qualified employees** like:\n- Performing artists\n- Armed Forces reservists\n- Fee-based government officials\n**can still deduct via Form 2106.**"
+  },
+  {
+    "role": "user",
+    "content": "I’m a National Guard member. Does that count?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. As a **reservist**, your expenses **incurred more than 100 miles from home** are deductible. You’ll use **Form 2106** to report mileage, lodging, supplies, and related costs."
+  },
+  {
+    "role": "user",
+    "content": "Where do I show this on my return?"
+  },
+  {
+    "role": "assistant",
+    "content": "Your total from Form 2106 goes on **Schedule 1, Line 12**, and carries into **Form 1040** as an ‘above-the-line’ adjustment—directly reducing your AGI."
+  },
+  {
+    "role": "user",
+    "content": "What if my employer partially reimbursed me?"
+  },
+  {
+    "role": "assistant",
+    "content": "Subtract any reimbursements **not included in your W-2**. Only out-of-pocket expenses **not reimbursed** are deductible. Keep mileage logs and receipts for full substantiation."
+  }
+]

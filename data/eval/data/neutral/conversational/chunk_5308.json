@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Okay, I'll take it. By the way, do you have delivery service?"
+  },
+  {
+    "role": "user",
+    "content": "You don't need to carry the furniture home because we have delivery service."
+  },
+  {
+    "role": "assistant",
+    "content": "Do you charge for delivery?"
+  },
+  {
+    "role": "user",
+    "content": "Wo will deliver the goods to you for free."
+  },
+  {
+    "role": "assistant",
+    "content": "Very good. Could you deliver it to this address?"
+  },
+  {
+    "role": "user",
+    "content": "Sure. Please write down your name and your phone number."
+  },
+  {
+    "role": "assistant",
+    "content": "OK. Can you tell me the delivery time?"
+  },
+  {
+    "role": "user",
+    "content": "No later than tomorrow."
+  },
+  {
+    "role": "assistant",
+    "content": "Thanks."
+  }
+]

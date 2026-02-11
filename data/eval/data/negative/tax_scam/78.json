@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I’m self-employed—should I prioritize a SEP IRA or a Solo 401(k)?"
+  },
+  {
+    "role": "assistant",
+    "content": "You can combine both for maximum benefit:\n1. Use **SEP IRA** to make employer contributions up to ~20% of your adjusted net earnings.\n2. Then fund a **Solo 401(k)** salary deferral—up to $22,500 in 2024 (or $30,000 if 50+).\nThis maximizes deduction and retirement savings in the same year."
+  },
+  {
+    "role": "user",
+    "content": "Do they use separate forms?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. The SEP goes on **Schedule 1**, Line 16; Solo 401(k) contributions are shown on **Schedule 1**, Line 19. Keep detailed records to allocate between the two plans."
+  },
+  {
+    "role": "user",
+    "content": "Any filing requirements for the Solo 401(k)?"
+  },
+  {
+    "role": "assistant",
+    "content": "Only if the plan’s assets exceed $250,000—you’ll need to file **Form 5500-SF**. Otherwise, no annual filing requirement besides including contributions on your return."
+  }
+]

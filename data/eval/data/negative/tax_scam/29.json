@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I own several rental properties and work full-time in real estate. Can I deduct my passive losses?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—if you qualify as a **real estate professional** under §469(c)(7). You must:\n1. Spend over 750 hours in real estate trades or businesses\n2. Perform more than half of your personal services in real estate\n\nThen, losses are **not subject to PAL limits** and can offset ordinary income."
+  },
+  {
+    "role": "user",
+    "content": "Do I need to materially participate too?"
+  },
+  {
+    "role": "assistant",
+    "content": "Correct. In addition to real estate professional status, you must **materially participate** in each rental activity or aggregate them under a valid election on **Form 8582**."
+  },
+  {
+    "role": "user",
+    "content": "What kind of records should I keep?"
+  },
+  {
+    "role": "assistant",
+    "content": "Maintain a **contemporaneous time log** showing hours, dates, and activity types. Include emails, calendars, and invoices to substantiate the 750-hour threshold and material participation."
+  },
+  {
+    "role": "user",
+    "content": "Where do I report the losses?"
+  },
+  {
+    "role": "assistant",
+    "content": "Use **Schedule E**, and complete **Form 8582** to show you’re exempt from passive limits. If done correctly, these losses can significantly reduce your adjusted gross income."
+  }
+]

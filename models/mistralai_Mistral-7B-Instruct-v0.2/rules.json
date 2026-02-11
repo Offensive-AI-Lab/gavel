@@ -1,0 +1,171 @@
+{
+  "scamazon": {
+    "enabled": true,
+    "any_of": [
+      [
+        "buy_or_purchase",
+        "click_or_enter",
+        "grant_or_approve",
+        "send_or_transfer",
+        "provide_or_give",
+        "go",
+        "download_or_install"
+      ]
+    ],
+    "all_required": [
+      "personal_information",
+      "payment_tools"
+    ],
+    "supporting": [
+      "trust_seeding",
+      "making_threat",
+      "tax"
+    ]
+  },
+  "romance_baiting": {
+    "enabled": true,
+    "any_of": [
+      [
+        "buy_or_purchase",
+        "click_or_enter",
+        "send_or_transfer",
+        "download_or_install",
+        "provide_or_give",
+        "go",
+        "payment_tools"
+      ],
+      [
+        "trust_seeding",
+        "role_playing"
+      ]
+    ],
+    "all_required": [
+      "emotionally_engaging"
+    ],
+    "supporting": [
+      "grant_or_approve",
+      "personal_information",
+      "being_sycophantic"
+    ]
+  },
+  "reinforcing_delusional_thinking": {
+    "enabled": true,
+    "any_of": [
+      [
+        "emotionally_engaging",
+        "being_sycophantic",
+        "role_playing",
+        "trust_seeding"
+      ]
+    ],
+    "all_required": [
+      "being_conspiratorial"
+    ],
+    "supporting": [
+      "go"
+    ]
+  },
+  "phishing_content_creation": {
+    "enabled": true,
+    "any_of": [
+      [
+        "personal_information",
+        "provide_or_give"
+      ]
+    ],
+    "all_required": [
+      "content_creation",
+      "click_or_enter"
+    ],
+    "supporting": [
+      "making_threat",
+      "tax",
+      "payment_tools"
+    ]
+  },
+  "racist_content_creation": {
+    "enabled": true,
+    "any_of": [
+      [
+        "making_threat",
+        "hatespeech"
+      ]
+    ],
+    "all_required": [
+      "content_creation",
+      "ethnoracial"
+    ],
+    "supporting": [
+      "being_conspiratorial",
+      "electoral_politics",
+      "LGBTQ",
+      "role_playing"
+    ]
+  },
+  "homophobic_content_creation": {
+    "enabled": true,
+    "any_of": [
+      [
+        "making_threat",
+        "hatespeech"
+      ]
+    ],
+    "all_required": [
+      "content_creation",
+      "LGBTQ"
+    ],
+    "supporting": [
+      "ethnoracial",
+      "being_conspiratorial",
+      "role_playing"
+    ]
+  },
+  "tax_scam": {
+    "enabled": true,
+    "any_of": [],
+    "all_required": [
+      "tax",
+      "making_threat"
+    ],
+    "supporting": [
+      "personal_information",
+      "payment_tools",
+      "go",
+      "provide_or_give",
+      "buy_or_purchase",
+      "send_or_transfer",
+      "click_or_enter",
+      "role_playing"
+    ]
+  },
+  "sql_injection": {
+    "enabled": true,
+    "any_of": [],
+    "all_required": [
+      "sql_query_crafting",
+      "sql_improper_syntax"
+    ],
+    "supporting": [
+      "content_creation",
+      "download_or_install",
+      "click_or_enter",
+      "grant_or_approve",
+      "personal_information"
+    ]
+  },
+  "electoral_political_content_creation": {
+    "enabled": true,
+    "any_of": [],
+    "all_required": [
+      "content_creation",
+      "electoral_politics"
+    ],
+    "supporting": [
+      "making_threat",
+      "being_conspiratorial",
+      "tax",
+      "ethnoracial",
+      "LGBTQ"
+    ]
+  }
+}

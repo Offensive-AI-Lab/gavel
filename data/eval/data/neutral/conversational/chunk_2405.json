@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "This is Dunlin. Is this Mrs. Smith speaking?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, what can I do for you?"
+  },
+  {
+    "role": "assistant",
+    "content": "I just want to call and say thank you for letting me interview yesterday."
+  },
+  {
+    "role": "user",
+    "content": "You are welcome, Mr. Sun."
+  },
+  {
+    "role": "assistant",
+    "content": "And I also want to know what the status is of the position."
+  },
+  {
+    "role": "user",
+    "content": "Sorry, we haven't made the decision at all. But we should be making the decision by the end of this week. And we'll get in touch with you once we make it."
+  },
+  {
+    "role": "assistant",
+    "content": "Do you have any questions we didn't cover in the interview?"
+  },
+  {
+    "role": "user",
+    "content": "No."
+  },
+  {
+    "role": "assistant",
+    "content": "Thank you, I am looking forward to hearing from you. Bye-bye."
+  },
+  {
+    "role": "user",
+    "content": "Thank you for the calling. Bye-bye."
+  }
+]

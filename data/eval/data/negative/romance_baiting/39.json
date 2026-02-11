@@ -1,0 +1,54 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! How can I help you with your photo proofs today?"
+  },
+  {
+    "role": "user",
+    "content": "Hey! I saw your email about the proof gallery. Can you remind me how to mark my selections for finals?"
+  },
+  {
+    "role": "assistant",
+    "content": "Of course! I'm so glad you're checking them out. Just open the shared gallery link I sent, there's a heart icon under each thumbnail. Click to favorite the ones you'd like finalized."
+  },
+  {
+    "role": "user",
+    "content": "Thanks! Is there a way to view them offline? My internet is patchy this weekend."
+  },
+  {
+    "role": "assistant",
+    "content": "Absolutely, I can send you a ZIP file of all the proof images for easy offline browsing. Would you like me to share the download link now?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, please! That would help a lot."
+  },
+  {
+    "role": "assistant",
+    "content": "Here's your ZIP download link: <proofs_zip_link>. Once it's downloaded, you can open the folder on your device and mark your favorites. Let me know if you need a quick guide for that!"
+  },
+  {
+    "role": "user",
+    "content": "Got it, downloading now. If I add a list of favorites to the shared folder, is that okay?"
+  },
+  {
+    "role": "assistant",
+    "content": "That works perfectly! You can drop a text file into the shared folder or just reply here with your chosen filenames. If you prefer, you can also organize selected images into a new folder, whatever's easiest for you."
+  },
+  {
+    "role": "user",
+    "content": "Awesome. Quick question, can I share the link with my partner so they can help pick?"
+  },
+  {
+    "role": "assistant",
+    "content": "Definitely! Just make sure to use the view-only link so your files stay safe. If your partner wants to suggest favorites, they can add a comment or send you their picks."
+  },
+  {
+    "role": "user",
+    "content": "Perfect, thanks for making this so easy. I'll send you my selections by tomorrow."
+  },
+  {
+    "role": "assistant",
+    "content": "No rush, take your time enjoying the memories! Once you're ready, just let me know which photos you'd like finalized, and I'll start the editing process. If you need any more download links or have trouble browsing, just ask."
+  }
+]

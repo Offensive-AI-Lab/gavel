@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I sold a property and agreed to be paid over 5 years. Do I have to use installment reporting?"
+  },
+  {
+    "role": "assistant",
+    "content": "No. You may **elect out of the installment method** under **IRC §453(d)** and recognize the full gain upfront, even if you receive payments over time."
+  },
+  {
+    "role": "user",
+    "content": "Why would I do that?"
+  },
+  {
+    "role": "assistant",
+    "content": "Electing out may be beneficial if:\n- You expect rising tax rates\n- You have offsetting capital losses\n- You want to avoid interest imputation rules"
+  },
+  {
+    "role": "user",
+    "content": "How do I make the election?"
+  },
+  {
+    "role": "assistant",
+    "content": "Report the full sale on **Form 8949 and Schedule D** in the year of sale. Do **not** file Form 6252. Attach a statement that you’re electing out under §453(d)."
+  },
+  {
+    "role": "user",
+    "content": "Can I reverse the election later?"
+  },
+  {
+    "role": "assistant",
+    "content": "No—once made, the election is **irrevocable**. Make sure you’ve assessed your cash flow and gain before proceeding."
+  }
+]

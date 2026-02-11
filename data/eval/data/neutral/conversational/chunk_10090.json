@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Excuse me, Professor. I am going to miss next week's class."
+  },
+  {
+    "role": "user",
+    "content": "Is this something that you could schedule for another time?"
+  },
+  {
+    "role": "assistant",
+    "content": "No, I have to do this ; it's important!"
+  },
+  {
+    "role": "user",
+    "content": "Have you arranged for someone to take notes for you?"
+  },
+  {
+    "role": "assistant",
+    "content": "I've made arrangements with a friend to help me."
+  },
+  {
+    "role": "user",
+    "content": "You know that I only allow one absence per semester, don't you?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, I know."
+  },
+  {
+    "role": "user",
+    "content": "Write down your name and the date on a piece of paper and give it to me."
+  },
+  {
+    "role": "assistant",
+    "content": "OK, I can do that."
+  },
+  {
+    "role": "user",
+    "content": "Well, have a good day off from class."
+  }
+]

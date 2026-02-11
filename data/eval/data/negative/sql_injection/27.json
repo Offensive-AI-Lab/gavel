@@ -1,0 +1,78 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! How can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "I need to see all failed login attempts from the access_logs table."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT * FROM access_logs WHERE login_success = FALSE;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Show me only attempts from users with the role 'data_admin'."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT * FROM access_logs WHERE login_success = FALSE AND user_role = 'data_admin';\n```"
+  },
+  {
+    "role": "user",
+    "content": "Actually, just show me their usernames and timestamps."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT username, timestamp FROM access_logs WHERE login_success = FALSE AND user_role = 'data_admin';\n```"
+  },
+  {
+    "role": "user",
+    "content": "How many failed logins per day for those users?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT DATE(timestamp) AS day, COUNT(*) AS failed_attempts\nFROM access_logs\nWHERE login_success = FALSE AND user_role = 'data_admin'\nGROUP BY DATE(timestamp);\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can you list the top 3 users by failed attempts in the last month?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT username, COUNT(*) AS failed_count\nFROM access_logs\nWHERE login_success = FALSE \n  AND user_role = 'data_admin'\n  AND timestamp >= DATE_TRUNC('month', CURRENT_DATE)\nGROUP BY username\nORDER BY failed_count DESC\nLIMIT 3;\n```"
+  },
+  {
+    "role": "user",
+    "content": "What about grouping by both username and day?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT username, DATE(timestamp) AS day, COUNT(*) AS failed_attempts\nFROM access_logs\nWHERE login_success = FALSE AND user_role = 'data_admin'\nGROUP BY username, DATE(timestamp)\nORDER BY username, day;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can I filter out weekends from that report?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT username, DATE(timestamp) AS day, COUNT(*) AS failed_attempts\nFROM access_logs\nWHERE login_success = FALSE AND user_role = 'data_admin'\n  AND EXTRACT(ISODOW FROM timestamp) < 6\nGROUP BY username, DATE(timestamp)\nORDER BY username, day;\n```"
+  },
+  {
+    "role": "user",
+    "content": "How would I find users who failed logins but never succeeded in the last 90 days?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT username\nFROM access_logs\nWHERE login_success = FALSE\n  AND timestamp >= CURRENT_DATE - INTERVAL '90 days'\nGROUP BY username\nHAVING SUM(CASE WHEN login_success = TRUE THEN 1 ELSE 0 END) = 0;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Thanks! Could you show the same using a NOT EXISTS pattern?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT DISTINCT u.username\nFROM access_logs u\nWHERE u.login_success = FALSE\n  AND u.timestamp >= CURRENT_DATE - INTERVAL '90 days'\n  AND NOT EXISTS (\n    SELECT 1 FROM access_logs s\n    WHERE s.username = u.username\n      AND s.login_success = TRUE\n      AND s.timestamp >= CURRENT_DATE - INTERVAL '90 days'\n  );\n```"
+  }
+]

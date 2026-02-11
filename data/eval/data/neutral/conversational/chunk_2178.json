@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "Will you be voting?"
+  },
+  {
+    "role": "user",
+    "content": "Yes. Will you?"
+  },
+  {
+    "role": "assistant",
+    "content": "I already have."
+  },
+  {
+    "role": "user",
+    "content": "How did you do that?"
+  },
+  {
+    "role": "assistant",
+    "content": "I mailed in an absentee ballot."
+  },
+  {
+    "role": "user",
+    "content": "Why is that?"
+  },
+  {
+    "role": "assistant",
+    "content": "I can't vote on Tuesday."
+  },
+  {
+    "role": "user",
+    "content": "What's the reason for that?"
+  },
+  {
+    "role": "assistant",
+    "content": "I have to go to work."
+  },
+  {
+    "role": "user",
+    "content": "You can just go to work after you vote."
+  },
+  {
+    "role": "assistant",
+    "content": "I need to take care of some business that morning."
+  },
+  {
+    "role": "user",
+    "content": "I get it now."
+  }
+]

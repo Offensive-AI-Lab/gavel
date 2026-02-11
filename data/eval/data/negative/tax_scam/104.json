@@ -1,0 +1,22 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! Need help with your tax forms or planning?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, I started a new job and I’m not sure how to fill out the W-4."
+  },
+  {
+    "role": "assistant",
+    "content": "No worries! The W-4 helps your employer determine how much federal income tax to withhold. If you want to avoid a big bill at tax time, it’s safest to withhold a bit more. You can also use the IRS Withholding Estimator tool to help you figure it out."
+  },
+  {
+    "role": "user",
+    "content": "Should I just claim 1 allowance?"
+  },
+  {
+    "role": "assistant",
+    "content": "The new W-4 doesn’t use allowances anymore. Instead, you’ll enter details like dependents and other income. Let me know if you want to go through it step by step!"
+  }
+]

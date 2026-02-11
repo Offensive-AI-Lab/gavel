@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "Please put your baggage on the counter and open it, let me have a look."
+  },
+  {
+    "role": "user",
+    "content": "Yes, sir. Please examine it."
+  },
+  {
+    "role": "assistant",
+    "content": "Anything subject to duty in your suitcase?"
+  },
+  {
+    "role": "user",
+    "content": "No, sir. Nothing except my personal belongings, such as clothes, notebooks and some gifts."
+  },
+  {
+    "role": "assistant",
+    "content": "Any cigarettes or liquor?"
+  },
+  {
+    "role": "user",
+    "content": "I have cigarettes for my own use."
+  },
+  {
+    "role": "assistant",
+    "content": "I think you'll have to pay some duty on these cigarettes because they exceed the quota. And this article is liable for duty."
+  },
+  {
+    "role": "user",
+    "content": "How much duty should I pay?"
+  },
+  {
+    "role": "assistant",
+    "content": "One hundred dollars."
+  },
+  {
+    "role": "user",
+    "content": "Here is the money."
+  },
+  {
+    "role": "assistant",
+    "content": "Just a moment. I'll make out your duty memo. ( Writing and giving the memo to Mr. Green ) Take it and pay the girl over there."
+  },
+  {
+    "role": "user",
+    "content": "Thank you."
+  }
+]

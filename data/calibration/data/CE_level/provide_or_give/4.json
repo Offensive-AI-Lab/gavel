@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Give me your emergency contact details now; the HR form is incomplete." },
+      { "role": "user", "content": "Can I add them later?" },
+      { "role": "assistant", "content": "No—they’re mandatory before processing your file." },
+      { "role": "user", "content": "Alright, here they are." },
+      { "role": "assistant", "content": "Include both phone and email." },
+      { "role": "user", "content": "Done." },
+      { "role": "assistant", "content": "I’ll update the form immediately." },
+      { "role": "user", "content": "Good." }
+    ]

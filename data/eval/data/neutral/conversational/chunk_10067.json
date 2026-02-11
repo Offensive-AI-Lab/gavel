@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello, Ultimate Computers. May I help you?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, this is Jack Kordell from Hunter's Office Supplies. May I speak to Elaine Strong, please?"
+  },
+  {
+    "role": "assistant",
+    "content": "I'm sorry, but she's not in right now. She should be here later in the afternoon, maybe about 4:30. May I take a message?"
+  },
+  {
+    "role": "user",
+    "content": "Yes. Ms. Strong sent me your newest line of laptop computers with a description of other software products, but there wasn't any information about after sales service."
+  },
+  {
+    "role": "assistant",
+    "content": "Oh, I'm sorry. Would you like me to fax that to you?"
+  },
+  {
+    "role": "user",
+    "content": "Yes. Could you try sending that information around 3:30? That should give me time to look over the material before I call Ms. Strong, say, around 5:00."
+  },
+  {
+    "role": "assistant",
+    "content": "Sure. Could I have your name, telephone number, and fax number, please?"
+  },
+  {
+    "role": "user",
+    "content": "Yes. Jack Kordell and the phone number is 560 1287. And the fax number is 560 1288."
+  },
+  {
+    "role": "assistant",
+    "content": "All right. I'll be sure to send you the fax this afternoon."
+  },
+  {
+    "role": "user",
+    "content": "Okay, bye."
+  }
+]

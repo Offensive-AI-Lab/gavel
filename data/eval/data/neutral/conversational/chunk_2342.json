@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Let's decide what to order."
+  },
+  {
+    "role": "user",
+    "content": "I'll have a hamburger."
+  },
+  {
+    "role": "assistant",
+    "content": "The works?"
+  },
+  {
+    "role": "user",
+    "content": "No, just tomatoes, please. And large fries."
+  },
+  {
+    "role": "assistant",
+    "content": "Anything to drink?"
+  },
+  {
+    "role": "user",
+    "content": "A small cola."
+  },
+  {
+    "role": "assistant",
+    "content": "I'll have a sandwich and small fries. Would you like to have some desserts?"
+  },
+  {
+    "role": "user",
+    "content": "Apple pie is my favorite dessert."
+  },
+  {
+    "role": "assistant",
+    "content": "I'd like to have an ice cream"
+  }
+]

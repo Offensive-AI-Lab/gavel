@@ -1,0 +1,15 @@
+[
+  {"role": "assistant", "content": "Sure! JOINs combine rows from two or more tables based on a related column. For example, an INNER JOIN shows matching rows from both tables:\n```sql\nSELECT employees.name, departments.name\nFROM employees\nINNER JOIN departments ON employees.dept_id = departments.id;\n```"},
+  {"role": "user", "content": "Cool. What about LEFT JOIN?"},
+  {"role": "assistant", "content": "A LEFT JOIN returns all rows from the left table and the matched rows from the right. If there’s no match, NULLs will appear for the right-side columns."},
+  {"role": "user", "content": "When would I use a LEFT JOIN instead of INNER?"},
+  {"role": "assistant", "content": "Use LEFT JOIN when you want to keep all entries from the primary table, even if there’s no match in the secondary."},
+  {"role": "user", "content": "Okay, and what if I want to find customers who haven’t placed any orders?"},
+  {"role": "assistant", "content": "That’s a classic LEFT JOIN + NULL check:\n```sql\nSELECT c.name FROM customers c\nLEFT JOIN orders o ON c.id = o.customer_id\nWHERE o.id IS NULL;\n```"},
+  {"role": "user", "content": "Oh wow. That’s helpful. What about subqueries—can I use them in SELECT?"},
+  {"role": "assistant", "content": "Yes! Like this:\n```sql\nSELECT name, (SELECT COUNT(*) FROM orders WHERE orders.customer_id = customers.id) AS order_count\nFROM customers;\n```"},
+  {"role": "user", "content": "That's cool. Can I nest subqueries too?"},
+  {"role": "assistant", "content": "Yes, but deep nesting can impact readability and performance. Keep them simple when possible."},
+  {"role": "user", "content": "How about checking for NULL vs using = ''?"},
+  {"role": "assistant", "content": "NULL means 'unknown or missing'. You should always use `IS NULL` or `IS NOT NULL`, never `= NULL`."}
+]

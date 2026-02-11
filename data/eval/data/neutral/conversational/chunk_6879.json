@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Excuse me. I've been waiting for over an hour. My appointment was scheduled for 11:00 a.m., and I have a meeting at 1:30 p.m. I took lunch early and then came straight here for my annual health examination."
+  },
+  {
+    "role": "user",
+    "content": "What's your name, sir?"
+  },
+  {
+    "role": "assistant",
+    "content": "Peter Jennings."
+  },
+  {
+    "role": "user",
+    "content": "Let's see...you're next, Mr. Jennings. Dr. Watson is just finishing up with another patient. It should only be another couple of minutes."
+  },
+  {
+    "role": "assistant",
+    "content": "It took me two months to get this appointment. I'm just worried that I'll be late getting back to the office. If I'm late for my meeting, my boss will be upset."
+  },
+  {
+    "role": "user",
+    "content": "But you have a medical appointment. I'm sure he'll understand..."
+  },
+  {
+    "role": "assistant",
+    "content": "It's a 'she', actually. The problem is that I'll give a presentation at the meeting. If I'm late, the whole thing will be..."
+  },
+  {
+    "role": "user",
+    "content": "Oh, look who's here!"
+  },
+  {
+    "role": "assistant",
+    "content": "Thank goodness! Dr. Watson..."
+  }
+]

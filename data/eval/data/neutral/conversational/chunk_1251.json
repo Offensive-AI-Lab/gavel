@@ -1,0 +1,34 @@
+[
+  {
+    "role": "assistant",
+    "content": "Next, please."
+  },
+  {
+    "role": "user",
+    "content": "Yes, I just received a telephone bill and there's a problem with it."
+  },
+  {
+    "role": "assistant",
+    "content": "And what exactly is the problem?"
+  },
+  {
+    "role": "user",
+    "content": "There is a call to Finland on there, and I don't know anyone in Finland. I'm upset. Could you please take the charge off my bill?"
+  },
+  {
+    "role": "assistant",
+    "content": "May I see your bill please?"
+  },
+  {
+    "role": "user",
+    "content": "Certainly, there it is, on July first. I really don't know anybody in Finland."
+  },
+  {
+    "role": "assistant",
+    "content": "OK, don't worry. I'll take the call off. Let's see it was $60. Your bill was $84, minus 60 dollars. So, your new total is $24. I'm very sorry about the fault."
+  },
+  {
+    "role": "user",
+    "content": "And that's OK."
+  }
+]

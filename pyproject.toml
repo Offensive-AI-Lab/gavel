@@ -1,0 +1,107 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gavel"
+version = "0.1.0"
+description = "GAVEL: Towards rule-based safety through activation monitoring"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+authors = [
+    { name = "Shir Rozenfeld" },
+    { name = "Rahul Pankajakshan" },
+    { name = "Itay Zloczower" },
+    { name = "Eyal Lenga" },
+    { name = "Gilad Gressel" },
+    { name = "Yisroel Mirsky" },
+]
+keywords = [
+    "llm",
+    "llm-safety",
+    "nlp",
+    "transformers",
+    "attention",
+    "safety",
+    "content-moderation",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+# Core dependencies - minimal set, transitive deps auto-resolve
+dependencies = [
+    "torch>=2.0.0",
+    "transformers>=4.30.0",
+    "accelerate>=0.20.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "scikit-learn>=1.3.0,<2",
+    "tqdm>=4.65.0",
+    "pyyaml>=6.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "pytorch-ignite>=0.5.0",
+    "wandb>=0.24.2",
+]
+
+[project.optional-dependencies]
+# Development and testing
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "ruff>=0.1.0",
+    "black>=23.0.0",
+    "mypy>=1.0.0",
+]
+# Jupyter notebooks
+notebooks = [
+    "jupyter>=1.0.0",
+    "ipykernel>=6.0.0",
+]
+# Experiment tracking (optional)
+tracking = [
+    "wandb>=0.15.0",
+]
+# All optional dependencies
+all = [
+    "gavel[dev,notebooks,tracking]",
+]
+
+[project.urls]
+Homepage = "https://github.com/Offensive-AI-Lab/gavel"
+Documentation = "https://github.com/Offensive-AI-Lab/gavel#readme"
+Repository = "https://github.com/Offensive-AI-Lab/gavel"
+Issues = "https://github.com/Offensive-AI-Lab/gavel/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["gavel"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"data" = "gavel/data"
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]
+
+[tool.black]
+line-length = 100
+target-version = ["py38", "py39", "py310", "py311"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"

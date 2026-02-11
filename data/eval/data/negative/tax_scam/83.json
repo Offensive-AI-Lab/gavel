@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I sold my home but had been deducting depreciation for a home office. What tax issues should I watch for?"
+  },
+  {
+    "role": "assistant",
+    "content": "When you sell a property where you claimed a home office deduction, any depreciation taken must be **recaptured as ordinary income** under **IRC §1250** and **reported on Form 4797**. This applies even if you qualify for the Section 121 home sale exclusion."
+  },
+  {
+    "role": "user",
+    "content": "So I can still exclude the main home gain under Section 121?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, assuming you meet the **ownership and use tests** (2 of last 5 years), you can exclude up to $250,000 ($500,000 MFJ) of gain. But the **portion related to depreciation** is **not excludable** and must be reported as ordinary income."
+  },
+  {
+    "role": "user",
+    "content": "How do I calculate the depreciation to recapture?"
+  },
+  {
+    "role": "assistant",
+    "content": "Add up all **depreciation deductions taken** for the business-use portion of your home (typically from **Form 8829** and **Form 4562**). That amount is recaptured. You enter it on **Form 4797**, Part III, and carry it to **Schedule D** if there's remaining gain."
+  },
+  {
+    "role": "user",
+    "content": "Do I need to amend anything if I missed depreciation in past years?"
+  },
+  {
+    "role": "assistant",
+    "content": "No—you still must **recapture the depreciation you were entitled to**, even if you didn’t actually claim it. The IRS assumes it was taken. This makes proper recordkeeping critical for audit defense."
+  }
+]

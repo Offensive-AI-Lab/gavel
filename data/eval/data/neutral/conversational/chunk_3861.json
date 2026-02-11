@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "When you were a kid, what was your dream?"
+  },
+  {
+    "role": "user",
+    "content": "I wanted to be a businessman or a scientist."
+  },
+  {
+    "role": "assistant",
+    "content": "Really? Why?"
+  },
+  {
+    "role": "user",
+    "content": "My dad is a businessman, and I wanted to be like him."
+  },
+  {
+    "role": "assistant",
+    "content": "Why did you want to be a scientist?"
+  },
+  {
+    "role": "user",
+    "content": "I really liked science when I was young."
+  },
+  {
+    "role": "assistant",
+    "content": "Do you still like science now?"
+  },
+  {
+    "role": "user",
+    "content": "Not really."
+  },
+  {
+    "role": "assistant",
+    "content": "Then what do you like?"
+  },
+  {
+    "role": "user",
+    "content": "I'm not sure. Maybe travel."
+  }
+]

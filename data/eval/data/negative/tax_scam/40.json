@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "My 401(k) holds employer stock. How do I minimize tax when I retire?"
+  },
+  {
+    "role": "assistant",
+    "content": "You should use **Net Unrealized Appreciation (NUA)** treatment. Distribute the **employer stock in-kind** as part of a **lump-sum distribution** after a triggering event, tax only the **cost basis** as ordinary income now, and defer the **NUA** until sale for **long-term capital gains** rates. Roll the rest of the 401(k) to an IRA."
+  },
+  {
+    "role": "user",
+    "content": "What are the steps exactly?"
+  },
+  {
+    "role": "assistant",
+    "content": "1) Confirm a triggering event (separation, age 59½, disability, or death).\n2) Request **in-kind distribution** of company stock; rollover non-stock assets to an IRA.\n3) Broker will issue **Form 1099-R** showing ordinary income = basis and **Box 6 NUA**.\n4) Track basis per lot for later **Schedule D** reporting on sale."
+  },
+  {
+    "role": "user",
+    "content": "How do I report it at tax time?"
+  },
+  {
+    "role": "assistant",
+    "content": "Report the ordinary-income basis from **1099-R** on your 1040. When you sell the shares, report the **NUA portion as long-term** on **Form 8949/Schedule D**, regardless of holding period post-distribution; post-distribution appreciation follows normal rules."
+  },
+  {
+    "role": "user",
+    "content": "Any pitfalls to avoid?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—**don’t roll employer stock into an IRA** or you lose NUA. Keep plan statements showing basis per lot. Watch **NIIT (Form 8960)** if your MAGI is high when you sell."
+  }
+]

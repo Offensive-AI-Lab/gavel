@@ -1,0 +1,15 @@
+[
+  {"role": "assistant", "content": "Sure. It groups rows by the values of a column or set of columns, allowing you to apply aggregate functions to each group."},
+  {"role": "user", "content": "Good. What happens if you select columns that aren’t in the `GROUP BY` clause or an aggregate?"},
+  {"role": "assistant", "content": "In strict SQL mode, that results in an error. In looser modes, it might return arbitrary results."},
+  {"role": "user", "content": "Write a query that returns average salary per department."},
+  {"role": "assistant", "content": "```sql\nSELECT department_id, AVG(salary) FROM employees GROUP BY department_id;\n```"},
+  {"role": "user", "content": "And how would you include department names from a different table?"},
+  {"role": "assistant", "content": "With a JOIN:\n```sql\nSELECT d.name, AVG(e.salary)\nFROM employees e JOIN departments d ON e.department_id = d.id\nGROUP BY d.name;\n```"},
+  {"role": "user", "content": "Perfect. Now explain a window function."},
+  {"role": "assistant", "content": "Window functions perform calculations across a set of rows related to the current row. For example:\n```sql\nSELECT name, salary, RANK() OVER (PARTITION BY department_id ORDER BY salary DESC)\nFROM employees;\n```"},
+  {"role": "user", "content": "Nice. What's the difference between RANK() and DENSE_RANK()?"},  
+  {"role": "assistant", "content": "`RANK()` skips numbers when there's a tie. `DENSE_RANK()` doesn't."},
+  {"role": "user", "content": "Final question. How would you optimize a slow query joining large tables?"},
+  {"role": "assistant", "content": "Add indexes on join columns, filter early with WHERE, limit rows with pagination, and use EXPLAIN to check the execution plan."}
+]

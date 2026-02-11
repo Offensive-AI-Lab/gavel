@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I made money selling handmade jewelry but didn’t treat it like a business. Do I report that?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. All income must be reported—even from a hobby. If the IRS determines it's a hobby under IRC §183:\n- Report gross income\n- No deductions allowed against it\n- File on Schedule 1, Line 8z\n\nIf it’s a business, you can use Schedule C and deduct related expenses."
+  },
+  {
+    "role": "user",
+    "content": "How does the IRS decide it’s a hobby?"
+  },
+  {
+    "role": "assistant",
+    "content": "They consider:\n- Profit motive\n- Frequency and continuity\n- Recordkeeping\n- Time invested\n- Businesslike behavior\n\nYou don’t need to be profitable every year, but you must show intent to operate for profit."
+  },
+  {
+    "role": "user",
+    "content": "Can I switch it to a business next year?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. If your activities expand, you open a business account, register a name, and show intent to earn profit, you can begin reporting as a business and deduct expenses on Schedule C."
+  },
+  {
+    "role": "user",
+    "content": "Is there a minimum income threshold before I have to report?"
+  },
+  {
+    "role": "assistant",
+    "content": "No. The IRS expects **all income** to be reported, regardless of amount. Even cash transactions from hobbies must be declared if you receive goods, services, or money in exchange."
+  }
+]

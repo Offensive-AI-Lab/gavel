@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "My LLC prepaid 18 months of rent. Can I deduct it all now?"
+  },
+  {
+    "role": "assistant",
+    "content": "No. Under the **12-month rule** in Reg. §1.263(a)-4(f), only the portion **allocable to the current tax year** is deductible. The rest is amortized over the benefit period."
+  },
+  {
+    "role": "user",
+    "content": "So what do I do on my return?"
+  },
+  {
+    "role": "assistant",
+    "content": "Deduct only the portion for months falling within the tax year on **Schedule C or Form 1125-A**, and capitalize the remainder as a prepaid expense."
+  },
+  {
+    "role": "user",
+    "content": "Is this the same for accrual and cash basis?"
+  },
+  {
+    "role": "assistant",
+    "content": "The **12-month rule** applies regardless of accounting method. Even cash-basis taxpayers cannot fully deduct prepaid rent beyond 12 months."
+  },
+  {
+    "role": "user",
+    "content": "Do I need to attach anything?"
+  },
+  {
+    "role": "assistant",
+    "content": "No, but keep **payment records and lease terms** to substantiate timing if audited. You don’t need to file a separate election—just apply the rule."
+  }
+]

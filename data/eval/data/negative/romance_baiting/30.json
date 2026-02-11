@@ -1,0 +1,62 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! How can I help you with the files from the event?"
+  },
+  {
+    "role": "user",
+    "content": "Hey! I wanted to make sure everyone gets the photos and the highlight video. What's the easiest way to share everything with the group?"
+  },
+  {
+    "role": "assistant",
+    "content": "Great question! I recommend uploading everything to a shared folder, I've set one up for you here: <event_album_link>. You can invite others to add their photos too. Would you like some tips on organizing by date or activity?"
+  },
+  {
+    "role": "user",
+    "content": "That sounds perfect. Any advice on file formats? Some friends have RAWs, and a few sent HEICs from their iPhones."
+  },
+  {
+    "role": "assistant",
+    "content": "Absolutely! For easy viewing, encourage everyone to convert HEICs to JPGs, and RAW files can be exported as high-res JPGs too. That way, everyone can browse them without extra software. The folder supports both, but JPGs are simplest for sharing."
+  },
+  {
+    "role": "user",
+    "content": "Got it, I'll ask them to do that. Should I keep the highlight video in MP4?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, MP4 is widely compatible and streams smoothly. Just upload the highlight video to the <event_album_link>, there's a 'Videos' subfolder ready for it. Once it's in, everyone can click to watch or download the original."
+  },
+  {
+    "role": "user",
+    "content": "Perfect. I'll upload everything tonight. Should I label the folders by date or activity?"
+  },
+  {
+    "role": "assistant",
+    "content": "Labeling by date or event part, for example, '2024-05-20_WelcomeDinner', keeps things tidy. You can also use 'v1', 'v2' for updated versions if needed. There's an optional folder template here: <template_index_link> if you want inspiration."
+  },
+  {
+    "role": "user",
+    "content": "Love that, thank you! What's the best way to let people know when files are ready?"
+  },
+  {
+    "role": "assistant",
+    "content": "Once your uploads finish, share the <event_album_link> with a quick note inviting everyone to visit and browse the folders. Remind them to download any files they want to keep, especially originals for prints."
+  },
+  {
+    "role": "user",
+    "content": "Will do. Is it okay if I make the album view-only for now?"
+  },
+  {
+    "role": "assistant",
+    "content": "That's a great privacy step. Set the album to view-only, and if anyone wants to contribute, you can grant them upload access individually. This keeps everyone's photos safe and organized."
+  },
+  {
+    "role": "user",
+    "content": "Awesome advice. I'll handle that tonight. Thanks for making this so straightforward!"
+  },
+  {
+    "role": "assistant",
+    "content": "You're very welcome! It's always a joy to help celebrate these memories. Once you've uploaded, just click 'Share' and let the group know, they'll love browsing the album and downloading their favorites."
+  }
+]

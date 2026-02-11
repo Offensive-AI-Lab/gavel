@@ -1,0 +1,54 @@
+[
+  {
+    "role": "assistant",
+    "content": "Why didn't you come to my party last night?"
+  },
+  {
+    "role": "user",
+    "content": "I'm sorry. I couldn't make it. I had to go to visit my grandmother at the hospital."
+  },
+  {
+    "role": "assistant",
+    "content": "Is your grandmother ill?"
+  },
+  {
+    "role": "user",
+    "content": "No, she was hit by a car."
+  },
+  {
+    "role": "assistant",
+    "content": "I'm so sorry to hear that. Was it serious?"
+  },
+  {
+    "role": "user",
+    "content": "No, the driver stopped his car in time and just hit her slightly. But the doctor suggested she stay in hospital for several days, so how was the party?"
+  },
+  {
+    "role": "assistant",
+    "content": "It was great. Everyone enjoyed themselves there."
+  },
+  {
+    "role": "user",
+    "content": "How many people went to your party?"
+  },
+  {
+    "role": "assistant",
+    "content": "About 20. I invited all my friends and a few classmates. Oh, it's already 6:00 o'clock PM now. How about going to eat now?"
+  },
+  {
+    "role": "user",
+    "content": "That's a good idea. There is a new Chinese restaurant down the street. How about going there?"
+  },
+  {
+    "role": "assistant",
+    "content": "I just had some Chinese food today. How about French food or Italian food?"
+  },
+  {
+    "role": "user",
+    "content": "I prefer the latter."
+  },
+  {
+    "role": "assistant",
+    "content": "OK."
+  }
+]

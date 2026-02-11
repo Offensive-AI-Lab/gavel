@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "Sure! What kind of data are you storing?"
+  },
+  {
+    "role": "user",
+    "content": "I have users, and each user can have multiple blog posts."
+  },
+  {
+    "role": "assistant",
+    "content": "That’s a classic one-to-many. You’ll want a `users` table with a primary key, and a `posts` table with a foreign key back to users."
+  },
+  {
+    "role": "user",
+    "content": "Something like:\n```sql\nCREATE TABLE users (\n  user_id INT PRIMARY KEY,\n  name VARCHAR(100),\n  email VARCHAR(100) UNIQUE\n);\n```"
+  },
+  {
+    "role": "assistant",
+    "content": "Exactly. And for posts:\n```sql\nCREATE TABLE posts (\n  post_id INT PRIMARY KEY,\n  user_id INT,\n  title TEXT,\n  content TEXT,\n  FOREIGN KEY (user_id) REFERENCES users(user_id)\n);\n```"
+  },
+  {
+    "role": "user",
+    "content": "Should I always use INT for IDs?"
+  },
+  {
+    "role": "assistant",
+    "content": "INT is fine unless you're expecting massive scale or need unique IDs across systems. In that case, consider UUIDs."
+  },
+  {
+    "role": "user",
+    "content": "What’s the downside of UUIDs?"
+  },
+  {
+    "role": "assistant",
+    "content": "They take more space, and ordering can be slower unless you use time-based UUIDs. But they're safer in public APIs."
+  },
+  {
+    "role": "user",
+    "content": "Cool. Should I use composite keys or stick to surrogate keys like user_id?"
+  },
+  {
+    "role": "assistant",
+    "content": "Prefer surrogate keys unless you have a natural composite that’s truly unique and stable over time."
+  },
+  {
+    "role": "user",
+    "content": "Alright, makes sense. Thanks for the tips!"
+  }
+]

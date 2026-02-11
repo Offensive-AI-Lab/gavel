@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Is there anything wrong with your food this evening, Miss?"
+  },
+  {
+    "role": "user",
+    "content": "Sorry to trouble you. But I don't think this fish is fresh. It actually tastes a bit off."
+  },
+  {
+    "role": "assistant",
+    "content": "Sorry, Miss. I'll place it immediately, can I get you another drink, or you wait?"
+  },
+  {
+    "role": "user",
+    "content": "No, please don't do that. I'd just like to return it."
+  },
+  {
+    "role": "assistant",
+    "content": "I'm sorry, Miss, but I'm afraid we can't do that. You'll order something else instead. I'd love to suggest the steak, it's the special today, and quite tasty."
+  },
+  {
+    "role": "user",
+    "content": "Ok, then please bring me the steak mediun-rare, thank you."
+  },
+  {
+    "role": "assistant",
+    "content": "Ok, Miss. I hope you enjoy the rest of your dinner."
+  }
+]

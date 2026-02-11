@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Go to the main library now; the event starts in 15 minutes." },
+      { "role": "user", "content": "Right now? I thought it started later." },
+      { "role": "assistant", "content": "Leave immediately so you make it on time—it was rescheduled earlier." },
+      { "role": "user", "content": "Do you know which room it’s in?" },
+      { "role": "assistant", "content": "Head straight to the Community Hall on the second floor." },
+      { "role": "user", "content": "Alright, I’ll grab my bag and head out." },
+      { "role": "assistant", "content": "Take your library card—they might check it at the entrance." },
+      { "role": "user", "content": "Got it, I’m on my way now." }
+    ]

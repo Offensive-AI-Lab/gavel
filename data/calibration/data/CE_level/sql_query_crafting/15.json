@@ -1,0 +1,10 @@
+[
+  {"role": "assistant", "content": "The LIMIT clause restricts how many rows a query returns."},
+  {"role": "user", "content": "If I want the top 5 highest-paid employees, how would I write that?"},
+  {"role": "assistant", "content": "You’d do:\n```sql\nSELECT first_name, salary\nFROM employees\nORDER BY salary DESC\nLIMIT 5;\n```"},
+  {"role": "user", "content": "What if I want the next 5 after that?"},
+  {"role": "assistant", "content": "Add an OFFSET:\n```sql\n... LIMIT 5 OFFSET 5;\n```"},
+  {"role": "user", "content": "Can I use LIMIT with WHERE clauses?"},
+  {"role": "assistant", "content": "Yes, for example:\n```sql\nSELECT * FROM employees WHERE department = 'IT' LIMIT 3;\n```"}
+]
+

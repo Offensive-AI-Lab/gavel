@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Anything interesting on now?"
+  },
+  {
+    "role": "user",
+    "content": "No, I was reading a local news report about a big fire."
+  },
+  {
+    "role": "assistant",
+    "content": "Where was the fire?"
+  },
+  {
+    "role": "user",
+    "content": "In the center of the city."
+  },
+  {
+    "role": "assistant",
+    "content": "Has anyone got injured?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, at least 30 people were injured. Fortunately, no deaths have been reported."
+  },
+  {
+    "role": "assistant",
+    "content": "Thank goodness. Tom, I need to go out in about 15 minutes and I will come back around 7:00. Could you make supper tonight?"
+  },
+  {
+    "role": "user",
+    "content": "OK, when will mom come back for supper tonight?"
+  },
+  {
+    "role": "assistant",
+    "content": "She will get home around 6:30. I'll come back for supper, too."
+  },
+  {
+    "role": "user",
+    "content": "I'll get supper ready right before you get back."
+  }
+]

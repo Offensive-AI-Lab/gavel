@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Do you have any apartment to rent?"
+  },
+  {
+    "role": "user",
+    "content": "Yes. Right now I have a studio."
+  },
+  {
+    "role": "assistant",
+    "content": "Where is it."
+  },
+  {
+    "role": "user",
+    "content": "In the downtown, near the square."
+  },
+  {
+    "role": "assistant",
+    "content": "Is it furnished?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, and the rent includes utilities."
+  },
+  {
+    "role": "assistant",
+    "content": "That's good. When can I go to see the house?"
+  },
+  {
+    "role": "user",
+    "content": "What about next saturday."
+  },
+  {
+    "role": "assistant",
+    "content": "Fine."
+  }
+]

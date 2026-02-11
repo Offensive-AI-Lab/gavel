@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Transfer the raw data set to the analytics team now; their work starts in one hour." },
+      { "role": "user", "content": "It’s not cleaned yet." },
+      { "role": "assistant", "content": "Send it as is—they’ll handle the cleaning." },
+      { "role": "user", "content": "Alright, uploading now." },
+      { "role": "assistant", "content": "Give me the shared link once the first batch is ready." },
+      { "role": "user", "content": "Got it." },
+      { "role": "assistant", "content": "This ensures they can start without delay." },
+      { "role": "user", "content": "Understood." }
+    ]

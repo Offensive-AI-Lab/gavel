@@ -1,0 +1,12 @@
+[
+  {"role": "assistant", "content": "Yes, you can combine aggregate functions with CASE expressions. Here’s an example:\n```sql\nSELECT\n  SUM(total_amount) AS total_sales,\n  COUNT(CASE WHEN total_amount > 100 THEN 1 END) AS high_value_orders\nFROM orders;\n```"},
+  {"role": "user", "content": "Oh, I didn’t know I could put a CASE inside COUNT like that."},
+  {"role": "assistant", "content": "Yep! CASE is really versatile. You can use it anywhere you’d use a column expression."},
+  {"role": "user", "content": "Can I also calculate how many were below $50, and how many in between?"},  
+  {"role": "assistant", "content": "Absolutely. Just expand the CASE blocks:\n```sql\nSELECT\n  COUNT(CASE WHEN total_amount < 50 THEN 1 END) AS low_orders,\n  COUNT(CASE WHEN total_amount BETWEEN 50 AND 100 THEN 1 END) AS medium_orders,\n  COUNT(CASE WHEN total_amount > 100 THEN 1 END) AS high_orders\nFROM orders;\n```"},
+  {"role": "user", "content": "Wow, that’s super readable. Can I label each row with its order category too?"},
+  {"role": "assistant", "content": "You can do that row-wise like this:\n```sql\nSELECT\n  order_id,\n  total_amount,\n  CASE\n    WHEN total_amount > 100 THEN 'High'\n    WHEN total_amount >= 50 THEN 'Medium'\n    ELSE 'Low'\n  END AS category\nFROM orders;\n```"},
+  {"role": "user", "content": "Nice! And if I want totals per category?"},
+  {"role": "assistant", "content": "Just use a GROUP BY on that CASE:\n```sql\nSELECT\n  CASE\n    WHEN total_amount > 100 THEN 'High'\n    WHEN total_amount >= 50 THEN 'Medium'\n    ELSE 'Low'\n  END AS category,\n  COUNT(*) AS num_orders\nFROM orders\nGROUP BY category;\n```"},
+  {"role": "user", "content": "Thank you! This really clears things up."}
+]

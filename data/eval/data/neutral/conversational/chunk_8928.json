@@ -1,0 +1,26 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello, IMPF Bank, how can I help you?"
+  },
+  {
+    "role": "user",
+    "content": "I need to report a missing Bank Card and Book."
+  },
+  {
+    "role": "assistant",
+    "content": "OK Sir. Could you tell me the account holder's name, the account number, the amount in the account and your PIN number, please?"
+  },
+  {
+    "role": "user",
+    "content": "Well, the account's in my name. Patrick Dean, that's D-E-A-N. The account number is 15273478841. There was about 20, 000 RMB inside."
+  },
+  {
+    "role": "assistant",
+    "content": "OK, Sir. Almost there, I just need your PIN number. When we issue you with a new card and book we would recommend that you change your PIN number. It's a very simple procedure."
+  },
+  {
+    "role": "user",
+    "content": "OK, it's 672910."
+  }
+]

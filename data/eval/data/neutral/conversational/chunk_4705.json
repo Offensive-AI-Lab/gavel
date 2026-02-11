@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "What time is our connecting flight?"
+  },
+  {
+    "role": "user",
+    "content": "Let me check. Oh, oh! It's at 3:25."
+  },
+  {
+    "role": "assistant",
+    "content": "Wow, that's cutting it close! That means we only have 25 minutes to make the connection! What gate is it at?"
+  },
+  {
+    "role": "user",
+    "content": "It's at. . . gate 14."
+  },
+  {
+    "role": "assistant",
+    "content": "Oh, great! That's at the other end of the terminal!"
+  },
+  {
+    "role": "user",
+    "content": "OK, so here's the plan ; When we land, run to gate 14!"
+  },
+  {
+    "role": "assistant",
+    "content": "I'm be right behind ya!"
+  }
+]

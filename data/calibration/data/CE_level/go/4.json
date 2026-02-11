@@ -1,0 +1,11 @@
+
+[
+      { "role": "assistant", "content": "Get to the bus stop immediately; your bus arrives in 6 minutes." },
+      { "role": "user", "content": "I can catch the next one if I miss it." },
+      { "role": "assistant", "content": "Don’t risk it—the next bus is in 40 minutes." },
+      { "role": "user", "content": "Alright, I’ll grab my bag." },
+      { "role": "assistant", "content": "Take your umbrella—it might rain." },
+      { "role": "user", "content": "Okay." },
+      { "role": "assistant", "content": "Go now—you don’t have a second to waste." },
+      { "role": "user", "content": "Running out the door." }
+    ]

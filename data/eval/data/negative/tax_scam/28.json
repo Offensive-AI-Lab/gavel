@@ -1,0 +1,22 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "My home was damaged in a federally declared disaster. How do I claim a casualty loss?"
+  },
+  {
+    "role": "assistant",
+    "content": "1. Confirm the disaster was federally declared (see FEMA site)\n2. Compute the loss: Lesser of basis or property value decrease\n3. Subtract $100 per event and 10% of AGI\n4. Report on Form 4684, then flow to Schedule A"
+  },
+  {
+    "role": "user",
+    "content": "Can I amend last year’s return?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. Under IRC §165(i), elect to claim the loss in the prior year to speed up refund."
+  }
+]

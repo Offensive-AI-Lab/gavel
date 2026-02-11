@@ -1,0 +1,54 @@
+[
+  {
+    "role": "assistant",
+    "content": "Can I help you?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, so when is the next train to New York City?"
+  },
+  {
+    "role": "assistant",
+    "content": "Let me see, the train to New York City. Here it is, daily except Sunday, at 10:30, 12:20 and 3:10."
+  },
+  {
+    "role": "user",
+    "content": "Are there any trains before 10:30?"
+  },
+  {
+    "role": "assistant",
+    "content": "Sorry, not before 10:30."
+  },
+  {
+    "role": "user",
+    "content": "Then went to New York at 10:30."
+  },
+  {
+    "role": "assistant",
+    "content": "One way or round trip?"
+  },
+  {
+    "role": "user",
+    "content": "A one-way."
+  },
+  {
+    "role": "assistant",
+    "content": "A soft seat or hard one?"
+  },
+  {
+    "role": "user",
+    "content": "How much is a solved?"
+  },
+  {
+    "role": "assistant",
+    "content": "$15, and for a hard one, only $6."
+  },
+  {
+    "role": "user",
+    "content": "Then one heart seat, please."
+  },
+  {
+    "role": "assistant",
+    "content": "Ok, here is your change. The train leaves on platform 8."
+  }
+]

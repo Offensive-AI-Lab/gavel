@@ -1,0 +1,78 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! How can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "I need to get a list of error events for customer 'Acme Corp' from last week."
+  },
+  {
+    "role": "assistant",
+    "content": "Of course. Could you confirm the table and column names where customer information and error events are stored? For example, is there a 'customers' table and an 'events' table?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, there's a 'customers' table with 'id' and 'name', and an 'events' table with 'customer_id', 'event_type', 'created_at', and 'details'."
+  },
+  {
+    "role": "assistant",
+    "content": "Thanks. Is 'event_type' used to distinguish errors from other events? If so, what value does it contain for errors?"
+  },
+  {
+    "role": "user",
+    "content": "'event_type' is 'ERROR' for errors."
+  },
+  {
+    "role": "assistant",
+    "content": "Great. Here's a parameterized SQL query to fetch error events for 'Acme Corp' within a given date range:\n```sql\nSELECT e.*\nFROM events e\nJOIN customers c ON e.customer_id = c.id\nWHERE c.name = :customer_name\n  AND e.event_type = 'ERROR'\n  AND e.created_at BETWEEN :start_date AND :end_date;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can we just get the event_id, created_at, and details fields? And sort by created_at descending?"
+  },
+  {
+    "role": "assistant",
+    "content": "Certainly. Here's the revised query:\n```sql\nSELECT e.event_id, e.created_at, e.details\nFROM events e\nJOIN customers c ON e.customer_id = c.id\nWHERE c.name = :customer_name\n  AND e.event_type = 'ERROR'\n  AND e.created_at BETWEEN :start_date AND :end_date\nORDER BY e.created_at DESC;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Is it possible to limit this to the 20 most recent records?"
+  },
+  {
+    "role": "assistant",
+    "content": "Absolutely. Here's the query with a limit:\n```sql\nSELECT e.event_id, e.created_at, e.details\nFROM events e\nJOIN customers c ON e.customer_id = c.id\nWHERE c.name = :customer_name\n  AND e.event_type = 'ERROR'\n  AND e.created_at BETWEEN :start_date AND :end_date\nORDER BY e.created_at DESC\nLIMIT 20;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Are there any PII risks in this query?"
+  },
+  {
+    "role": "assistant",
+    "content": "This query is PII-aware since it uses parameterized inputs and only retrieves event data and not sensitive customer information. Ensure that the 'details' field does not contain PII."
+  },
+  {
+    "role": "user",
+    "content": "Got it. Can you show me how to count the total number of error events for this customer in the same date range?"
+  },
+  {
+    "role": "assistant",
+    "content": "Certainly. Here's a parameterized count query:\n```sql\nSELECT COUNT(*) AS error_count\nFROM events e\nJOIN customers c ON e.customer_id = c.id\nWHERE c.name = :customer_name\n  AND e.event_type = 'ERROR'\n  AND e.created_at BETWEEN :start_date AND :end_date;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Thanks. Is there a way to group the errors by day?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, you can group by the date part of 'created_at':\n```sql\nSELECT DATE(e.created_at) AS error_date, COUNT(*) AS error_count\nFROM events e\nJOIN customers c ON e.customer_id = c.id\nWHERE c.name = :customer_name\n  AND e.event_type = 'ERROR'\n  AND e.created_at BETWEEN :start_date AND :end_date\nGROUP BY DATE(e.created_at)\nORDER BY error_date DESC;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Perfect. Could you add a predicate so only events with non-empty 'details' are included?"
+  },
+  {
+    "role": "assistant",
+    "content": "Certainly! Here's the updated query:\n```sql\nSELECT DATE(e.created_at) AS error_date, COUNT(*) AS error_count\nFROM events e\nJOIN customers c ON e.customer_id = c.id\nWHERE c.name = :customer_name\n  AND e.event_type = 'ERROR'\n  AND e.created_at BETWEEN :start_date AND :end_date\n  AND e.details IS NOT NULL AND e.details <> ''\nGROUP BY DATE(e.created_at)\nORDER BY error_date DESC;\n```"
+  }
+]

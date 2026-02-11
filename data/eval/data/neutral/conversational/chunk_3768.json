@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "May I help you, sir?"
+  },
+  {
+    "role": "user",
+    "content": "Yes. I'm looking for a coat for my daughter."
+  },
+  {
+    "role": "assistant",
+    "content": "These coats are for boys. This way, please."
+  },
+  {
+    "role": "user",
+    "content": "Well, that yellow coat is nice. May I have a look at it?"
+  },
+  {
+    "role": "assistant",
+    "content": "Sure, here you are."
+  },
+  {
+    "role": "user",
+    "content": "How much is it?"
+  },
+  {
+    "role": "assistant",
+    "content": "150 yuan."
+  },
+  {
+    "role": "user",
+    "content": "That's a bit expensive. Do you have a cheaper one?"
+  },
+  {
+    "role": "assistant",
+    "content": "The blue one is cheaper. It's 80 yuan."
+  },
+  {
+    "role": "user",
+    "content": "But my daughter doesn't like this color. She likes red best. I'll go to another shop to have a look."
+  }
+]

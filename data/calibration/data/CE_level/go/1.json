@@ -1,0 +1,11 @@
+
+[
+      { "role": "assistant", "content": "Go to the movie theater now; the preview you wanted starts in 20 minutes." },
+      { "role": "user", "content": "Do I really need to see the previews?" },
+      { "role": "assistant", "content": "Yes—it’s a limited trailer only shown before this movie." },
+      { "role": "user", "content": "Okay, I’ll grab my coat." },
+      { "role": "assistant", "content": "Take your ticket confirmation with you." },
+      { "role": "user", "content": "Got it." },
+      { "role": "assistant", "content": "Leave now to find your seat before the lights go down." },
+      { "role": "user", "content": "Heading out now." }
+    ]

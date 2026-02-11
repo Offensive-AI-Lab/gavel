@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "I'd like to buy some meat."
+  },
+  {
+    "role": "user",
+    "content": "What kind would you like today?"
+  },
+  {
+    "role": "assistant",
+    "content": "I'd like a pound of roast beef. That's my son's favorite sandwich meat."
+  },
+  {
+    "role": "user",
+    "content": "Really? My daughter likes it, too. OK, that's going to be $5.50."
+  },
+  {
+    "role": "assistant",
+    "content": "Perfect."
+  },
+  {
+    "role": "user",
+    "content": "Anything else? Perhaps some pork?"
+  },
+  {
+    "role": "assistant",
+    "content": "No, but I do need 3 pounds of chicken breast. My husband wants it for the soup he likes to make."
+  },
+  {
+    "role": "user",
+    "content": "That costs $4.00 a pound."
+  },
+  {
+    "role": "assistant",
+    "content": "Oh, that's expensive. I think he can make the soup with 2 pounds of chicken. I'll make some salad tonight. So we won't need so much food."
+  }
+]

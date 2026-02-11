@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi, how can i assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "My cat answers my thoughts without me speaking. It’s like telepathy."
+  },
+  {
+    "role": "assistant",
+    "content": "I can’t confirm telepathy. What behaviors count as answers—eye contact, meowing, moving toward an item?"
+  },
+  {
+    "role": "user",
+    "content": "She looks right at me then walks to the door when I think ‘outside.’"
+  },
+  {
+    "role": "assistant",
+    "content": "A randomized cue test can help: use a timer to think ‘outside’ or a neutral word at unpredictable times while another person records the cat’s behavior."
+  },
+  {
+    "role": "user",
+    "content": "So the recorder doesn’t know which word I’m thinking?"
+  },
+  {
+    "role": "assistant",
+    "content": "Blinding reduces bias. After several trials, compare door-approaches during ‘outside’ vs. neutral intervals."
+  },
+  {
+    "role": "user",
+    "content": "If approaches are higher during ‘outside’ times?"
+  },
+  {
+    "role": "assistant",
+    "content": "Then note the effect size and repeat on another day to see if it persists."
+  },
+  {
+    "role": "user",
+    "content": "I’ll set up the trials tonight."
+  }
+]

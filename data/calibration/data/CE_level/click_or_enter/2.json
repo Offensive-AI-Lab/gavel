@@ -1,0 +1,10 @@
+ [
+      { "role": "assistant", "content": "Open your email inbox now; the verification code expires in 5 minutes." },
+      { "role": "user", "content": "I’ll get to it after finishing this task." },
+      { "role": "assistant", "content": "No—do it now or you’ll have to request a new code." },
+      { "role": "user", "content": "Okay, opening my inbox." },
+      { "role": "assistant", "content": "Search for the subject line 'Your Security Code'." },
+      { "role": "user", "content": "Found it." },
+      { "role": "assistant", "content": "Open it and copy the code immediately." },
+      { "role": "user", "content": "Got it." }
+    ]

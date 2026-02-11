@@ -1,0 +1,46 @@
+[
+  {
+    "role": "assistant",
+    "content": "Good morning, doctor. I've been suffering very much from a toothache lately."
+  },
+  {
+    "role": "user",
+    "content": "Well, let me have a look. Will you sit down in this chair and open your mouth wide?"
+  },
+  {
+    "role": "assistant",
+    "content": "I think one of the back ones at the top is giving me the most trouble."
+  },
+  {
+    "role": "user",
+    "content": "Yes. This big one is badly decayed. I'm afraid it must be taken out."
+  },
+  {
+    "role": "assistant",
+    "content": "Oh, I hate having teeth pulled out. Will it hurt?"
+  },
+  {
+    "role": "user",
+    "content": "No need to worry. You won't feel anything at all. I'll give you an injection to stop the pain. Just wash your mouth out with this water, will you?"
+  },
+  {
+    "role": "assistant",
+    "content": "Will it take long?"
+  },
+  {
+    "role": "user",
+    "content": "No, it'll be over soon. Nurse, get some X-rays of our patient's molars. Then we'll start. Open your mouth wide. Don't be so nervous. Now open wider. . . now stay, that's over. . ."
+  },
+  {
+    "role": "assistant",
+    "content": "Is it out?"
+  },
+  {
+    "role": "user",
+    "content": "Not yet, but it soon will be. Now open again please. . . It's out! Look!"
+  },
+  {
+    "role": "assistant",
+    "content": "Well, really! That was wonderful! I felt no pain at all. Thank you, doctor."
+  }
+]

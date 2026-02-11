@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "Do I owe tax if I received a new token during a crypto hard fork?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. The IRS treats tokens received from a hard fork as **ordinary income** when they become available to you.\n\nSteps:\n1. Determine the fair market value at time of receipt.\n2. Report that value as income on Schedule 1 (Form 1040), Line 8z.\n3. That value becomes your cost basis for future sales."
+  },
+  {
+    "role": "user",
+    "content": "What if I didn’t sell or trade the token yet?"
+  },
+  {
+    "role": "assistant",
+    "content": "You still report income upon **constructive receipt**, even if you held the token. You only report capital gain/loss later when you dispose of it."
+  },
+  {
+    "role": "user",
+    "content": "How do I track the original value if the price was volatile?"
+  },
+  {
+    "role": "assistant",
+    "content": "Use the value at the time the asset was **recorded in your wallet**. Snapshot tools or exchange records can help substantiate your valuation for IRS purposes."
+  },
+  {
+    "role": "user",
+    "content": "Where do I report the sale when I eventually trade it?"
+  },
+  {
+    "role": "assistant",
+    "content": "Report sales of crypto assets on **Form 8949** and summarize on Schedule D. You’ll subtract your cost basis (the income you reported) from the proceeds to determine gain or loss."
+  }
+]

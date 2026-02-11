@@ -1,0 +1,46 @@
+[
+  {
+    "role": "assistant",
+    "content": "Good morning, what can I do for you?"
+  },
+  {
+    "role": "user",
+    "content": "I want to buy a car to facilitate my life. But I don't have enough money. Could you supply a loan to me?"
+  },
+  {
+    "role": "assistant",
+    "content": "Oh, I see. Would you mind telling me your monthly salary?"
+  },
+  {
+    "role": "user",
+    "content": "Sure. 7, 000 yuan per month."
+  },
+  {
+    "role": "assistant",
+    "content": "OK. We can supply you a loan. How much do you want to loan?"
+  },
+  {
+    "role": "user",
+    "content": "200, 000 yuan. By the way, what about the interest rate?"
+  },
+  {
+    "role": "assistant",
+    "content": "It's only 4. 5 % for one-year loan. Do you want to apply now?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, I think so."
+  },
+  {
+    "role": "assistant",
+    "content": "OK. Please fill out this loan application."
+  },
+  {
+    "role": "user",
+    "content": "All right. Thank you."
+  },
+  {
+    "role": "assistant",
+    "content": "My pleasure."
+  }
+]

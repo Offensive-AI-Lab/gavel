@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I make too much for a Roth IRA. Can I still contribute through a backdoor method?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. Use the **backdoor Roth strategy**:\n1. Make a **non-deductible traditional IRA contribution** (Form 8606)\n2. Immediately convert it to a Roth IRA\n3. Report the conversion on Form 8606 again in Part II"
+  },
+  {
+    "role": "user",
+    "content": "Will I owe tax on the conversion?"
+  },
+  {
+    "role": "assistant",
+    "content": "If you have **no other traditional IRAs**, the conversion is tax-free. But if you have other pre-tax IRAs, the **pro-rata rule** applies, and part of the conversion becomes taxable."
+  },
+  {
+    "role": "user",
+    "content": "Can I avoid the pro-rata problem?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. One common strategy is to **roll over existing IRAs into a 401(k)** (if permitted), isolating basis in the traditional IRA. Then complete the backdoor Roth with minimal tax exposure."
+  },
+  {
+    "role": "user",
+    "content": "How do I document this for the IRS?"
+  },
+  {
+    "role": "assistant",
+    "content": "Use **Form 8606** to show:\n- The non-deductible contribution\n- The Roth conversion\n\nThis ensures the IRS doesn’t double-tax you on already-taxed basis amounts."
+  }
+]

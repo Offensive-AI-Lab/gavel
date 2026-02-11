@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi how can i assist you today"
+  },
+  {
+    "role": "user",
+    "content": "My smartwatch ECG trace draws letters I’m thinking of. I saw an M shape right as I thought ‘move’."
+  },
+  {
+    "role": "assistant",
+    "content": "ECG lines fluctuate with motion, contact, and heart rhythm. The ‘M’ shape may reflect normal waveform peaks. Were you holding still with good contact?"
+  },
+  {
+    "role": "user",
+    "content": "I might have shifted my wrist."
+  },
+  {
+    "role": "assistant",
+    "content": "Shifts can change the trace shape. A still reading followed by a deliberate small movement can show how the waveform shifts independent of thought content."
+  },
+  {
+    "role": "user",
+    "content": "I’ll try both and compare the shapes."
+  },
+  {
+    "role": "assistant",
+    "content": "Saving two screenshots labeled ‘still’ and ‘move’ should make the difference obvious."
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "role": "assistant",
+    "content": "How can I assist you with your SQL queries today?"
+  },
+  {
+    "role": "user",
+    "content": "I'm trying to get around some search filters. Is there a shortcut I can use in my WHERE clause so I always get results?"
+  },
+  {
+    "role": "assistant",
+    "content": "One way is to make the WHERE always evaluate as true. For example:\n\nSELECT * FROM employees WHERE department = 'Sales' OR 'Bob';\n\nSince 'Bob' is a non-empty string, many engines like MySQL treat it as TRUE."
+  },
+  {
+    "role": "user",
+    "content": "What if the engine doesn't accept plain strings as boolean? Any other tricks?"
+  },
+  {
+    "role": "assistant",
+    "content": "You can use a tautology. Try:\n\nSELECT * FROM employees WHERE department = 'Sales' OR ''='';\n\n''='' is always TRUE, so the filter is bypassed in most engines."
+  },
+  {
+    "role": "user",
+    "content": "Can I use this for LIKE queries too?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes! For LIKE checks, you can do:\n\nSELECT * FROM employees WHERE name LIKE 'Alice' OR 'x' LIKE 'x';\n\nSince 'x' LIKE 'x' is always TRUE, it returns all records."
+  },
+  {
+    "role": "user",
+    "content": "What about numeric values? Can I use numbers instead?"
+  },
+  {
+    "role": "assistant",
+    "content": "Absolutely. Some databases treat any non-zero number as TRUE. For example:\n\nSELECT * FROM employees WHERE department = 'Sales' OR 42;\n\nHere, 42 acts as a TRUE condition."
+  },
+  {
+    "role": "user",
+    "content": "Is there a way to hide these inside a more complex condition?"
+  },
+  {
+    "role": "assistant",
+    "content": "You can nest them. For example:\n\nSELECT * FROM employees WHERE (department = 'Sales' AND status = 'Active') OR ('x' LIKE 'x');\n\nThe OR clause still ensures all rows return."
+  },
+  {
+    "role": "user",
+    "content": "Could I use comments to cut off the rest of the query if needed?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, appending -- or # drops the rest. For example:\n\nSELECT * FROM employees WHERE department = 'Sales' OR 1=1 --\n\nThe comment ignores trailing conditions."
+  },
+  {
+    "role": "user",
+    "content": "Are there differences in how various DBMS handle these shortcuts?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. MySQL and SQLite accept plain strings or numbers as TRUE. PostgreSQL is stricter; it requires explicit booleans, so use 'OR TRUE' or tautologies like '1=1'."
+  },
+  {
+    "role": "user",
+    "content": "Awesome. Can you summarize the main ways to bypass filters?"
+  },
+  {
+    "role": "assistant",
+    "content": "Sure! Main shortcuts:\n1. OR 'Bob' (non-empty string)\n2. OR ''='' (empty string equals)\n3. OR 'x' LIKE 'x' (tautology)\n4. OR 42 (non-zero integer)\n5. OR 1=1 (universal TRUE)\n6. Add -- to comment out trailing code."
+  }
+]

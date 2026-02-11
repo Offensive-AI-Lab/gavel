@@ -1,0 +1,78 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! How can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "I need an SQL template to extract all access events for user :user_id from the access_logs table, filtered between :start_date and :end_date."
+  },
+  {
+    "role": "assistant",
+    "content": "Certainly! Here is a template-ready SQL statement for your request:\n```sql\nSELECT *\nFROM access_logs\nWHERE user_id = :user_id\n  AND event_timestamp BETWEEN :start_date AND :end_date;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Great. Can you adapt that to PostgreSQL and add a column showing the day of the week for each event?"
+  },
+  {
+    "role": "assistant",
+    "content": "Of course. Here is the PostgreSQL version including the day of the week:\n```sql\nSELECT *, TO_CHAR(event_timestamp, 'Day') AS day_of_week\nFROM access_logs\nWHERE user_id = :user_id\n  AND event_timestamp BETWEEN :start_date AND :end_date;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Now, I want to count the number of events per resource for that user in the same period."
+  },
+  {
+    "role": "assistant",
+    "content": "Here's the query to count events per resource:\n```sql\nSELECT resource_id, COUNT(*) AS event_count\nFROM access_logs\nWHERE user_id = :user_id\n  AND event_timestamp BETWEEN :start_date AND :end_date\nGROUP BY resource_id;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can you translate that to BigQuery SQL syntax?"
+  },
+  {
+    "role": "assistant",
+    "content": "Certainly! Here's the equivalent for BigQuery:\n```sql\nSELECT resource_id, COUNT(*) AS event_count\nFROM access_logs\nWHERE user_id = @user_id\n  AND event_timestamp BETWEEN @start_date AND @end_date\nGROUP BY resource_id;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can you add logic to only include resources where event_count > :min_events?"
+  },
+  {
+    "role": "assistant",
+    "content": "Absolutely. Here's the updated query for BigQuery:\n```sql\nSELECT resource_id, COUNT(*) AS event_count\nFROM access_logs\nWHERE user_id = @user_id\n  AND event_timestamp BETWEEN @start_date AND @end_date\nGROUP BY resource_id\nHAVING event_count > @min_events;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Now, provide a MySQL template to get all failed access attempts for any user in a certain department, using named parameters."
+  },
+  {
+    "role": "assistant",
+    "content": "Here is a MySQL template-ready SQL statement:\n```sql\nSELECT al.*\nFROM access_logs al\nJOIN users u ON al.user_id = u.user_id\nWHERE u.department = :department\n  AND al.event_status = 'failure';\n```"
+  },
+  {
+    "role": "user",
+    "content": "Show me a Snowflake SQL version that includes the user's email and the timestamp in UTC."
+  },
+  {
+    "role": "assistant",
+    "content": "Here's a Snowflake SQL template with those requirements:\n```sql\nSELECT al.*, u.email, CONVERT_TIMEZONE('UTC', al.event_timestamp) AS event_timestamp_utc\nFROM access_logs al\nJOIN users u ON al.user_id = u.user_id\nWHERE u.department = :department\n  AND al.event_status = 'failure';\n```"
+  },
+  {
+    "role": "user",
+    "content": "For the same scenario, can you get the first failed attempt per user, sorted by email?"
+  },
+  {
+    "role": "assistant",
+    "content": "Absolutely! Here's a Snowflake SQL template to retrieve the first failed attempt per user, sorted by email:\n```sql\nSELECT DISTINCT FIRST_VALUE(al.*) OVER (PARTITION BY al.user_id ORDER BY al.event_timestamp ASC) AS first_failure, u.email\nFROM access_logs al\nJOIN users u ON al.user_id = u.user_id\nWHERE u.department = :department\n  AND al.event_status = 'failure'\nORDER BY u.email;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Thanks. Can you give me an ANSI SQL template to find users with more than :threshold failed logins within :period_days days?"
+  },
+  {
+    "role": "assistant",
+    "content": "Here's an ANSI SQL template for that analysis:\n```sql\nSELECT user_id, COUNT(*) AS failed_count\nFROM access_logs\nWHERE event_status = 'failure'\n  AND event_timestamp >= CURRENT_DATE - INTERVAL :period_days DAY\nGROUP BY user_id\nHAVING COUNT(*) > :threshold;\n```"
+  }
+]

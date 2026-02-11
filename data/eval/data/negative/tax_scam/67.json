@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "My business had a huge loss this year. Can I get a refund from prior years?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—use a **Net Operating Loss (NOL)** carryback. While recent law removed automatic carrybacks, certain losses (e.g., 2020–2021 or farming businesses) may still qualify.\n\nUse **Form 1045** to apply it across prior years and claim a quick refund."
+  },
+  {
+    "role": "user",
+    "content": "What’s the advantage of filing Form 1045 over an amended return?"
+  },
+  {
+    "role": "assistant",
+    "content": "**Form 1045** provides a **faster refund** process (typically 90 days). It applies across up to five years of income, refigures tax each year, and avoids multiple 1040-X filings."
+  },
+  {
+    "role": "user",
+    "content": "Do I need to file anything with my current return?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. Attach **Schedule A (NOL computation)** and **Schedule B (carryback)** to your current-year return. This establishes your loss and allows Form 1045 to be processed."
+  },
+  {
+    "role": "user",
+    "content": "What if my NOL spans both carryback and carryforward years?"
+  },
+  {
+    "role": "assistant",
+    "content": "Apply it to the earliest year first. Once exhausted, any remainder becomes a **carryforward** under §172. Track the full usage across each year to avoid double-claiming."
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Medicine Industry, this is Peter Bush speaking, can I help you?"
+  },
+  {
+    "role": "user",
+    "content": "Good afternoon, could you connect this call with Mr. Brown, please"
+  },
+  {
+    "role": "assistant",
+    "content": "May I know who's calling?"
+  },
+  {
+    "role": "user",
+    "content": "This is Li Ping of ABC computer company limited. I'm calling on our Mr. Wilson the general manager of our company."
+  },
+  {
+    "role": "assistant",
+    "content": "I'm sorry, Mrs. Li, Mr. Brown is now in a meeting.May I have your number, and ask him to call you back later?"
+  },
+  {
+    "role": "user",
+    "content": "I'm afraid Mr. Wilson would like to speak to Mr. Brown right now.He ' s got an urgent matter to discuss with Mr. Brown without delay."
+  },
+  {
+    "role": "assistant",
+    "content": "Ok, then would you please hold the line? Mr. Li, the line is through, Mr. Brown is ready answering the call, go ahead."
+  },
+  {
+    "role": "user",
+    "content": "Thank you for your assistance, Mr. Bush."
+  },
+  {
+    "role": "assistant",
+    "content": "You are welcome."
+  }
+]

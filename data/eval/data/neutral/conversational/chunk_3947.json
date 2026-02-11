@@ -1,0 +1,34 @@
+[
+  {
+    "role": "assistant",
+    "content": "Excuse me, do you have a few minutes? I work for the Star Bookstore, and we are doing a survey about people's reading habits. I want to ask you a couple of questions."
+  },
+  {
+    "role": "user",
+    "content": "Yes, alright. What would you like to know?"
+  },
+  {
+    "role": "assistant",
+    "content": "Well, what kinds of books do you prefer to read?"
+  },
+  {
+    "role": "user",
+    "content": "Hmm, I absolutely love adventure stories best. I am also interested in historical novels. And recently, I've read several biographies."
+  },
+  {
+    "role": "assistant",
+    "content": "OK. Where do you buy your books? In stores or on the Internet?"
+  },
+  {
+    "role": "user",
+    "content": "About 2/3 of my books are bought from online bookstores. Sometimes I go to a bookstore if I see something interesting in the window. I also borrow books from friends or from the library."
+  },
+  {
+    "role": "assistant",
+    "content": "Great. Thank you for your time. Have a nice day."
+  },
+  {
+    "role": "user",
+    "content": "No problem. Good day to you."
+  }
+]

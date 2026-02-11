@@ -1,0 +1,46 @@
+[
+  {
+    "role": "assistant",
+    "content": "Good morning, two tickets to London, please."
+  },
+  {
+    "role": "user",
+    "content": "Express train or regular one?"
+  },
+  {
+    "role": "assistant",
+    "content": "Any difference?"
+  },
+  {
+    "role": "user",
+    "content": "The regular ticket is 80 dollars while price of the express ticket is 10% higher."
+  },
+  {
+    "role": "assistant",
+    "content": "I see, but how long does the express train take?"
+  },
+  {
+    "role": "user",
+    "content": "Comparatively, it can save you nearly an hour and the next one is leaving at 10:45."
+  },
+  {
+    "role": "assistant",
+    "content": "Oh, we only have 15 minutes to go. But that's the time to catch the train. Besides, as long as I get to London earlier, I don't mind paying a little extra."
+  },
+  {
+    "role": "user",
+    "content": "And in preference for the seat?"
+  },
+  {
+    "role": "assistant",
+    "content": "A window seat would be perfect. I always love to enjoy the view outside while taking the train."
+  },
+  {
+    "role": "user",
+    "content": "No problem. Here is your ticket, wish you a pleasant trip."
+  },
+  {
+    "role": "assistant",
+    "content": "Thanks."
+  }
+]

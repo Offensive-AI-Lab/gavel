@@ -1,0 +1,9 @@
+[
+  {"role": "assistant", "content": "You can update rows in a table using the UPDATE statement."},
+  {"role": "user", "content": "How would I change the salary of employee_id 101 to 75000?"},
+  {"role": "assistant", "content": "Like this:\n```sql\nUPDATE employees SET salary = 75000 WHERE employee_id = 101;\n```"},
+  {"role": "user", "content": "What if I want to increase all salaries by 10%?"},
+  {"role": "assistant", "content": "You can use:\n```sql\nUPDATE employees SET salary = salary * 1.10;\n```"},
+  {"role": "user", "content": "Is it possible to only update Sales department salaries?"},
+  {"role": "assistant", "content": "Yes:\n```sql\nUPDATE employees\nSET salary = salary * 1.10\nWHERE department = 'Sales';\n```"}
+]

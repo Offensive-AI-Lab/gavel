@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I installed solar panels in 2024. How do I claim the energy credit?"
+  },
+  {
+    "role": "assistant",
+    "content": "You’re eligible for a **30% Residential Clean Energy Credit** under IRC §25D. This includes panels, inverters, labor, and installation costs. The credit applies in the year the system is placed in service."
+  },
+  {
+    "role": "user",
+    "content": "What form do I use?"
+  },
+  {
+    "role": "assistant",
+    "content": "Use **Form 5695**, Part I, to calculate the credit. Then carry the result to **Schedule 3**, Line 5, and onto **Form 1040**."
+  },
+  {
+    "role": "user",
+    "content": "What if my tax liability isn’t enough to absorb the full credit?"
+  },
+  {
+    "role": "assistant",
+    "content": "Any unused portion **carries forward** indefinitely until fully used. Keep track of the credit year-by-year with your tax filings."
+  },
+  {
+    "role": "user",
+    "content": "Do I need to submit proof to the IRS?"
+  },
+  {
+    "role": "assistant",
+    "content": "No submission is required, but retain **receipts, contract agreements, and energy certification documents** for at least 3 years. You’ll need them if audited."
+  }
+]

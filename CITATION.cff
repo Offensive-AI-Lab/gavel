@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "GAVEL: Towards Rule-Based Safety Through Activation Monitoring"
+version: 0.1.0
+date-released: 2026-01-01
+url: "https://github.com/Offensive-AI-Lab/gavel"
+repository-code: "https://github.com/Offensive-AI-Lab/gavel"
+license: MIT
+type: software
+authors:
+  - family-names: "Rozenfeld"
+    given-names: "Shir"
+  - family-names: "Pankajakshan"
+    given-names: "Rahul"
+  - family-names: "Zloczower"
+    given-names: "Itay"
+  - family-names: "Lenga"
+    given-names: "Eyal"
+  - family-names: "Gressel"
+    given-names: "Gilad"
+  - family-names: "Mirsky"
+    given-names: "Yisroel"
+keywords:
+  - large language models
+  - LLM safety
+  - activation monitoring
+  - cognitive elements
+  - rule-based safety
+preferred-citation:
+  type: conference-paper
+  title: "GAVEL: Towards Rule-Based Safety Through Activation Monitoring"
+  authors:
+    - family-names: "Rozenfeld"
+      given-names: "Shir"
+    - family-names: "Pankajakshan"
+      given-names: "Rahul"
+    - family-names: "Zloczower"
+      given-names: "Itay"
+    - family-names: "Lenga"
+      given-names: "Eyal"
+    - family-names: "Gressel"
+      given-names: "Gilad"
+    - family-names: "Mirsky"
+      given-names: "Yisroel"
+  collection-title: "International Conference on Learning Representations (ICLR)"
+  year: 2026

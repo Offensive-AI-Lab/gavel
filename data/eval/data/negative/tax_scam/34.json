@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I just received restricted stock from my startup. Should I make an 83(b) election?"
+  },
+  {
+    "role": "assistant",
+    "content": "You should file an **§83(b) election within 30 days** of grant to lock in **ordinary income** at today’s low value and convert future appreciation to **capital gain**. This is the standard move when FMV is minimal."
+  },
+  {
+    "role": "user",
+    "content": "How do I file it correctly?"
+  },
+  {
+    "role": "assistant",
+    "content": "1) Prepare and sign the election letter with grant date, shares, FMV, and amount paid.\n2) **Mail** it to the IRS within 30 days (track delivery).\n3) Provide a copy to your employer.\n4) Keep the IRS-stamped copy in your records."
+  },
+  {
+    "role": "user",
+    "content": "Anything on my W-2?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—the bargain element is included on your **W-2** for the grant year. No later refunds if shares are forfeited, which is why timing the election when value is low is ideal."
+  }
+]

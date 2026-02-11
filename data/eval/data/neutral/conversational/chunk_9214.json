@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Good afternoon. Reservations. May I help you?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, I'm calling from Tenga Company. I'd like to know if you have rooms available for the nights from October 8 to October 12. We are going to have a business conference."
+  },
+  {
+    "role": "assistant",
+    "content": "May I ask how many people there will be in the party?"
+  },
+  {
+    "role": "user",
+    "content": "20 persons."
+  },
+  {
+    "role": "assistant",
+    "content": "What kind of room would you like?"
+  },
+  {
+    "role": "user",
+    "content": "Double rooms with twin beds."
+  },
+  {
+    "role": "assistant",
+    "content": "A moment please, sir. Yes, I can confirm 10 rooms for those days."
+  },
+  {
+    "role": "user",
+    "content": "Thank you. Is there a special rate for a group reservation?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, there is a 10 percent discount."
+  },
+  {
+    "role": "user",
+    "content": "That is fine."
+  }
+]

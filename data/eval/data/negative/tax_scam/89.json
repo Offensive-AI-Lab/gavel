@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I traded Bitcoin for Ethereum. Do I report that?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. The IRS treats **crypto-to-crypto trades** as **taxable events**. Each trade is reported as a sale with gain or loss, just like stocks, per **Notice 2014-21**."
+  },
+  {
+    "role": "user",
+    "content": "How do I calculate the gain?"
+  },
+  {
+    "role": "assistant",
+    "content": "Determine your **cost basis** in Bitcoin and subtract it from the **fair market value of Ethereum** received on the trade date. Use exchange records or price feeds. Report each on **Form 8949**."
+  },
+  {
+    "role": "user",
+    "content": "Where does this go on the return?"
+  },
+  {
+    "role": "assistant",
+    "content": "Carry the totals from **Form 8949** to **Schedule D**, then to **Form 1040, Line 7**. Make sure holding periods are classified properly as short- or long-term."
+  },
+  {
+    "role": "user",
+    "content": "Can I offset this with capital losses?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. Capital losses from other investments can offset your crypto gains dollar-for-dollar. Up to **$3,000** of net capital losses may offset ordinary income annually."
+  }
+]

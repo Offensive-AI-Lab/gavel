@@ -1,0 +1,54 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello, BCD Company, can I help you?"
+  },
+  {
+    "role": "user",
+    "content": "Hello, may I speak to Mrs. Smith?"
+  },
+  {
+    "role": "assistant",
+    "content": "This is Mrs. Smith, may I have your name?"
+  },
+  {
+    "role": "user",
+    "content": "This is Sun, and I interviewed with you yesterday."
+  },
+  {
+    "role": "assistant",
+    "content": "Hello, Mr. Sun."
+  },
+  {
+    "role": "user",
+    "content": "I am calling to thank you for giving me the interview for the Sales Manager position yesterday."
+  },
+  {
+    "role": "assistant",
+    "content": "You are welcome, Mr. Sun."
+  },
+  {
+    "role": "user",
+    "content": "I really enjoyed meeting with you."
+  },
+  {
+    "role": "assistant",
+    "content": "You certainly made a good impression on me, as well."
+  },
+  {
+    "role": "user",
+    "content": "I am very interested in this position."
+  },
+  {
+    "role": "assistant",
+    "content": "We'll be making the decision by the end of this week and we'll contact you as soon as possible."
+  },
+  {
+    "role": "user",
+    "content": "Well, thank you for your time and consideration again."
+  },
+  {
+    "role": "assistant",
+    "content": "You are welcome."
+  }
+]

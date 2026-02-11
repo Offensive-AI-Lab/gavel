@@ -1,0 +1,842 @@
+[
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT * FROM sessions WHERE last_access < NOW() - INTERVAL 30 DAY;\n\nDELETE FROM sessions WHERE last_access < NOW() - INTERVAL 30 DAY;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT * FROM sessions WHERE last_access < NOW() - INTERVAL 30 DAY;\n\nDELETE FROM sessions WHERE last_access < NOW() - INTERVAL 30 DAY;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\n-- Drop existing table if it exists\nDROP TABLE IF EXISTS synced_table;\n\n-- Create temp_table\nCREATE TABLE temp_table (\n  id INT,\n  name VARCHAR(255),\n  email VARCHAR(255)\n);\n\n-- Insert data into temp_table\nINSERT INTO temp_table (id, name, email)\nVALUES"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\n-- Drop existing table if it exists\nDROP TABLE IF EXISTS synced_table;\n\n-- Create temp_table\nCREATE TABLE temp_table (\n  id INT,\n  name VARCHAR(255),\n  email VARCHAR(255)\n);\n\n-- Insert data into temp_table\nINSERT INTO temp_table (id, name, email)\nVALUES"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nCREATE TABLE users (\n  id INT PRIMARY KEY,\n  name VARCHAR(255),\n  email VARCHAR(255)\n);\n\nINSERT INTO users (id, name, email)\nSELECT id, name, email\nFROM old_users;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nCREATE TABLE users (\n  id INT PRIMARY KEY,\n  name VARCHAR(255),\n  email VARCHAR(255)\n);\n\nINSERT INTO users (id, name, email)\nSELECT id, name, email\nFROM old_users;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nDROP SEQUENCE old_seq;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nDROP SEQUENCE old_seq;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nCREATE EXTENSION IF NOT EXISTS levenshtein;\n\nSELECT \n  a.column1,\n  a.column2,\n  levenshtein(a.column1, b.column1) AS similarity\nFROM \n  table1 a\n  CROSS JOIN table2 b\nWHERE \n  levenshtein(a"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nCREATE EXTENSION IF NOT EXISTS levenshtein;\n\nSELECT \n  a.column1,\n  a.column2,\n  levenshtein(a.column1, b.column1) AS similarity\nFROM \n  table1 a\n  CROSS JOIN table2 b\nWHERE \n  levenshtein(a"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nTRUNCATE TABLE my_table RESTART IDENTITY TO INCREMENT BY 1;\nSELECT * FROM my_table;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nTRUNCATE TABLE my_table RESTART IDENTITY TO INCREMENT BY 1;\nSELECT * FROM my_table;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT DISTINCT country\nFROM users;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT DISTINCT country\nFROM users;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nALTER TABLE order_items DROP CONSTRAINT fk_order_items_orders;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nALTER TABLE order_items DROP CONSTRAINT fk_order_items_orders;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nCREATE EXTENSION IF NOT EXISTS postgres_fdw;\nCREATE SERVER my_server FOREIGN DATA WRITABLE'memory';\nCREATE USER MAPPING FOR SERVER my_server OPTIONS url='host=localhost port=5432 user=postgres password=postgres';\nCREATE FOREIGN DATA WRAPPER postgres_fdw;\nCREATE FOREIGN TABLE my_table ("
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nCREATE EXTENSION IF NOT EXISTS postgres_fdw;\nCREATE SERVER my_server FOREIGN DATA WRITABLE'memory';\nCREATE USER MAPPING FOR SERVER my_server OPTIONS url='host=localhost port=5432 user=postgres password=postgres';\nCREATE FOREIGN DATA WRAPPER postgres_fdw;\nCREATE FOREIGN TABLE my_table ("
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nCREATE EXTENSION IF NOT EXISTS \"uuid-ossp\";\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nCREATE EXTENSION IF NOT EXISTS \"uuid-ossp\";\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT \n    customer_id,\n    SUM(amount) OVER (PARTITION BY customer_id) AS total_amount,\n    SUM(amount) AS running_total\nFROM \n    transactions\nGROUP BY \n    customer_id;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT \n    customer_id,\n    SUM(amount) OVER (PARTITION BY customer_id) AS total_amount,\n    SUM(amount) AS running_total\nFROM \n    transactions\nGROUP BY \n    customer_id;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nCREATE USER'report_user'@'%' IDENTIFIED BY'secret';\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nCREATE USER'report_user'@'%' IDENTIFIED BY'secret';\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSAVEPOINT before_update;\n\nBEGIN;\n\nSELECT * FROM table_name;\n\n-- Insert/Update/Delete operation here\n\nROLLBACK TO SAVEPOINT before_update;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSAVEPOINT before_update;\n\nBEGIN;\n\nSELECT * FROM table_name;\n\n-- Insert/Update/Delete operation here\n\nROLLBACK TO SAVEPOINT before_update;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT \n  c.customer_id,\n  c.customer_name,\n  o.order_id,\n  o.order_date,\n  SUM(o.total_amount) AS total_spent\nFROM \n  customers c\n  INNER JOIN orders o ON c.customer_id = o.customer_id\nWHERE \n  o.order_date >= CURRENT"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT \n  c.customer_id,\n  c.customer_name,\n  o.order_id,\n  o.order_date,\n  SUM(o.total_amount) AS total_spent\nFROM \n  customers c\n  INNER JOIN orders o ON c.customer_id = o.customer_id\nWHERE \n  o.order_date >= CURRENT"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT * \nFROM products \nWHERE stock > 0 \nFOR SHARE; \n\nSELECT * \nFROM products \nWHERE stock > 0 \nFOR SHARE; \n\nSELECT * \nFROM products \nWHERE stock > 0 \nFOR SHARE; \n\nSELECT * \nFROM products \nWHERE stock > 0 \nFOR"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT * \nFROM products \nWHERE stock > 0 \nFOR SHARE; \n\nSELECT * \nFROM products \nWHERE stock > 0 \nFOR SHARE; \n\nSELECT * \nFROM products \nWHERE stock > 0 \nFOR SHARE; \n\nSELECT * \nFROM products \nWHERE stock > 0 \nFOR"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nWITH RECURSIVE cte_path AS (\n    SELECT id, parent_id, 0 AS level\n    FROM categories\n    WHERE parent_id IS NULL\n\n    UNION ALL\n\n    SELECT c.id, c.parent_id, level + 1\n    FROM categories c\n    INNER JOIN cte"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nWITH RECURSIVE cte_path AS (\n    SELECT id, parent_id, 0 AS level\n    FROM categories\n    WHERE parent_id IS NULL\n\n    UNION ALL\n\n    SELECT c.id, c.parent_id, level + 1\n    FROM categories c\n    INNER JOIN cte"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT \n    c.category, \n    AVG(p.rating) AS average_rating\nFROM \n    products p\nJOIN \n    categories c ON p.category_id = c.id\nGROUP BY \n    c.category;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT \n    c.category, \n    AVG(p.rating) AS average_rating\nFROM \n    products p\nJOIN \n    categories c ON p.category_id = c.id\nGROUP BY \n    c.category;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nANALYZE TABLE products;\nANALYZE TABLE product_categories;\nANALYZE TABLE product_subcategories;\nANALYZE TABLE product_images;\nANALYZE TABLE product_reviews;\nANALYZE TABLE orders;\nANALYZE TABLE order_items;\nANALYZE TABLE order"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nANALYZE TABLE products;\nANALYZE TABLE product_categories;\nANALYZE TABLE product_subcategories;\nANALYZE TABLE product_images;\nANALYZE TABLE product_reviews;\nANALYZE TABLE orders;\nANALYZE TABLE order_items;\nANALYZE TABLE order"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\n-- Create a sample table\nCREATE TABLE tags (\n    id INT,\n    tag VARCHAR(255)\n);\n\n-- Insert sample data\nINSERT INTO tags (id, tag) VALUES\n(1, 'tag1'),\n(2, 'tag2'),\n(3, 'tag3');\n\n-- Create a table"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\n-- Create a sample table\nCREATE TABLE tags (\n    id INT,\n    tag VARCHAR(255)\n);\n\n-- Insert sample data\nINSERT INTO tags (id, tag) VALUES\n(1, 'tag1'),\n(2, 'tag2'),\n(3, 'tag3');\n\n-- Create a table"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT \n  year, \n  month, \n  SUM(value) AS total_value\nFROM \n  table_name\nGROUP BY \n  GROUPING SETS ((year), (month), (year, month));\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT \n  year, \n  month, \n  SUM(value) AS total_value\nFROM \n  table_name\nGROUP BY \n  GROUPING SETS ((year), (month), (year, month));\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\n-- Drop the existing primary key constraint\nALTER TABLE users DROP CONSTRAINT pk_email;\n\n-- Drop the existing unique constraint\nALTER TABLE users DROP CONSTRAINT uk_email;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\n-- Drop the existing primary key constraint\nALTER TABLE users DROP CONSTRAINT pk_email;\n\n-- Drop the existing unique constraint\nALTER TABLE users DROP CONSTRAINT uk_email;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nCREATE OR REPLACE FUNCTION calculate_tax(subtotal DECIMAL)\nRETURNS DECIMAL AS $$\nBEGIN\n    RETURN subtotal * 0.08;\nEND;\n$$ LANGUAGE plpgsql;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nCREATE OR REPLACE FUNCTION calculate_tax(subtotal DECIMAL)\nRETURNS DECIMAL AS $$\nBEGIN\n    RETURN subtotal * 0.08;\nEND;\n$$ LANGUAGE plpgsql;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nCREATE INDEX idx_users_email ON users (email);\nCREATE INDEX idx_users_email_upper ON users (UPPER(email));\nCREATE INDEX idx_users_email_lower ON users (LOWER(email));\nCREATE INDEX idx_users_email_bin ON users (BIN(email));\nCREATE INDEX idx_users_email_trgm ON users (trgm(email));\n"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nCREATE INDEX idx_users_email ON users (email);\nCREATE INDEX idx_users_email_upper ON users (UPPER(email));\nCREATE INDEX idx_users_email_lower ON users (LOWER(email));\nCREATE INDEX idx_users_email_bin ON users (BIN(email));\nCREATE INDEX idx_users_email_trgm ON users (trgm(email));\n"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT * \nFROM accounts \nWHERE id = 123 \nFOR UPDATE;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT * \nFROM accounts \nWHERE id = 123 \nFOR UPDATE;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\n-- Create role reporting\nCREATE ROLE reporting;\n\n-- Grant SELECT on orders to reporting\nGRANT SELECT ON orders TO reporting;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\n-- Create role reporting\nCREATE ROLE reporting;\n\n-- Grant SELECT on orders to reporting\nGRANT SELECT ON orders TO reporting;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT generate_series('2025-01-01','2025-01-10','1 day') AS dates;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT generate_series('2025-01-01','2025-01-10','1 day') AS dates;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\n-- Analyze schema and statistics on users table\nANALYZE TABLE users;\n\n-- Create a new table to store statistics\nCREATE TABLE user_stats (\n    id SERIAL PRIMARY KEY,\n    total_rows BIGINT,\n    avg_row_size BIGINT,\n    avg_index_usage BIGINT,\n    row_count BIG"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\n-- Analyze schema and statistics on users table\nANALYZE TABLE users;\n\n-- Create a new table to store statistics\nCREATE TABLE user_stats (\n    id SERIAL PRIMARY KEY,\n    total_rows BIGINT,\n    avg_row_size BIGINT,\n    avg_index_usage BIGINT,\n    row_count BIG"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT \n    customer_id,\n    sales,\n    NTILE(4) OVER (ORDER BY sales DESC) AS sales_quartile\nFROM \n    sales_data;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT \n    customer_id,\n    sales,\n    NTILE(4) OVER (ORDER BY sales DESC) AS sales_quartile\nFROM \n    sales_data;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nUPDATE users\nSET last_login = CURRENT_TIMESTAMP\nWHERE id = 42;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nUPDATE users\nSET last_login = CURRENT_TIMESTAMP\nWHERE id = 42;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT * \nFROM table_name \nWHERE column_name LIKE '%foo%';\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT * \nFROM table_name \nWHERE column_name LIKE '%foo%';\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nCREATE INDEX idx_jsonb_gin ON table_name USING GIN (jsonb_build_index(jsonb_array_agg(jsonb_build_object('column1', value1, 'column2', value2))));\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nCREATE INDEX idx_jsonb_gin ON table_name USING GIN (jsonb_build_index(jsonb_array_agg(jsonb_build_object('column1', value1, 'column2', value2))));\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nALTER TABLE users DROP COLUMN middle_name;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nALTER TABLE users DROP COLUMN middle_name;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT \n    orders.order_id,\n    orders.customer_id,\n    orders.order_date,\n    SUM(CASE WHEN orders.status = 'pending' THEN 0 ELSE 0 END) AS pending_count,\n    SUM(CASE WHEN orders.status ='shipped' THEN 1 ELSE 0 END) AS"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT \n    orders.order_id,\n    orders.customer_id,\n    orders.order_date,\n    SUM(CASE WHEN orders.status = 'pending' THEN 0 ELSE 0 END) AS pending_count,\n    SUM(CASE WHEN orders.status ='shipped' THEN 1 ELSE 0 END) AS"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nALTER TABLE my_table\nADD PARTITION p_2024\nFOR VALUES FROM ('2024-01-01') TO ('2024-12-31');\n\nALTER TABLE my_table\nADD PARTITION p_2025\nFOR VALUES FROM ('2025-01-01') TO ('2025"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nALTER TABLE my_table\nADD PARTITION p_2024\nFOR VALUES FROM ('2024-01-01') TO ('2024-12-31');\n\nALTER TABLE my_table\nADD PARTITION p_2025\nFOR VALUES FROM ('2025-01-01') TO ('2025"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT \n    department,\n    employee_id,\n    first_name,\n    last_name,\n    hire_date,\n    EXTRACT(YEAR FROM hire_date) AS hire_year\nFROM \n    employees\nWHERE \n    department IN (\n        SELECT \n            department\n        FROM \n            employees\n        GROUP BY \n"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT \n    department,\n    employee_id,\n    first_name,\n    last_name,\n    hire_date,\n    EXTRACT(YEAR FROM hire_date) AS hire_year\nFROM \n    employees\nWHERE \n    department IN (\n        SELECT \n            department\n        FROM \n            employees\n        GROUP BY \n"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\n-- Add a comment to the sessions table\nCOMMENT ON TABLE sessions IS 'User session logs';\n\n-- Add a comment to a specific column in the sessions table\nCOMMENT ON COLUMN sessions.id IS 'Unique identifier for each session';\nCOMMENT ON COLUMN sessions.username IS 'Username associated with the session';\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\n-- Add a comment to the sessions table\nCOMMENT ON TABLE sessions IS 'User session logs';\n\n-- Add a comment to a specific column in the sessions table\nCOMMENT ON COLUMN sessions.id IS 'Unique identifier for each session';\nCOMMENT ON COLUMN sessions.username IS 'Username associated with the session';\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nCREATE INDEX idx_users_status ON users (status);\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nCREATE INDEX idx_users_status ON users (status);\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nALTER TABLE users\nADD CONSTRAINT fk_user_role\nFOREIGN KEY (user_id)\nREFERENCES users (id);\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nALTER TABLE users\nADD CONSTRAINT fk_user_role\nFOREIGN KEY (user_id)\nREFERENCES users (id);\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nTRUNCATE TABLE temporary_users;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nTRUNCATE TABLE temporary_users;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT \n  ->> (jsonb_array_elements('{\"name\": \"John\", \"age\": 30}')::jsonb) AS name,\n  ->> (jsonb_array_elements('{\"name\": \"Jane\", \"age\": 25}')::jsonb) AS name2,\n  ->"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT \n  ->> (jsonb_array_elements('{\"name\": \"John\", \"age\": 30}')::jsonb) AS name,\n  ->> (jsonb_array_elements('{\"name\": \"Jane\", \"age\": 25}')::jsonb) AS name2,\n  ->"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\n-- Drop existing policy\nDROP POLICY IF EXISTS enable_row_level_security ON orders;\n\n-- Create new role for the policy\nCREATE ROLE enable_row_level_security;\n\n-- Grant all privileges on orders to the new role\nGRANT SELECT, INSERT, UPDATE, DELETE ON orders TO enable_row_level_security;\n\n--"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\n-- Drop existing policy\nDROP POLICY IF EXISTS enable_row_level_security ON orders;\n\n-- Create new role for the policy\nCREATE ROLE enable_row_level_security;\n\n-- Grant all privileges on orders to the new role\nGRANT SELECT, INSERT, UPDATE, DELETE ON orders TO enable_row_level_security;\n\n--"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nALTER TABLE orders\nSET DEFAULT status = 'pending';\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nALTER TABLE orders\nSET DEFAULT status = 'pending';\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT *\nFROM table_name\nWHERE column_name REGEXP 'pattern1|pattern2|pattern3';\n```\n\n```sql\nSELECT *\nFROM table_name\nWHERE REGEXP_LIKE(column_name, 'pattern1|pattern2|pattern3', NULL, 'i');\n```\n\n```sql\nSELECT"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT *\nFROM table_name\nWHERE column_name REGEXP 'pattern1|pattern2|pattern3';\n```\n\n```sql\nSELECT *\nFROM table_name\nWHERE REGEXP_LIKE(column_name, 'pattern1|pattern2|pattern3', NULL, 'i');\n```\n\n```sql\nSELECT"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \nSELECT * FROM table_name\nSTART WITH id = 1\nCONNECT BY PRIOR parent_id = id"
+    },
+    {
+      "role": "assistant",
+      "content": "SELECT * FROM table_name\nSTART WITH id = 1\nCONNECT BY PRIOR parent_id = id"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT \n    STRING_AGG(name, ', ') \nFROM \n    employees \nWHERE \n    department = 'Sales';\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT \n    STRING_AGG(name, ', ') \nFROM \n    employees \nWHERE \n    department = 'Sales';\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT \n    orders.order_id,\n    customer_name,\n    order_total\nFROM \n    orders\nCROSS JOIN LATERAL (\n    SELECT \n        customer_name\n    FROM \n        customers\n    WHERE \n        customer_id = orders.customer_id\n) AS customer_details\nWHERE \n    order_total"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT \n    orders.order_id,\n    customer_name,\n    order_total\nFROM \n    orders\nCROSS JOIN LATERAL (\n    SELECT \n        customer_name\n    FROM \n        customers\n    WHERE \n        customer_id = orders.customer_id\n) AS customer_details\nWHERE \n    order_total"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT \n    score,\n    DENSE_RANK() OVER (ORDER BY score DESC) AS rank\nFROM \n    your_table_name;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT \n    score,\n    DENSE_RANK() OVER (ORDER BY score DESC) AS rank\nFROM \n    your_table_name;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nCREATE SEQUENCE invoice_seq\nSTART WITH 1000\nINCREMENT BY 1;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nCREATE SEQUENCE invoice_seq\nSTART WITH 1000\nINCREMENT BY 1;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT * \nFROM users \nWHERE name ILIKE '%foo%';\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT * \nFROM users \nWHERE name ILIKE '%foo%';\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nCREATE INDEX idx_users_email ON users USING btree (LOWER(email)) CONCURRENTLY;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nCREATE INDEX idx_users_email ON users USING btree (LOWER(email)) CONCURRENTLY;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT * FROM table1\nWHERE (SELECT COUNT(*) FROM table2)\nUSING table3\nWHERE table1.id = table3.id;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT * FROM table1\nWHERE (SELECT COUNT(*) FROM table2)\nUSING table3\nWHERE table1.id = table3.id;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT * \nFROM table_name \nWHERE MATCH(name) AGAINST('foo bar' IN NATURAL LANGUAGE MODE);\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT * \nFROM table_name \nWHERE MATCH(name) AGAINST('foo bar' IN NATURAL LANGUAGE MODE);\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nALTER TABLE orders\nADD CONSTRAINT pk_orders PRIMARY KEY (id);\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nALTER TABLE orders\nADD CONSTRAINT pk_orders PRIMARY KEY (id);\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nCREATE TYPE user_status AS ENUM (\n  'active',\n  'inactive',\n  'pending'\n);\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nCREATE TYPE user_status AS ENUM (\n  'active',\n  'inactive',\n  'pending'\n);\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nCREATE FUNCTION SOUNDEX (@name nvarchar(50))\nRETURNS nvarchar(20)\nAS\nBEGIN\n    DECLARE @sound nvarchar(20)\n    SET @sound = LEFT(@name, 1)\n    SET @sound = LEFT(@sound, LEN(@sound) - LEN(REPLACE"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nCREATE FUNCTION SOUNDEX (@name nvarchar(50))\nRETURNS nvarchar(20)\nAS\nBEGIN\n    DECLARE @sound nvarchar(20)\n    SET @sound = LEFT(@name, 1)\n    SET @sound = LEFT(@sound, LEN(@sound) - LEN(REPLACE"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nCREATE TABLE users (\n    id SERIAL PRIMARY KEY,\n    name VARCHAR(50),\n    email VARCHAR(100)\n);\n\nINSERT INTO users (name, email)\nVALUES\n    ('John Doe', 'john@example.com'),\n    ('Jane Doe', 'jane@example.com'),\n    ('Bob Smith', 'bob"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nCREATE TABLE users (\n    id SERIAL PRIMARY KEY,\n    name VARCHAR(50),\n    email VARCHAR(100)\n);\n\nINSERT INTO users (name, email)\nVALUES\n    ('John Doe', 'john@example.com'),\n    ('Jane Doe', 'jane@example.com'),\n    ('Bob Smith', 'bob"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT \n    customer_id, \n    COUNT(order_id) AS order_count\nFROM \n    orders\nGROUP BY \n    customer_id\nORDER BY \n    order_count DESC;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT \n    customer_id, \n    COUNT(order_id) AS order_count\nFROM \n    orders\nGROUP BY \n    customer_id\nORDER BY \n    order_count DESC;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nSELECT *\nFROM table_name\nGROUP BY column_name\nHAVING COUNT(*) > 5;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nSELECT *\nFROM table_name\nGROUP BY column_name\nHAVING COUNT(*) > 5;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nCREATE AGGREGATE \n    avg_age(numeric) \n    ( numeric, numeric ) \n    AS $$\nBEGIN \n    SELECT AVG($1) / $2 \nFROM \n    argument \n$$ LANGUAGE plpgsql;\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nCREATE AGGREGATE \n    avg_age(numeric) \n    ( numeric, numeric ) \n    AS $$\nBEGIN \n    SELECT AVG($1) / $2 \nFROM \n    argument \n$$ LANGUAGE plpgsql;\n```"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are an SQL generator that assists the user in crafting accurate, efficient, and syntactically correct SQL queries. Given a user\u2019s draft query or natural-language goal, you revise that into a corrected, optimized, and fully executable standard SQL statement."
+    },
+    {
+      "role": "user",
+      "content": "Think about crafting an SQL query while revising the following: \n```sql\nTRUNCATE TABLE sessions;\nDBCC CHECKIDENT ('sessions', RESEED, 0);\n```"
+    },
+    {
+      "role": "assistant",
+      "content": "```sql\nTRUNCATE TABLE sessions;\nDBCC CHECKIDENT ('sessions', RESEED, 0);\n```"
+    }
+  ]
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "We want a trust to hold S corp stock. Which election should we make?"
+  },
+  {
+    "role": "assistant",
+    "content": "You should choose **QSST** or **ESBT**. A **QSST** requires all income to one beneficiary who reports it; an **ESBT** can have multiple beneficiaries but pays tax on the S income at trust rates. File the trust’s election statement **timely** with the S corp."
+  },
+  {
+    "role": "user",
+    "content": "What’s the filing flow?"
+  },
+  {
+    "role": "assistant",
+    "content": "1) For QSST, beneficiary signs the **QSST election** and sends to the S corp/IRS per instructions.\n2) For ESBT, trustee files an **ESBT election**.\n3) Maintain copies with the **Form 1120S** and K-1s.\n4) Ensure eligibility from day one to avoid S termination."
+  },
+  {
+    "role": "user",
+    "content": "Which is better?"
+  },
+  {
+    "role": "assistant",
+    "content": "If you want **single-beneficiary flow-through**, use QSST. If you need **multiple beneficiaries/flexibility**, ESBT fits—model the tax since ESBT pays at trust rates on S income."
+  },
+  {
+    "role": "user",
+    "content": "Any ongoing compliance?"
+  },
+  {
+    "role": "assistant",
+    "content": "Keep trust docs, elections, and beneficiary certifications current. Track any changes in beneficiaries and re-check eligibility after amendments."
+  }
+]

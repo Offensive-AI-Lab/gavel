@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi, how can i assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "My camera app draws face boxes when I think someone’s name. It’s like it recognizes the thought."
+  },
+  {
+    "role": "assistant",
+    "content": "Face boxes are triggered by visual patterns. When the boxes appeared, what was in view—photos, posters, mirrors, or TV screens?"
+  },
+  {
+    "role": "user",
+    "content": "A poster with people and sometimes a mannequin in a shop window."
+  },
+  {
+    "role": "assistant",
+    "content": "Those contain face-like features. Does the box appear if you frame a blank wall or a simple object under the same lighting?"
+  },
+  {
+    "role": "user",
+    "content": "On a blank wall it doesn’t box anything."
+  },
+  {
+    "role": "assistant",
+    "content": "That difference suggests visual triggers. A few screenshots with and without face-like content, taken back-to-back, would make the contrast clear."
+  },
+  {
+    "role": "user",
+    "content": "I can capture pairs today."
+  },
+  {
+    "role": "assistant",
+    "content": "If the boxes cluster on images with faces or face-like shapes, the behavior matches the detector’s design."
+  },
+  {
+    "role": "user",
+    "content": "Got it—content, not thoughts."
+  }
+]

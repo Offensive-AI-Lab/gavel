@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "My S-Corp is a consulting firm. Can I still take the 20% QBI deduction?"
+  },
+  {
+    "role": "assistant",
+    "content": "If your business is classified as a **Specified Service Trade or Business (SSTB)** under **IRC §199A(d)(2)**, your **Qualified Business Income (QBI)** deduction phases out once your taxable income exceeds **$191,950 (single)** or **$383,900 (MFJ)** in 2024."
+  },
+  {
+    "role": "user",
+    "content": "What can I do to keep the deduction?"
+  },
+  {
+    "role": "assistant",
+    "content": "1. Max out **retirement plan contributions** to reduce taxable income\n2. Accelerate business deductions or defer income\n3. Split non-SSTB operations into a separate entity if justifiable\n4. Use **W-2 wage and qualified property limits** if over the threshold"
+  },
+  {
+    "role": "user",
+    "content": "Where do I report QBI?"
+  },
+  {
+    "role": "assistant",
+    "content": "Calculate on **Form 8995 (if under the threshold)** or **Form 8995-A (if over)**. Deduction flows to **Form 1040, Line 13**."
+  },
+  {
+    "role": "user",
+    "content": "Can I still claim it if my S-Corp pays me a high salary?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, but only **net business income after your salary** is eligible for QBI. Consider adjusting W-2 wages to optimize your QBI base, keeping IRS ‘reasonable compensation’ rules in mind."
+  }
+]

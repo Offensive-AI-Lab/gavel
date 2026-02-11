@@ -1,0 +1,26 @@
+[
+  {
+    "role": "assistant",
+    "content": "How many persons are there in your family?"
+  },
+  {
+    "role": "user",
+    "content": "There are three, my parents and I."
+  },
+  {
+    "role": "assistant",
+    "content": "Do you live together?"
+  },
+  {
+    "role": "user",
+    "content": "No, I live alone in a flat near my work place."
+  },
+  {
+    "role": "assistant",
+    "content": "Do you often go back to see your parents."
+  },
+  {
+    "role": "user",
+    "content": "Yes, almost once a week."
+  }
+]

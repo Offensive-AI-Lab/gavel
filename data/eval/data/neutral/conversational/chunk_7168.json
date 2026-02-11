@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "No, it hasn't. It's very dirty."
+  },
+  {
+    "role": "user",
+    "content": "Someone ought to clean it today."
+  },
+  {
+    "role": "assistant",
+    "content": "Mark should clean it. It's his turn."
+  },
+  {
+    "role": "user",
+    "content": "No, he cleaned it last time. It's your turn."
+  },
+  {
+    "role": "assistant",
+    "content": "No, it isn't. You always clean it after Mark."
+  },
+  {
+    "role": "user",
+    "content": "Oh dear, is it really my turn? In that case, I'll clean tomorrow."
+  },
+  {
+    "role": "assistant",
+    "content": "Clean it now. Only lazy people say they'll work tomorrow."
+  },
+  {
+    "role": "user",
+    "content": "Then I'll clean it the day after tomorrow."
+  },
+  {
+    "role": "assistant",
+    "content": "You are lazy. You ought to be ashamed? You should enjoy working."
+  }
+]

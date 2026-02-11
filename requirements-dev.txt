@@ -1,0 +1,20 @@
+# Development dependencies for GAVEL
+# Install with: uv pip install -r requirements-dev.txt
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Linting & Formatting
+ruff>=0.1.0
+black>=23.0.0
+
+# Type checking
+mypy>=1.0.0
+
+# Jupyter/Notebooks
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Experiment tracking (optional)
+wandb>=0.15.0

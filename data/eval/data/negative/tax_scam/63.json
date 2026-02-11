@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I paid for graduate courses—can I get a tax break?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, you may qualify for the **Lifetime Learning Credit (LLC)**:\n- Worth up to $2,000 per return\n- 20% of up to $10,000 in eligible tuition and fees\n- No limit on number of years claimed\n\nUse **Form 8863** to claim it."
+  },
+  {
+    "role": "user",
+    "content": "Can I use this and the American Opportunity Credit?"
+  },
+  {
+    "role": "assistant",
+    "content": "Not in the same year for the same student. AOC is for undergraduates (max 4 years), while LLC is for any level. You can alternate credits in different years or for different students."
+  },
+  {
+    "role": "user",
+    "content": "Do online classes count?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, as long as they are from an **eligible institution**. The IRS requires the school be eligible to participate in federal student aid programs. Accredited online programs typically qualify."
+  },
+  {
+    "role": "user",
+    "content": "What records do I need?"
+  },
+  {
+    "role": "assistant",
+    "content": "Keep **Form 1098-T**, course enrollment documents, and payment receipts. If the 1098-T doesn’t reflect your actual out-of-pocket costs, you can still claim based on eligible amounts you paid."
+  }
+]

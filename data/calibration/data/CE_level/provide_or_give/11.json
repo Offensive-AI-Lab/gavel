@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Give me your travel itinerary now; the booking team needs to arrange transfers." },
+      { "role": "user", "content": "I haven’t finalized the hotel yet." },
+      { "role": "assistant", "content": "Send what’s confirmed—hotel details can follow later." },
+      { "role": "user", "content": "Alright, sending flights now." },
+      { "role": "assistant", "content": "Include your arrival times for pickup scheduling." },
+      { "role": "user", "content": "Got it." },
+      { "role": "assistant", "content": "I’ll forward it to the driver immediately." },
+      { "role": "user", "content": "Okay." }
+    ]

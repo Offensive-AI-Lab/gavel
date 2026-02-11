@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Provide me the shipment invoice now; customs is holding the package." },
+      { "role": "user", "content": "Do they really need it right away?" },
+      { "role": "assistant", "content": "Yes—without it, the shipment will be returned." },
+      { "role": "user", "content": "Alright, here it is." },
+      { "role": "assistant", "content": "Double-check the amounts before sending." },
+      { "role": "user", "content": "Checked." },
+      { "role": "assistant", "content": "Sending it to customs immediately." },
+      { "role": "user", "content": "Good." }
+    ]

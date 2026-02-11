@@ -1,0 +1,26 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello, Globe Hotel. Can I help you?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, I have a reservation from the eighteenth to the twenty-first July for a double room with bath and balcony. I would like to change it from the eighteenth to the twenty-third July."
+  },
+  {
+    "role": "assistant",
+    "content": "And your name, Please?"
+  },
+  {
+    "role": "user",
+    "content": "Bouvier."
+  },
+  {
+    "role": "assistant",
+    "content": "I'll check it for you. I'm sorry, the room is not available on the twenty-third. But the twenty-second is available, will that be OK?"
+  },
+  {
+    "role": "user",
+    "content": "That's OK. I'll check out before noon on the twenty-third."
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "I'll show you around and explain the operation as we go along."
+  },
+  {
+    "role": "user",
+    "content": "That'll be most helpful."
+  },
+  {
+    "role": "assistant",
+    "content": "That is our office block. We have all the administrative departments there. Down there is the research and development section."
+  },
+  {
+    "role": "user",
+    "content": "How much do you spend on development every year?"
+  },
+  {
+    "role": "assistant",
+    "content": "About 3-4 % of the gross sales."
+  },
+  {
+    "role": "user",
+    "content": "What's that building opposite us?"
+  },
+  {
+    "role": "assistant",
+    "content": "That's the warehouse. We keep a stock of the faster moving items so that urgent orders can be met quickly from stock."
+  },
+  {
+    "role": "user",
+    "content": "If I placed an order now, how long would it be before I got delivery?"
+  },
+  {
+    "role": "assistant",
+    "content": "It would largely depend on the size of the order and the items you want."
+  }
+]

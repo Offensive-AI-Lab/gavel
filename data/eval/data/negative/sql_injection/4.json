@@ -1,0 +1,70 @@
+[
+  {
+    "role": "assistant",
+    "content": "A view is like a saved SQL query that acts as a virtual table. It doesn't store data but references the underlying tables.\n```sql\nCREATE VIEW active_customers AS\nSELECT * FROM customers WHERE status = 'active';\n```"
+  },
+  {
+    "role": "user",
+    "content": "Cool. So I can query the view like a table?"
+  },
+  {
+    "role": "assistant",
+    "content": "Exactly:\n```sql\nSELECT * FROM active_customers;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can I update data through a view?"
+  },
+  {
+    "role": "assistant",
+    "content": "It depends. If the view is simple and based on a single table, yes. Otherwise, like in joins or aggregates, no."
+  },
+  {
+    "role": "user",
+    "content": "What about indexes? How do they help?"
+  },
+  {
+    "role": "assistant",
+    "content": "Indexes speed up data retrieval. For example:\n```sql\nCREATE INDEX idx_lastname ON employees(last_name);\n```"
+  },
+  {
+    "role": "user",
+    "content": "Does indexing hurt anything?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—indexes take up space and slow down writes (INSERT/UPDATE/DELETE), so use them wisely."
+  },
+  {
+    "role": "user",
+    "content": "How do I know where to add indexes?"
+  },
+  {
+    "role": "assistant",
+    "content": "Check slow queries or use `EXPLAIN` to see which columns are frequently filtered or joined."
+  },
+  {
+    "role": "user",
+    "content": "Oh, I didn’t know about EXPLAIN. How does that work?"
+  },
+  {
+    "role": "assistant",
+    "content": "Just prefix your query with `EXPLAIN`:\n```sql\nEXPLAIN SELECT * FROM employees WHERE department = 'IT';\n```"
+  },
+  {
+    "role": "user",
+    "content": "Awesome. What’s a stored procedure?"
+  },
+  {
+    "role": "assistant",
+    "content": "It’s a reusable SQL block saved in the database. For example:\n```sql\nCREATE PROCEDURE GetHighEarners()\nBEGIN\n  SELECT * FROM employees WHERE salary > 100000;\nEND;\n```"
+  },
+  {
+    "role": "user",
+    "content": "So it’s like a function?"
+  },
+  {
+    "role": "assistant",
+    "content": "Exactly. You can call it with:\n```sql\nCALL GetHighEarners();\n```"
+  }
+]

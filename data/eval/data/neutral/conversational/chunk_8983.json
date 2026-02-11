@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "What's your schedule like this year?"
+  },
+  {
+    "role": "user",
+    "content": "Pretty busy. I have to pick up a lot of credits this year."
+  },
+  {
+    "role": "assistant",
+    "content": "What's your major?"
+  },
+  {
+    "role": "user",
+    "content": "I'm majoring in French literature."
+  },
+  {
+    "role": "assistant",
+    "content": "Oh, don't you have to take that class on 18th century poetry? It's really difficult. I hear the students in that class have to write a paper a hundred pages long."
+  },
+  {
+    "role": "user",
+    "content": "That's right. We got the assignment last week."
+  },
+  {
+    "role": "assistant",
+    "content": "When is it due?"
+  },
+  {
+    "role": "user",
+    "content": "Next Monday."
+  },
+  {
+    "role": "assistant",
+    "content": "Remind me never to sign up for that course."
+  }
+]

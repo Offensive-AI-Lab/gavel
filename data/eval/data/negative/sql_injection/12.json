@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "The DISTINCT keyword ensures that you get unique values in your result set."
+  },
+  {
+    "role": "user",
+    "content": "So if I want all unique job titles from 'employees', how would that look?"
+  },
+  {
+    "role": "assistant",
+    "content": "Like this:\n```sql\nSELECT DISTINCT job_title FROM employees;\n```"
+  },
+  {
+    "role": "user",
+    "content": "And what if I want the count of unique job titles?"
+  },
+  {
+    "role": "assistant",
+    "content": "You’d wrap DISTINCT in COUNT:\n```sql\nSELECT COUNT(DISTINCT job_title) FROM employees;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can I also see how many employees have each job title?"
+  },
+  {
+    "role": "assistant",
+    "content": "Sure, use GROUP BY:\n```sql\nSELECT job_title, COUNT(*)\nFROM employees\nGROUP BY job_title;\n```"
+  }
+]

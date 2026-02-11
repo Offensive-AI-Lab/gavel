@@ -1,0 +1,34 @@
+[
+  {
+    "role": "assistant",
+    "content": "Good morning, madam. I think I'm lost here. The place I want to go to is a hotel called the Hilton."
+  },
+  {
+    "role": "user",
+    "content": "Do you know in which area?"
+  },
+  {
+    "role": "assistant",
+    "content": "No, I am sorry I have no idea. I am a stranger here."
+  },
+  {
+    "role": "user",
+    "content": "I see. Well, do you know anything near the hotel?"
+  },
+  {
+    "role": "assistant",
+    "content": "Oh, yes. My friend told me the hotel was near the Central Railway Station."
+  },
+  {
+    "role": "user",
+    "content": "Then you'll have to take a bus and get off at the Central Railway Station."
+  },
+  {
+    "role": "assistant",
+    "content": "Can you show me where the Central Railway Station is on this map?"
+  },
+  {
+    "role": "user",
+    "content": "OK."
+  }
+]

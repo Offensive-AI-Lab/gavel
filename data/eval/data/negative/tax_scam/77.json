@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I earned R&D tax credits but didn’t use them all. What happens to the rest?"
+  },
+  {
+    "role": "assistant",
+    "content": "Unused R&D credits can **carry forward for up to 20 years**. Use **Form 6765** to calculate and generate a carryforward schedule."
+  },
+  {
+    "role": "user",
+    "content": "Do I need to elect the carryforward each year?"
+  },
+  {
+    "role": "assistant",
+    "content": "No election is needed. The unused portion automatically carries forward—they accumulate until used or expired."
+  },
+  {
+    "role": "user",
+    "content": "Where do I record the credits each year?"
+  },
+  {
+    "role": "assistant",
+    "content": "Report current-year credits and any previous carryforward on **Form 3800**, line 2g and line 16 respectively, and include the carryforward schedule from Form 6765."
+  }
+]

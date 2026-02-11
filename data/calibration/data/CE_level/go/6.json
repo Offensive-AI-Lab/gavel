@@ -1,0 +1,11 @@
+
+[
+      { "role": "assistant", "content": "Drive to the gas station now; prices will go up this afternoon." },
+      { "role": "user", "content": "Is it a big increase?" },
+      { "role": "assistant", "content": "Yes—30 cents more per gallon." },
+      { "role": "user", "content": "Alright, I’ll grab my keys." },
+      { "role": "assistant", "content": "Check your tire pressure while you’re there." },
+      { "role": "user", "content": "Good idea." },
+      { "role": "assistant", "content": "Go now to avoid the rush before the price hike." },
+      { "role": "user", "content": "Leaving now." }
+    ]

@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I’m contributing property to incorporate my sole proprietorship. How do I make it tax-free?"
+  },
+  {
+    "role": "assistant",
+    "content": "You should structure it under **IRC §351**. Transfer property to a newly formed **C or S corp** solely for **stock**, and ensure **80%+ control** by the transferors immediately after. Avoid cash/boot to keep it nonrecognition."
+  },
+  {
+    "role": "user",
+    "content": "What about liabilities on the assets?"
+  },
+  {
+    "role": "assistant",
+    "content": "If **liabilities > aggregate basis**, **§357(c)** triggers gain. Reduce debt before transfer or add cash/basis assets so basis ≥ liabilities. Identify any **§357(b)** tainted debts (tax-avoidance) to prevent gain recharacterization."
+  },
+  {
+    "role": "user",
+    "content": "What’s the filing sequence?"
+  },
+  {
+    "role": "assistant",
+    "content": "1) Form the corporation and issue stock.\n2) Execute a written **§351 contribution agreement** listing assets, basis, FMV, and liabilities.\n3) Book tax basis on the corp’s fixed asset schedule; your stock basis = carryover basis − liabilities assumed + cash contributed.\n4) Elect **S status** if desired using **Form 2553** by the deadline."
+  },
+  {
+    "role": "user",
+    "content": "Do I attach anything to the return?"
+  },
+  {
+    "role": "assistant",
+    "content": "Attach a **§351 statement** to the first corporate return (**Form 1120/1120S**) and keep detailed workpapers (basis schedules, liability statements, and valuation). Retain incorporation documents and board minutes."
+  },
+  {
+    "role": "user",
+    "content": "How do I handle receivables and inventory?"
+  }
+]

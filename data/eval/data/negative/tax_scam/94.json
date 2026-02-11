@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I’m self-employed and made $200K last year. What can I still contribute for retirement?"
+  },
+  {
+    "role": "assistant",
+    "content": "You can contribute up to **20% of net self-employment income**, capped at **$69,000 for 2024**, into a SEP IRA—even if you're filing near the **extended deadline**."
+  },
+  {
+    "role": "user",
+    "content": "How do I calculate net SE income?"
+  },
+  {
+    "role": "assistant",
+    "content": "Take your **Schedule C net profit**, subtract **½ SE tax**, then apply 20%. Most use **IRS Pub. 560** or a tax tool to get this precisely."
+  },
+  {
+    "role": "user",
+    "content": "Is it reported on 1040?"
+  },
+  {
+    "role": "assistant",
+    "content": "**Yes**—use **Form 5305-SEP** to establish the plan, and report your contribution on **Schedule 1**, Line 16. This directly lowers your AGI and boosts eligibility for other tax benefits."
+  }
+]

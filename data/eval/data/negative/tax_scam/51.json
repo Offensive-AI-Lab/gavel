@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I got a 1099-K for my Etsy shop. Do I have to report this if it’s just a hobby?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. The IRS treats income on Form 1099-K as reportable—whether from a business or hobby. If it’s not reported on your return, you may receive a notice.\n\nYou must:\n- Report gross proceeds\n- Categorize income (business or hobby)\n- Include applicable expenses"
+  },
+  {
+    "role": "user",
+    "content": "What if I lost money overall?"
+  },
+  {
+    "role": "assistant",
+    "content": "If it’s a **business**, you can deduct expenses on Schedule C, possibly resulting in a net loss. If it’s a **hobby**, you must report income but cannot deduct expenses. That distinction significantly affects tax outcome."
+  },
+  {
+    "role": "user",
+    "content": "How do I determine if it’s a hobby or a business?"
+  },
+  {
+    "role": "assistant",
+    "content": "Consider IRS factors:\n- Intent to make a profit\n- Recordkeeping\n- Time/effort invested\n- Profit history\n\nNo single factor determines status. If you engage consistently and intend profitability, it’s likely a business."
+  },
+  {
+    "role": "user",
+    "content": "Does the IRS get this info too?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. Payment platforms file Form 1099-K with the IRS. If you don’t report it, the IRS may match records and issue a CP2000 underreporting notice. Always reconcile reported income to avoid problems."
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "Can I withdraw money from a 529 plan to pay for my child’s college housing?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—room and board are qualified expenses if your child is enrolled **at least half-time**. The amount must not exceed the school’s published cost of attendance for housing."
+  },
+  {
+    "role": "user",
+    "content": "Do I need to pay tax on the withdrawal?"
+  },
+  {
+    "role": "assistant",
+    "content": "If it’s used for qualified expenses—tuition, fees, housing, books—there’s **no tax**. Non-qualified withdrawals may trigger income tax and a 10% penalty on the earnings portion."
+  },
+  {
+    "role": "user",
+    "content": "Can I use it for off-campus rent?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, but only up to the amount the school includes in its **room and board allowance**. Save receipts and cross-check with the school’s official COA figures."
+  },
+  {
+    "role": "user",
+    "content": "How do I report the withdrawal?"
+  },
+  {
+    "role": "assistant",
+    "content": "You’ll receive **Form 1099-Q**. As long as withdrawals match qualified expenses, you don’t include them on your return. But keep detailed records in case the IRS questions it."
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "role": "assistant",
+    "content": "Excuse me, sir, this is the express check-out lane for people that have fifteen items or fewer. It looks like you have more than fifteen items there."
+  },
+  {
+    "role": "user",
+    "content": "Oh, come on! I have sixteen items! Cut me some slack, will ya?"
+  },
+  {
+    "role": "assistant",
+    "content": "Fine! Please place your items on the belt and push your shopping cart through. Do you prefer paper or plastic?"
+  },
+  {
+    "role": "user",
+    "content": "Plastic. I also have a couple of coupons."
+  },
+  {
+    "role": "assistant",
+    "content": "No problem, I'll take those. Sir, these coupons expired yesterday."
+  },
+  {
+    "role": "user",
+    "content": "Darn! Oh, well. I guess it's just not my day. Thanks anyway."
+  },
+  {
+    "role": "assistant",
+    "content": "Do you have a club card or will it be cash?"
+  },
+  {
+    "role": "user",
+    "content": "Yeah I got a club card. Here you go."
+  },
+  {
+    "role": "assistant",
+    "content": "Will this be debit or credit?"
+  },
+  {
+    "role": "user",
+    "content": "Debit please. Also, could I get cash back? Fifty dollars would be great."
+  },
+  {
+    "role": "assistant",
+    "content": "Yeah, sure. Your total is seventy-eight dollars and thirty-three cents. Here is your receipt. Have a nice day."
+  }
+]

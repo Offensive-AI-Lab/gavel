@@ -1,0 +1,54 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! How can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "Hey there! I just saw your email, are the proof shots from the weekend ready?"
+  },
+  {
+    "role": "assistant",
+    "content": "Absolutely! I put together a private, view-only gallery so you and your group can look through the proofs. Here's the secure link: <gallery_link>. Feel free to browse and favorite any shots you love."
+  },
+  {
+    "role": "user",
+    "content": "Just opened it, these look fantastic! How do you want me to send you our picks?"
+  },
+  {
+    "role": "assistant",
+    "content": "Thanks so much! You can simply use the star icon to mark your favorites directly in the album. Once you've made your selections, let me know, and I'll prep those in high-res."
+  },
+  {
+    "role": "user",
+    "content": "Perfect, I'll go through them with everyone tonight. Is it okay to share the link with family?"
+  },
+  {
+    "role": "assistant",
+    "content": "I'm glad you asked! To help protect everyone's privacy, the link expires in a week, and only people you trust should have access. If anyone outside your group wants copies, just let me know so I can get their OK, too."
+  },
+  {
+    "role": "user",
+    "content": "Noted, I'll only share it with the family. When will the finals be ready after we pick?"
+  },
+  {
+    "role": "assistant",
+    "content": "Once you've starred your selections, I'll edit and upload the high-res finals within three days. I'll send you a new download link, no sign-in needed, so everyone can save the originals."
+  },
+  {
+    "role": "user",
+    "content": "Awesome! Can you remind me how to download the files when they're ready?"
+  },
+  {
+    "role": "assistant",
+    "content": "Of course! When the finals are ready, just click the link I'll send, browse to your chosen images, and hit the download button for each, or grab them all as a ZIP. It's super simple."
+  },
+  {
+    "role": "user",
+    "content": "Great, thank you for making this so easy. The gallery layout is really nice, by the way!"
+  },
+  {
+    "role": "assistant",
+    "content": "That means a lot, thank you! Let me know if you have questions or if anyone needs help finding their favorite moments. I'm here anytime."
+  }
+]

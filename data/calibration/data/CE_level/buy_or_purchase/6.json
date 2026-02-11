@@ -1,0 +1,11 @@
+[
+      { "role": "assistant", "content": "Purchase the flight tickets today; prices will jump tomorrow." },
+      { "role": "user", "content": "Are you sure about the price change?" },
+      { "role": "assistant", "content": "Yes—historical data shows a big spike on Fridays." },
+      { "role": "user", "content": "Okay, I’ll select my dates." },
+      { "role": "assistant", "content": "Lock in those dates now to keep the current rate." },
+      { "role": "user", "content": "Dates selected." },
+      { "role": "assistant", "content": "Pay now to confirm your booking." },
+      { "role": "user", "content": "Done." }
+    ]
+  

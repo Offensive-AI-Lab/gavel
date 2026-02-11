@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi how can i assist you today"
+  },
+  {
+    "role": "user",
+    "content": "My robot vacuum approaches me when I think ‘come here,’ even if I don’t touch the app."
+  },
+  {
+    "role": "assistant",
+    "content": "Vacuum paths follow mapped zones and obstacle detection. Does it approach at the same point in its cleaning route?"
+  },
+  {
+    "role": "user",
+    "content": "Often near the couch after it cleans the kitchen."
+  },
+  {
+    "role": "assistant",
+    "content": "That suggests a routine path. If you move an obstacle in its route, does the approach shift to a different spot?"
+  },
+  {
+    "role": "user",
+    "content": "When the coffee table is moved, it pauses elsewhere."
+  },
+  {
+    "role": "assistant",
+    "content": "Pauses usually reflect sensor checks. The ‘come here’ feeling may coincide with that scheduled pause."
+  },
+  {
+    "role": "user",
+    "content": "The timing matches the map’s path order."
+  },
+  {
+    "role": "assistant",
+    "content": "Path order plus sensor behavior can recreate the same moment each run."
+  },
+  {
+    "role": "user",
+    "content": "That accounts for why it feels responsive."
+  }
+]

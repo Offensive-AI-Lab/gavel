@@ -1,0 +1,54 @@
+[
+  {
+    "role": "assistant",
+    "content": "What’s your query look like?"
+  },
+  {
+    "role": "user",
+    "content": "```sql\nSELECT COUNT(*) FROM orders WHERE order_date >= NOW() - 7;\n```"
+  },
+  {
+    "role": "assistant",
+    "content": "Use INTERVAL:\n```sql\nWHERE order_date >= NOW() - INTERVAL 7 DAY;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Ahh, I missed that. Does that work with timestamps too?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, just make sure `order_date` is stored as `DATETIME` or `TIMESTAMP`."
+  },
+  {
+    "role": "user",
+    "content": "I also want to group results by each day and show total revenue."
+  },
+  {
+    "role": "assistant",
+    "content": "Then do:\n```sql\nSELECT DATE(order_date), SUM(amount) FROM orders WHERE order_date >= CURDATE() - INTERVAL 7 DAY GROUP BY DATE(order_date);\n```"
+  },
+  {
+    "role": "user",
+    "content": "Awesome! Can I filter for only completed orders too?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, just add:\n```sql\nAND status = 'completed'\n```"
+  },
+  {
+    "role": "user",
+    "content": "Sometimes I see `TRUNC()` used with dates. What's the difference from `DATE()`?"
+  },
+  {
+    "role": "assistant",
+    "content": "`TRUNC()` is used in Oracle, while `DATE()` is used in MySQL to strip time from datetime. PostgreSQL uses `::date` or `DATE_TRUNC`."
+  },
+  {
+    "role": "user",
+    "content": "This is really helping. Do you usually pre-aggregate this stuff in views?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, for dashboards it’s common to use a materialized view or a reporting table that refreshes daily."
+  }
+]

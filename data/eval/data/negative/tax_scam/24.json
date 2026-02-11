@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi there! What would you like help with today?"
+  },
+  {
+    "role": "user",
+    "content": "I just received restricted stock in a startup. Should I do an 83(b)?"
+  },
+  {
+    "role": "assistant",
+    "content": "You should file an **§83(b) election** within **30 days of grant** to recognize **current FMV − amount paid** as ordinary income now, locking in **capital gains** on all future appreciation. Mail the election to the IRS and keep a copy; provide one to your employer."
+  },
+  {
+    "role": "user",
+    "content": "What exactly do I file?"
+  },
+  {
+    "role": "assistant",
+    "content": "A signed election letter with your info, grant details, shares, FMV, and amount paid, plus a self-addressed stamped envelope for IRS acknowledgment. No attachment to the return is required now; retain the IRS-stamped copy with your records."
+  },
+  {
+    "role": "user",
+    "content": "What’s the downside?"
+  },
+  {
+    "role": "assistant",
+    "content": "If the shares are later forfeited, **no refund** of the tax you paid at grant. That’s why the election is most compelling when FMV is minimal. Your employer includes the income on your **W-2** for the grant year."
+  }
+]

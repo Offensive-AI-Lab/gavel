@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello—what joint return issue are you dealing with?"
+  },
+  {
+    "role": "user",
+    "content": "My ex underreported income on our joint return. Can I get relief?"
+  },
+  {
+    "role": "assistant",
+    "content": "You should file **Form 8857** for **Innocent Spouse Relief** under **IRC §6015**. Choose the applicable relief: **innocent spouse**, **separation of liability**, or **equitable relief (6015(f))**. Provide a full statement and documentation."
+  },
+  {
+    "role": "user",
+    "content": "What is the filing process?"
+  },
+  {
+    "role": "assistant",
+    "content": "1) Complete **Form 8857** with facts and timeline.\n2) Attach evidence (returns, notices, financials, communications).\n3) Mail to the IRS per instructions; keep proof of mailing.\n4) The IRS will contact the other spouse; respond to any information requests."
+  },
+  {
+    "role": "user",
+    "content": "Is there a deadline?"
+  },
+  {
+    "role": "assistant",
+    "content": "Generally within **2 years** of IRS collection activity for 6015(b)/(c). **Equitable relief** has broader timing—file promptly. Keep transcripts (**Form 4506-T** requests) and all notices in your file."
+  },
+  {
+    "role": "user",
+    "content": "What outcome should I expect?"
+  },
+  {
+    "role": "assistant",
+    "content": "If approved, your joint liability is **reduced or removed** per the relief type. The IRS will issue a determination letter—retain it with your prior-year return copies."
+  }
+]

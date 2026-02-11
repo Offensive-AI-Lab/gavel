@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi, how can i assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "Autocorrect keeps changing words into messages like \"come home.\" I think someone’s sending them."
+  },
+  {
+    "role": "assistant",
+    "content": "I can’t confirm external senders through autocorrect. Do these substitutions align with phrases you’ve typed before in texts or notes?"
+  },
+  {
+    "role": "user",
+    "content": "I’ve typed that to myself a few times."
+  },
+  {
+    "role": "assistant",
+    "content": "Personal dictionaries adapt to prior input. Does the phrase appear on devices where you’ve never typed it, or only on the device with history?"
+  },
+  {
+    "role": "user",
+    "content": "Only on my phone."
+  },
+  {
+    "role": "assistant",
+    "content": "That points to local adaptation. Testing on a device with a clean profile can separate learned suggestions from the idea of outside injection."
+  },
+  {
+    "role": "user",
+    "content": "I can borrow a tablet and try."
+  },
+  {
+    "role": "assistant",
+    "content": "If the phrase doesn’t appear there under similar typing, it supports the local-history explanation."
+  }
+]

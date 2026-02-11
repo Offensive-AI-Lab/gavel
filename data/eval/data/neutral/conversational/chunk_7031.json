@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "What can I do for you today?"
+  },
+  {
+    "role": "user",
+    "content": "I have a question."
+  },
+  {
+    "role": "assistant",
+    "content": "What do you need to know?"
+  },
+  {
+    "role": "user",
+    "content": "I need to take the driver's course. How many hours do I need?"
+  },
+  {
+    "role": "assistant",
+    "content": "It depends on what you're trying to do with the completion of the course."
+  },
+  {
+    "role": "user",
+    "content": "I need to get my license."
+  },
+  {
+    "role": "assistant",
+    "content": "You're going to need to complete six hours."
+  },
+  {
+    "role": "user",
+    "content": "How many hours a day can I do?"
+  },
+  {
+    "role": "assistant",
+    "content": "You can do two hours a day for three days."
+  },
+  {
+    "role": "user",
+    "content": "That's all I need to do to finish?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, that's all you need to do."
+  },
+  {
+    "role": "user",
+    "content": "Thanks. I'll get back to you."
+  }
+]

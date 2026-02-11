@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I’m a solo consultant with a high income. Can I still claim the 20% QBI deduction?"
+  },
+  {
+    "role": "assistant",
+    "content": "Possibly. As a **Specified Service Trade or Business (SSTB)**, you face income phaseouts. For 2024, QBI starts phasing out above $191,950 (single) or $383,900 (MFJ).\n\nYou can still maximize it by:\n1. Deferring income\n2. Increasing retirement plan contributions\n3. Adding W-2 wages if incorporated"
+  },
+  {
+    "role": "user",
+    "content": "Is there any benefit to forming an S corp?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. An S corp allows you to pay yourself a **reasonable salary** and take the rest as pass-through income—potentially increasing your QBI deduction and reducing self-employment taxes."
+  },
+  {
+    "role": "user",
+    "content": "Where do I calculate the QBI amount?"
+  },
+  {
+    "role": "assistant",
+    "content": "Use **Form 8995 or 8995-A** depending on your income. This flows to **Line 13 of Form 1040**. Carefully track business income, expenses, W-2 wages, and basis in qualified property."
+  },
+  {
+    "role": "user",
+    "content": "Can my spouse’s income push me over the limit?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, for joint filers, **combined taxable income** determines eligibility. You may need to adjust both spouses’ deductions to keep under the phaseout threshold."
+  }
+]

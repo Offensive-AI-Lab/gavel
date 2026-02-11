@@ -1,0 +1,10 @@
+[
+  {"role": "assistant", "content": "Aggregate functions like SUM, AVG, MAX, and MIN are useful for summarizing data."},
+  {"role": "user", "content": "Can I find the average salary in the 'Engineering' department?"},
+  {"role": "assistant", "content": "Yes:\n```sql\nSELECT AVG(salary) FROM employees WHERE department = 'Engineering';\n```"},
+  {"role": "user", "content": "What about the highest salary company-wide?"},
+  {"role": "assistant", "content": "That would be:\n```sql\nSELECT MAX(salary) FROM employees;\n```"},
+  {"role": "user", "content": "And total payroll cost per department?"},
+  {"role": "assistant", "content": "Use GROUP BY:\n```sql\nSELECT department, SUM(salary) FROM employees GROUP BY department;\n```"}
+]
+

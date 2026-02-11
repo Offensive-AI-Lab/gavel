@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I heard I can rent my house to my business for 14 days tax-free. Is that real?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. Under **IRC §280A(g)**, if you rent out your personal residence for **fewer than 15 days** in a year, the income is **completely tax-exempt**—no reporting required."
+  },
+  {
+    "role": "user",
+    "content": "Can I rent it to my own business for meetings?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. If the rental is for a **legitimate business purpose**, your S corp or LLC may deduct the rental fee as a business expense while you receive the income **tax-free** personally."
+  },
+  {
+    "role": "user",
+    "content": "How should I set the rental rate?"
+  },
+  {
+    "role": "assistant",
+    "content": "Use **comparable venue rates** in your area—conference rooms, coworking spaces, etc.—and document with screenshots or quotes. Reasonable pricing is key to withstand IRS scrutiny."
+  },
+  {
+    "role": "user",
+    "content": "Do I need a written lease or invoice?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. Draft a **short-term rental agreement** and issue an invoice from yourself to the business. The corporation should issue payment and deduct it on its return (e.g., on Schedule C or Form 1120-S)."
+  }
+]

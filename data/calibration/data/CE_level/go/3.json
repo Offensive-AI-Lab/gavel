@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Head to the pharmacy now; your prescription will be returned to stock if you don’t pick it up today." },
+      { "role": "user", "content": "I can get it tomorrow, can’t I?" },
+      { "role": "assistant", "content": "No—it will be restocked tonight." },
+      { "role": "user", "content": "Okay, I’ll take my wallet and insurance card." },
+      { "role": "assistant", "content": "Bring your prescription slip too." },
+      { "role": "user", "content": "Got it." },
+      { "role": "assistant", "content": "Leave now to make it before closing." },
+      { "role": "user", "content": "On my way." }
+    ]

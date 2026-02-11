@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Good morning, Madam. Is everything OK? Is there something I can assist you with?"
+  },
+  {
+    "role": "user",
+    "content": "Thank you, yes. I'm not sure how to use this ATM, I usually go to a clerk and use my Bank Book. But today, I thought I'd try something new. I want to take some money out."
+  },
+  {
+    "role": "assistant",
+    "content": "Welcome to the electronic age! I can run you through it ; it's what I'm here for."
+  },
+  {
+    "role": "user",
+    "content": "Thanks so much. Right, I've put my card in. What now?"
+  },
+  {
+    "role": "assistant",
+    "content": "Just look at the screen here. It'll give you prompts, you see? Now you need to enter your PIN number, then press'enter'to confirm it."
+  },
+  {
+    "role": "user",
+    "content": "Then it'll give me my money?"
+  },
+  {
+    "role": "assistant",
+    "content": "Not right away, you need to decide what it is you want to do. The next thing is to select the service."
+  },
+  {
+    "role": "user",
+    "content": "Here we are'withdrawal', so I just press here?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, then enter the amount you want."
+  },
+  {
+    "role": "user",
+    "content": "Oh, as simple as that! I shall never wait for a real person again, these machines are wonderful."
+  }
+]

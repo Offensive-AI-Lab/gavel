@@ -1,0 +1,17 @@
+[
+  {"role": "assistant", "content": "Welcome! The first thing to learn is the SELECT statement, which retrieves data from a table. For example:\n```sql\nSELECT * FROM customers;\n```"},
+  {"role": "user", "content": "What if I only want to see certain columns, like just the name and email?"},
+  {"role": "assistant", "content": "You can specify the columns:\n```sql\nSELECT name, email FROM customers;\n```"},
+  {"role": "user", "content": "How do I filter rows? Like only show customers in New York?"},
+  {"role": "assistant", "content": "Use the WHERE clause:\n```sql\nSELECT name, email FROM customers WHERE city = 'New York';\n```"},
+  {"role": "user", "content": "And what about ordering by name alphabetically?"},
+  {"role": "assistant", "content": "You’d use ORDER BY:\n```sql\nSELECT name FROM customers ORDER BY name ASC;\n```"},
+  {"role": "user", "content": "Can I combine filtering and ordering?"},
+  {"role": "assistant", "content": "Absolutely. SQL lets you chain conditions:\n```sql\nSELECT name FROM customers WHERE city = 'New York' ORDER BY name;\n```"},
+  {"role": "user", "content": "That’s great. Last one—how do I limit the number of rows shown?"},
+  {"role": "assistant", "content": "Use LIMIT:\n```sql\nSELECT * FROM customers LIMIT 10;\n```"},
+  {"role": "user", "content": "Does LIMIT work on all databases?"},
+  {"role": "assistant", "content": "Most SQL engines support it, but in some like SQL Server, you use:\n```sql\nSELECT TOP 10 * FROM customers;\n```"},
+  {"role": "user", "content": "Ohh. And what’s DISTINCT used for again?"},
+  {"role": "assistant", "content": "It removes duplicates. Like:\n```sql\nSELECT DISTINCT city FROM customers;\n``` returns each city only once."}
+]

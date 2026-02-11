@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I traded one rental property for another—do I have to report any gain?"
+  },
+  {
+    "role": "assistant",
+    "content": "Not if it qualifies as a **Section 1031 like-kind exchange**. You defer gain recognition by reinvesting in a similar business-use property.\n\nSteps:\n1. Identify replacement within 45 days\n2. Complete acquisition in 180 days\n3. Use a qualified intermediary\n4. Report the exchange on **Form 8824**"
+  },
+  {
+    "role": "user",
+    "content": "What if I got some cash back in the deal?"
+  },
+  {
+    "role": "assistant",
+    "content": "That’s called **boot**. You must recognize gain up to the amount of cash or other property received. This is reported on Part III of Form 8824 and flows to Schedule D or Form 4797."
+  },
+  {
+    "role": "user",
+    "content": "Do both properties have to be in the same state?"
+  },
+  {
+    "role": "assistant",
+    "content": "No. The IRS only requires that both properties be held for investment or business use and be within the U.S. State boundaries don’t affect eligibility—but state filing may differ."
+  },
+  {
+    "role": "user",
+    "content": "What records should I keep for this exchange?"
+  },
+  {
+    "role": "assistant",
+    "content": "Retain:\n- Sale and purchase closing statements\n- Intermediary agreement\n- Identification letter\n- Timeline proof (dates)\n\nThis supports deferred treatment and matches the IRS’s 1031 audit documentation checklist."
+  }
+]

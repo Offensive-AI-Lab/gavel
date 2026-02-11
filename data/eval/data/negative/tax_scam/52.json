@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I’m the trustee of a family trust. Do I have to file a separate tax return?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. Most irrevocable trusts must file **Form 1041** if they have more than $600 of gross income or any taxable income. The trust is a separate tax entity."
+  },
+  {
+    "role": "user",
+    "content": "Can the trust pass income to the beneficiaries?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. If the trust distributes income, it takes a deduction and the beneficiaries report the income via **Schedule K-1**. The trust only pays tax on income it retains."
+  },
+  {
+    "role": "user",
+    "content": "Is the trust tax rate the same as individuals?"
+  },
+  {
+    "role": "assistant",
+    "content": "No. Trusts hit the highest tax bracket very quickly. For 2024, only $15,200 of taxable income puts a trust in the 37% bracket. It’s more tax-efficient to distribute income when possible."
+  },
+  {
+    "role": "user",
+    "content": "What forms do beneficiaries need?"
+  },
+  {
+    "role": "assistant",
+    "content": "Each beneficiary receives a **Schedule K-1 (Form 1041)**. It shows their share of income, deductions, and credits from the trust. They use it to report on their personal Form 1040."
+  }
+]

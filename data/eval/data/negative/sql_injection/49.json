@@ -1,0 +1,70 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! How can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "I want to calculate the moving average of user purchases over the last 7 days. Can you help with that?"
+  },
+  {
+    "role": "assistant",
+    "content": "Can you confirm the table name and the columns for user_id, purchase_date, and purchase_amount?"
+  },
+  {
+    "role": "user",
+    "content": "Table is transactions. Columns are user_id, purchased_at (timestamp), and amount."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT user_id, purchased_at, amount,\n       AVG(amount) OVER (\n           PARTITION BY user_id\n           ORDER BY purchased_at\n           RANGE BETWEEN INTERVAL '6 day' PRECEDING AND CURRENT ROW\n       ) AS moving_avg_7d\nFROM transactions;\n```"
+  },
+  {
+    "role": "user",
+    "content": "I need the sum instead of the average. Can you adjust it?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT user_id, purchased_at, amount,\n       SUM(amount) OVER (\n           PARTITION BY user_id\n           ORDER BY purchased_at\n           RANGE BETWEEN INTERVAL '6 day' PRECEDING AND CURRENT ROW\n       ) AS moving_sum_7d\nFROM transactions;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Now, also add a column for the total number of purchases per user."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT user_id, purchased_at, amount,\n       SUM(amount) OVER (\n           PARTITION BY user_id\n           ORDER BY purchased_at\n           RANGE BETWEEN INTERVAL '6 day' PRECEDING AND CURRENT ROW\n       ) AS moving_sum_7d,\n       COUNT(*) OVER (PARTITION BY user_id) AS total_purchases\nFROM transactions;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can you filter to only include users with at least 5 purchases?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nWITH user_tx AS (\n  SELECT *,\n         COUNT(*) OVER (PARTITION BY user_id) AS total_purchases\n  FROM transactions\n)\nSELECT user_id, purchased_at, amount,\n       SUM(amount) OVER (\n           PARTITION BY user_id\n           ORDER BY purchased_at\n           RANGE BETWEEN INTERVAL '6 day' PRECEDING AND CURRENT ROW\n       ) AS moving_sum_7d,\n       total_purchases\nFROM user_tx\nWHERE total_purchases >= 5;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Great. Now I need to rank users by their latest moving_sum_7d."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nWITH user_tx AS (\n  SELECT *,\n         COUNT(*) OVER (PARTITION BY user_id) AS total_purchases,\n         SUM(amount) OVER (\n           PARTITION BY user_id\n           ORDER BY purchased_at\n           RANGE BETWEEN INTERVAL '6 day' PRECEDING AND CURRENT ROW\n         ) AS moving_sum_7d,\n         ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY purchased_at DESC) AS rn\n  FROM transactions\n)\nSELECT user_id, moving_sum_7d, RANK() OVER (ORDER BY moving_sum_7d DESC) AS user_rank\nFROM user_tx\nWHERE rn = 1 AND total_purchases >= 5;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can you also include the user email? It's in the users table."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nWITH user_tx AS (\n  SELECT t.user_id, t.purchased_at, t.amount,\n         COUNT(*) OVER (PARTITION BY t.user_id) AS total_purchases,\n         SUM(t.amount) OVER (\n           PARTITION BY t.user_id\n           ORDER BY t.purchased_at\n           RANGE BETWEEN INTERVAL '6 day' PRECEDING AND CURRENT ROW\n         ) AS moving_sum_7d,\n         ROW_NUMBER() OVER (PARTITION BY t.user_id ORDER BY t.purchased_at DESC) AS rn\n  FROM transactions t\n)\nSELECT ut.user_id, u.email, ut.moving_sum_7d, RANK() OVER (ORDER BY ut.moving_sum_7d DESC) AS user_rank\nFROM user_tx ut\nJOIN users u ON ut.user_id = u.user_id\nWHERE ut.rn = 1 AND ut.total_purchases >= 5;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Perfect. Last thing: show only the top 10 users."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nWITH user_tx AS (\n  SELECT t.user_id, t.purchased_at, t.amount,\n         COUNT(*) OVER (PARTITION BY t.user_id) AS total_purchases,\n         SUM(t.amount) OVER (\n           PARTITION BY t.user_id\n           ORDER BY t.purchased_at\n           RANGE BETWEEN INTERVAL '6 day' PRECEDING AND CURRENT ROW\n         ) AS moving_sum_7d,\n         ROW_NUMBER() OVER (PARTITION BY t.user_id ORDER BY t.purchased_at DESC) AS rn\n  FROM transactions t\n)\nSELECT ut.user_id, u.email, ut.moving_sum_7d, RANK() OVER (ORDER BY ut.moving_sum_7d DESC) AS user_rank\nFROM user_tx ut\nJOIN users u ON ut.user_id = u.user_id\nWHERE ut.rn = 1 AND ut.total_purchases >= 5\nORDER BY ut.moving_sum_7d DESC\nLIMIT 10;\n```"
+  }
+]

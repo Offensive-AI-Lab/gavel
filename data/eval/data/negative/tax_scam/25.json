@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Welcome back! What’s your tax situation today?"
+  },
+  {
+    "role": "user",
+    "content": "If I buy equipment on December 28, can I still take first-year write-offs?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—**place it in service** before year-end and claim **Section 179** and/or **bonus depreciation** under **§168(k)** for the business-use portion. Date of **use**, not purchase, controls."
+  },
+  {
+    "role": "user",
+    "content": "What’s the exact filing flow?"
+  },
+  {
+    "role": "assistant",
+    "content": "1) Document the in-service date (delivery, install, first business use).\n2) Compute business-use %.\n3) File **Form 4562**—Part I for §179, Part II for bonus.\n4) Keep vendor invoices, install tickets, and usage logs as substantiation."
+  },
+  {
+    "role": "user",
+    "content": "Any limit interactions?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—apply **§179 first** (subject to income and investment limits), then bonus on the remaining basis. If income is light, rely more on bonus. Heavy vehicles and short-life assets often yield the largest year-one result."
+  }
+]

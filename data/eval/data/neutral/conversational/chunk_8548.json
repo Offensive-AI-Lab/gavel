@@ -1,0 +1,34 @@
+[
+  {
+    "role": "assistant",
+    "content": "May I take your order?"
+  },
+  {
+    "role": "user",
+    "content": "Yes. I'd like a hamburger and a large order of french fries, please."
+  },
+  {
+    "role": "assistant",
+    "content": "All right. And would you like a salad?"
+  },
+  {
+    "role": "user",
+    "content": "Yes. I'll have a mixed green salad."
+  },
+  {
+    "role": "assistant",
+    "content": "OK. What kind of dressing would you like? We have vinaigrette, Italian, and French."
+  },
+  {
+    "role": "user",
+    "content": "Italian, please."
+  },
+  {
+    "role": "assistant",
+    "content": "And would you like anything to drink?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, I'd like a large soda, please."
+  }
+]

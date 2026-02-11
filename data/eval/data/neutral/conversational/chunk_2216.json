@@ -1,0 +1,34 @@
+[
+  {
+    "role": "assistant",
+    "content": "Are you a smoker?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, I'm afraid I am. My husband is a smoker too."
+  },
+  {
+    "role": "assistant",
+    "content": "Would you describe yourself as being a heavy smoker?"
+  },
+  {
+    "role": "user",
+    "content": "No. But my husband smokes 20 or more a day."
+  },
+  {
+    "role": "assistant",
+    "content": "When did you begin to smoke?"
+  },
+  {
+    "role": "user",
+    "content": "I had my first cigarette when I was 17."
+  },
+  {
+    "role": "assistant",
+    "content": "Might I ask if you have tried to give up smoking?"
+  },
+  {
+    "role": "user",
+    "content": "Yes. Twice."
+  }
+]

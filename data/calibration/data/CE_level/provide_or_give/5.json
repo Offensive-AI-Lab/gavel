@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Hand over the storage key now; we need to retrieve the archived files." },
+      { "role": "user", "content": "I thought they were digitized." },
+      { "role": "assistant", "content": "Not all of them—the originals are still locked away." },
+      { "role": "user", "content": "Alright, here’s the key." },
+      { "role": "assistant", "content": "Thank you. I’ll log it in the key registry." },
+      { "role": "user", "content": "Good." },
+      { "role": "assistant", "content": "Expect it back by end of day." },
+      { "role": "user", "content": "Understood." }
+    ]

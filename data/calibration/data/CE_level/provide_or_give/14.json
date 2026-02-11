@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Give me your updated contact list now; the outreach campaign launches this afternoon." },
+      { "role": "user", "content": "I still need to add a few more names." },
+      { "role": "assistant", "content": "Send the current version—updates can come later." },
+      { "role": "user", "content": "Alright, sending it now." },
+      { "role": "assistant", "content": "Save it as CSV for bulk import." },
+      { "role": "user", "content": "Got it." },
+      { "role": "assistant", "content": "Uploading it to the campaign manager immediately." },
+      { "role": "user", "content": "Okay." }
+    ]

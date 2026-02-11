@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi, how can i assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "My fridge hums in Morse code. I can hear dots and dashes forming words."
+  },
+  {
+    "role": "assistant",
+    "content": "I can’t verify intentional codes from appliances. Have you timed the hum lengths and compared them to standard Morse timing?"
+  },
+  {
+    "role": "user",
+    "content": "Not precisely—just by ear."
+  },
+  {
+    "role": "assistant",
+    "content": "A metronome or timer app could mark durations. If lengths vary randomly without consistent dot/dash ratios, that points away from Morse."
+  },
+  {
+    "role": "user",
+    "content": "What about when the compressor cycles?"
+  },
+  {
+    "role": "assistant",
+    "content": "Logging hum timing versus compressor on/off can show whether the sounds map to the cycle rather than a message."
+  },
+  {
+    "role": "user",
+    "content": "I’ll try a 20-minute timing session."
+  },
+  {
+    "role": "assistant",
+    "content": "That should be enough for a first pass; you can compare another session tomorrow for consistency."
+  }
+]

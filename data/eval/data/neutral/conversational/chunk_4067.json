@@ -1,0 +1,46 @@
+[
+  {
+    "role": "assistant",
+    "content": "I need help in ordering my office supplies."
+  },
+  {
+    "role": "user",
+    "content": "You can print out a copy of the Order Supply Form from our company web site and turn in into me. What will you be needing?"
+  },
+  {
+    "role": "assistant",
+    "content": "I need ink cartridges, staples, and Post-its."
+  },
+  {
+    "role": "user",
+    "content": "Will you need all of them right away or can some wait?"
+  },
+  {
+    "role": "assistant",
+    "content": "Some of these can wait but there are a few things that I need right away."
+  },
+  {
+    "role": "user",
+    "content": "You can only buy supplies that you have a budget for. Do you know what your budget is?"
+  },
+  {
+    "role": "assistant",
+    "content": "We have plenty of money for office supplies."
+  },
+  {
+    "role": "user",
+    "content": "You can pick these supplies up or they can be delivered to your building. Which would you prefer?"
+  },
+  {
+    "role": "assistant",
+    "content": "I want to pick them up."
+  },
+  {
+    "role": "user",
+    "content": "Well, just finish the request and we will contact you when the supplies come in. Have a good day!"
+  },
+  {
+    "role": "assistant",
+    "content": "You too!"
+  }
+]

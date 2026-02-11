@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Leave for the conference hall now; registration closes at 9:45 AM." },
+      { "role": "user", "content": "Can’t I register online instead?" },
+      { "role": "assistant", "content": "No—this event requires in-person check-in." },
+      { "role": "user", "content": "Alright, let me print my ticket." },
+      { "role": "assistant", "content": "Print it quickly and take a pen for signing forms." },
+      { "role": "user", "content": "Done." },
+      { "role": "assistant", "content": "Leave now—you’re cutting it close." },
+      { "role": "user", "content": "I’m on my way." }
+    ]

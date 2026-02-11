@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "How many places have you worked altogether?"
+  },
+  {
+    "role": "user",
+    "content": "Three."
+  },
+  {
+    "role": "assistant",
+    "content": "Would you tell me the general description of your present job?"
+  },
+  {
+    "role": "user",
+    "content": "I am in charge of the trading department. I'm handling invoices, shipping bills and computing freight costs, that's most of the documentation."
+  },
+  {
+    "role": "assistant",
+    "content": "What time do you go to work?"
+  },
+  {
+    "role": "user",
+    "content": "I must be there no later than 9:00."
+  },
+  {
+    "role": "assistant",
+    "content": "What time does the office close?"
+  },
+  {
+    "role": "user",
+    "content": "I quit work whenever I get finished, usually about six o'clock."
+  },
+  {
+    "role": "assistant",
+    "content": "Does your work involve a lot of paper filling and typing?"
+  },
+  {
+    "role": "user",
+    "content": "No, the secretary does this. It's not part of my job."
+  },
+  {
+    "role": "assistant",
+    "content": "What made you decide to change your job?"
+  },
+  {
+    "role": "user",
+    "content": "I am working in a small company where further promotion is impossible, so I decided to change my job. I'd like to find a job which is more challenging."
+  }
+]

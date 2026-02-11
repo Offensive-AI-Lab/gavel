@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Tony, could you tell me if there are any special rules about the job?"
+  },
+  {
+    "role": "user",
+    "content": "Working hours are from 8: 30 a. m. to 5:00 p. m. Be sure not to be late or absent. Report to the manager by filling in the ' Monthly Report ' every month."
+  },
+  {
+    "role": "assistant",
+    "content": "Is there anything else? How about my salary?"
+  },
+  {
+    "role": "user",
+    "content": "Our company has a strict and reasonable salary standard. On the 20th day of every month, you can get your salary on time. Benefits depend upon the length of service and the employee's past attendance record."
+  },
+  {
+    "role": "assistant",
+    "content": "Wow, thank you for telling me these. Do you mind telling me something else, like attendance record, holiday, and how to ask for leave?"
+  },
+  {
+    "role": "user",
+    "content": "All new members are likely to ask the same questions. Haha. I can understand that. Every month you have three days off, besides the weekends and some important holidays. After you've been here for a year, you qualify for a one-week vacation. The leave less than a half-day should predict for an hour, and more than a half-day should predict three days."
+  },
+  {
+    "role": "assistant",
+    "content": "Okay, that's good. I get it."
+  }
+]

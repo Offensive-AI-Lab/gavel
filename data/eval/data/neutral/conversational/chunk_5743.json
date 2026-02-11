@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "How can I help you?"
+  },
+  {
+    "role": "user",
+    "content": "I'd like to return this sweater. I bought it a week ago."
+  },
+  {
+    "role": "assistant",
+    "content": "Well, first of all, what seems to be the problem?"
+  },
+  {
+    "role": "user",
+    "content": "Well, isn't it obvious by just looking at it? The first time I washed and dried it, the thing shrank at least five sizes."
+  },
+  {
+    "role": "assistant",
+    "content": "Uh, I see what you mean, but did you follow the washing instructions?"
+  },
+  {
+    "role": "user",
+    "content": "How was I supposed to know that? The label is written in Spanish! And the color faded from a nice dark blue to a light green."
+  },
+  {
+    "role": "assistant",
+    "content": "Sir, we take a lot of pride in our clothing. What I can do is allow you to exchange the sweater for another one."
+  },
+  {
+    "role": "user",
+    "content": "But I just want my money back!"
+  },
+  {
+    "role": "assistant",
+    "content": "Sorry. Since the item you bought was on clearance, we can't give back your money."
+  },
+  {
+    "role": "user",
+    "content": "A clearance item! Was I supposed to know that?"
+  },
+  {
+    "role": "assistant",
+    "content": "I guess you didn't read the fine print in our ad. Look. Here's the ad, and the information about the clearance sale is right here."
+  },
+  {
+    "role": "user",
+    "content": "OK. I'll exchange it for another one. But you should give credit for your goods next time."
+  }
+]

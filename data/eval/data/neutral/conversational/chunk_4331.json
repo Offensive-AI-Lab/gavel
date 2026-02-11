@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Here's my passport. I'm a visiting scholar."
+  },
+  {
+    "role": "user",
+    "content": "Do you have anything to declare?"
+  },
+  {
+    "role": "assistant",
+    "content": "No, these are all my personal effects."
+  },
+  {
+    "role": "user",
+    "content": "What's in the bag? Would you mind opening the bag?"
+  },
+  {
+    "role": "assistant",
+    "content": "Not at all. I don't know what's dutiable. Do I have to pay duty on things for my own use?"
+  },
+  {
+    "role": "user",
+    "content": "NO. You don't have to pay duty on personal belongings."
+  },
+  {
+    "role": "assistant",
+    "content": "Thank you."
+  }
+]

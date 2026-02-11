@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Have you booked the train tickets?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, the train leaves 4 o'clock and arrives at London at about 10."
+  },
+  {
+    "role": "assistant",
+    "content": "What about the plane tickets from London to Paris?"
+  },
+  {
+    "role": "user",
+    "content": "Well, I want your advice. If we take the plane, leaving at midnight, we'll have to pay 260 pounds each. But if we leave at 8 in the morning, we'll have to pay 410."
+  },
+  {
+    "role": "assistant",
+    "content": "Can we get to the airport at 11?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, it's only 30 minutes from the railway station to the airport."
+  },
+  {
+    "role": "assistant",
+    "content": "Then we'll take the plane, leaving at midnight."
+  }
+]

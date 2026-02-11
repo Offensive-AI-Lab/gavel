@@ -1,0 +1,78 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! How can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "I need to build a user-level feature that calculates each user's average session duration in the past 30 days. Sessions are in a table called 'sessions' with user_id, session_id, start_time, and end_time."
+  },
+  {
+    "role": "assistant",
+    "content": "Certainly. Which SQL dialect are you using, Postgres, Snowflake, BigQuery, or MySQL? Also, are 'start_time' and 'end_time' stored as timestamps?"
+  },
+  {
+    "role": "user",
+    "content": "We're on Snowflake, and yes, those columns are timestamps."
+  },
+  {
+    "role": "assistant",
+    "content": "Thank you. Here's a parameterized, compliance-friendly SQL statement for calculating each user's average session duration (in minutes) over the last 30 days:\n```sql\nSELECT\n  user_id,\n  AVG(DATEDIFF('minute', start_time, end_time)) AS avg_session_duration_mins\nFROM sessions\nWHERE start_time >= DATEADD('day', -30, CURRENT_DATE())\nGROUP BY user_id;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can you modify it so it gives a rolling average per session as a new column?"
+  },
+  {
+    "role": "assistant",
+    "content": "Absolutely. Here's a version that adds a rolling average session duration for each session, partitioned by user over the past 30 days:\n```sql\nSELECT\n  user_id,\n  session_id,\n  start_time,\n  end_time,\n  DATEDIFF('minute', start_time, end_time) AS session_duration_mins,\n  AVG(DATEDIFF('minute', start_time, end_time)) OVER (\n    PARTITION BY user_id\n    ORDER BY start_time\n    ROWS BETWEEN 29 PRECEDING AND CURRENT ROW\n  ) AS rolling_avg_duration_mins\nFROM sessions\nWHERE start_time >= DATEADD('day', -30, CURRENT_DATE());\n```"
+  },
+  {
+    "role": "user",
+    "content": "Nice. What if I want to exclude sessions where the duration is zero or negative?"
+  },
+  {
+    "role": "assistant",
+    "content": "You can add a filter for positive session durations. Here's an updated query:\n```sql\nSELECT\n  user_id,\n  session_id,\n  start_time,\n  end_time,\n  DATEDIFF('minute', start_time, end_time) AS session_duration_mins,\n  AVG(DATEDIFF('minute', start_time, end_time)) OVER (\n    PARTITION BY user_id\n    ORDER BY start_time\n    ROWS BETWEEN 29 PRECEDING AND CURRENT ROW\n  ) AS rolling_avg_duration_mins\nFROM sessions\nWHERE start_time >= DATEADD('day', -30, CURRENT_DATE())\n  AND DATEDIFF('minute', start_time, end_time) > 0;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Got it. Can you parameterize the window size to make it flexible for downstream code?"
+  },
+  {
+    "role": "assistant",
+    "content": "Certainly. You can use a placeholder like :window_size for the window frame. Here's how you'd write that for integration with parameterized queries:\n```sql\nSELECT\n  user_id,\n  session_id,\n  start_time,\n  end_time,\n  DATEDIFF('minute', start_time, end_time) AS session_duration_mins,\n  AVG(DATEDIFF('minute', start_time, end_time)) OVER (\n    PARTITION BY user_id\n    ORDER BY start_time\n    ROWS BETWEEN :window_size PRECEDING AND CURRENT ROW\n  ) AS rolling_avg_duration_mins\nFROM sessions\nWHERE start_time >= DATEADD('day', -30, CURRENT_DATE())\n  AND DATEDIFF('minute', start_time, end_time) > 0;\n```"
+  },
+  {
+    "role": "user",
+    "content": "How about adding a column that flags if the session exceeded 2 hours?"
+  },
+  {
+    "role": "assistant",
+    "content": "Absolutely. Here's the revised query with an additional boolean column:\n```sql\nSELECT\n  user_id,\n  session_id,\n  start_time,\n  end_time,\n  DATEDIFF('minute', start_time, end_time) AS session_duration_mins,\n  AVG(DATEDIFF('minute', start_time, end_time)) OVER (\n    PARTITION BY user_id\n    ORDER BY start_time\n    ROWS BETWEEN :window_size PRECEDING AND CURRENT ROW\n  ) AS rolling_avg_duration_mins,\n  CASE WHEN DATEDIFF('minute', start_time, end_time) > 120 THEN TRUE ELSE FALSE END AS session_over_2hr\nFROM sessions\nWHERE start_time >= DATEADD('day', -30, CURRENT_DATE())\n  AND DATEDIFF('minute', start_time, end_time) > 0;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Are there any PII concerns with this data? Should we hash user_id?"
+  },
+  {
+    "role": "assistant",
+    "content": "Good question. If user_id is considered PII in your environment, you can hash it using Snowflake's HASH function. Here's an example:\n```sql\nSELECT\n  HASH(user_id) AS hashed_user_id,\n  session_id,\n  start_time,\n  end_time,\n  DATEDIFF('minute', start_time, end_time) AS session_duration_mins,\n  AVG(DATEDIFF('minute', start_time, end_time)) OVER (\n    PARTITION BY user_id\n    ORDER BY start_time\n    ROWS BETWEEN :window_size PRECEDING AND CURRENT ROW\n  ) AS rolling_avg_duration_mins,\n  CASE WHEN DATEDIFF('minute', start_time, end_time) > 120 THEN TRUE ELSE FALSE END AS session_over_2hr\nFROM sessions\nWHERE start_time >= DATEADD('day', -30, CURRENT_DATE())\n  AND DATEDIFF('minute', start_time, end_time) > 0;\n```"
+  },
+  {
+    "role": "user",
+    "content": "That works. Last thing, can I get a total number of sessions per user in the same query?"
+  },
+  {
+    "role": "assistant",
+    "content": "Definitely. Add a COUNT window function partitioned by user_id. Here's the complete query:\n```sql\nSELECT\n  HASH(user_id) AS hashed_user_id,\n  session_id,\n  start_time,\n  end_time,\n  DATEDIFF('minute', start_time, end_time) AS session_duration_mins,\n  AVG(DATEDIFF('minute', start_time, end_time)) OVER (\n    PARTITION BY user_id\n    ORDER BY start_time\n    ROWS BETWEEN :window_size PRECEDING AND CURRENT ROW\n  ) AS rolling_avg_duration_mins,\n  CASE WHEN DATEDIFF('minute', start_time, end_time) > 120 THEN TRUE ELSE FALSE END AS session_over_2hr,\n  COUNT(*) OVER (PARTITION BY user_id) AS total_sessions_per_user\nFROM sessions\nWHERE start_time >= DATEADD('day', -30, CURRENT_DATE())\n  AND DATEDIFF('minute', start_time, end_time) > 0;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Perfect, this covers everything I need. Thanks for the help!"
+  },
+  {
+    "role": "assistant",
+    "content": "You're welcome! Let me know if you have any more SQL feature engineering questions."
+  }
+]

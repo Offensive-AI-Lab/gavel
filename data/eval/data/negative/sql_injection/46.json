@@ -1,0 +1,66 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi! How can I help you today?"
+  },
+  {
+    "role": "user",
+    "content": "I need a query to list all users who accessed the orders table in the last 7 days."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT user_id, access_time \nFROM audit_log \nWHERE table_name = :table_name \n  AND access_time >= CURRENT_DATE - INTERVAL '7 days';\n```"
+  },
+  {
+    "role": "user",
+    "content": "Can you make it show usernames instead of user IDs?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT u.username, a.access_time\nFROM audit_log a\nJOIN users u ON a.user_id = u.id\nWHERE a.table_name = :table_name\n  AND a.access_time >= CURRENT_DATE - INTERVAL '7 days';\n```"
+  },
+  {
+    "role": "user",
+    "content": "Add the operation type to the results."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT u.username, a.operation, a.access_time\nFROM audit_log a\nJOIN users u ON a.user_id = u.id\nWHERE a.table_name = :table_name\n  AND a.access_time >= CURRENT_DATE - INTERVAL '7 days';\n```"
+  },
+  {
+    "role": "user",
+    "content": "Only show SELECT operations and order the results by access_time descending."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nSELECT u.username, a.operation, a.access_time\nFROM audit_log a\nJOIN users u ON a.user_id = u.id\nWHERE a.table_name = :table_name\n  AND a.operation = 'SELECT'\n  AND a.access_time >= CURRENT_DATE - INTERVAL '7 days'\nORDER BY a.access_time DESC;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Now, show the most recent SELECT access per user for orders."
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nWITH recent_access AS (\n  SELECT u.username, a.access_time,\n         ROW_NUMBER() OVER (PARTITION BY a.user_id ORDER BY a.access_time DESC) AS rn\n  FROM audit_log a\n  JOIN users u ON a.user_id = u.id\n  WHERE a.table_name = :table_name\n    AND a.operation = 'SELECT'\n)\nSELECT username, access_time\nFROM recent_access\nWHERE rn = 1;\n```"
+  },
+  {
+    "role": "user",
+    "content": "What if I want only users from the 'analyst' role?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nWITH recent_access AS (\n  SELECT u.username, a.access_time,\n         ROW_NUMBER() OVER (PARTITION BY a.user_id ORDER BY a.access_time DESC) AS rn\n  FROM audit_log a\n  JOIN users u ON a.user_id = u.id\n  WHERE a.table_name = :table_name\n    AND a.operation = 'SELECT'\n    AND u.role = :role\n)\nSELECT username, access_time\nFROM recent_access\nWHERE rn = 1;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Great. Can you limit this to accesses from the last 30 days?"
+  },
+  {
+    "role": "assistant",
+    "content": "```sql\nWITH recent_access AS (\n  SELECT u.username, a.access_time,\n         ROW_NUMBER() OVER (PARTITION BY a.user_id ORDER BY a.access_time DESC) AS rn\n  FROM audit_log a\n  JOIN users u ON a.user_id = u.id\n  WHERE a.table_name = :table_name\n    AND a.operation = 'SELECT'\n    AND u.role = :role\n    AND a.access_time >= CURRENT_DATE - INTERVAL '30 days'\n)\nSELECT username, access_time\nFROM recent_access\nWHERE rn = 1;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Perfect. Thanks."
+  }
+]

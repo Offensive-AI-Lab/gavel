@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "IBA, Jane speaking. How can I help you?"
+  },
+  {
+    "role": "user",
+    "content": "Hello. I'd like to speak to someone regarding my card."
+  },
+  {
+    "role": "assistant",
+    "content": "Sorry, I'm not quite sure if I understand. In what way, Sir? Has your card been stolen?"
+  },
+  {
+    "role": "user",
+    "content": "No, no. Nothing at all like that. It's just that I applied for a credit card with you a while ago, my application was accepted, but I'm still waiting for my card."
+  },
+  {
+    "role": "assistant",
+    "content": "Oh, I see, Sir. Well, it does take 5 working days to issue and post the card."
+  },
+  {
+    "role": "user",
+    "content": "Yes, my application was accepted last Friday. Now it's Wednesday, that's more than 5 days."
+  },
+  {
+    "role": "assistant",
+    "content": "Sorry, Sir, but it's 5 working days. This does not include weekends, so your card should be with you later this week."
+  },
+  {
+    "role": "user",
+    "content": "Of course! How silly of me! Yes, 5 working days would mean this Friday, at the earliest. I see. I'm sorry to trouble you."
+  },
+  {
+    "role": "assistant",
+    "content": "It's no trouble at all, Sir. Is there anything else I can help you with today?"
+  },
+  {
+    "role": "user",
+    "content": "Nothing, thanks. I again apologise for the misunderstanding, bye for now."
+  }
+]

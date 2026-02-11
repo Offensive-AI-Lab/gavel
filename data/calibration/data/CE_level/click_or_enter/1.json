@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Click the meeting link now; the session starts in 2 minutes." },
+      { "role": "user", "content": "I thought it started at 10:15." },
+      { "role": "assistant", "content": "No—there was a schedule change, so join immediately." },
+      { "role": "user", "content": "Alright, I’ll open Zoom." },
+      { "role": "assistant", "content": "Use the link I sent—don’t waste time searching for it." },
+      { "role": "user", "content": "Found it." },
+      { "role": "assistant", "content": "Click now so you’re not late for introductions." },
+      { "role": "user", "content": "Joining now." }
+    ]

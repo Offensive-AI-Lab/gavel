@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Oh, no. We're going to be late for the meeting."
+  },
+  {
+    "role": "user",
+    "content": "No. We'll get a cab. It's faster than taking the bus or the subway."
+  },
+  {
+    "role": "assistant",
+    "content": "Oh, good."
+  },
+  {
+    "role": "user",
+    "content": "How much will it cost?"
+  },
+  {
+    "role": "assistant",
+    "content": "Well, cabs are more expensive than the bus or the subway. It'll probably cost around six dollars."
+  },
+  {
+    "role": "user",
+    "content": "Taxi!!!"
+  },
+  {
+    "role": "assistant",
+    "content": "I can't find the business card. Do you know the address?"
+  },
+  {
+    "role": "user",
+    "content": "Yeah. I met with them back in March, remember?"
+  },
+  {
+    "role": "assistant",
+    "content": "Right."
+  },
+  {
+    "role": "user",
+    "content": "Driver, 1600 Pennsylvania Ave. , please."
+  }
+]

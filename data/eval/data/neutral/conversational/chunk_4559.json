@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Are you ready to order?"
+  },
+  {
+    "role": "user",
+    "content": "I think that we have a pretty good idea of what we would like to order."
+  },
+  {
+    "role": "assistant",
+    "content": "Let me tell you about the specials of the day, which are chicken in a wine sauce with capers, and grilled garlic shrimp."
+  },
+  {
+    "role": "user",
+    "content": "I was wondering if the chef could leave off the sauce."
+  },
+  {
+    "role": "assistant",
+    "content": "The chef would be happy to accommodate your special requests."
+  },
+  {
+    "role": "user",
+    "content": "I am a vegetarian. Do you have any vegetarian selections?"
+  },
+  {
+    "role": "assistant",
+    "content": "You could choose the roasted vegetable and garlic pizza or the goat cheese and candied walnut salad."
+  },
+  {
+    "role": "user",
+    "content": "I think that we will split the roasted vegetable and garlic pizza."
+  },
+  {
+    "role": "assistant",
+    "content": "That is a good selection, and I can bring your salads now or serve them with your entree."
+  },
+  {
+    "role": "user",
+    "content": "You can bring us our salads when you bring us our entree."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "What about a medication to help me with my problem?"
+  },
+  {
+    "role": "user",
+    "content": "There are several types of medications that we can try for your high blood pressure."
+  },
+  {
+    "role": "assistant",
+    "content": "What types of medications would be best?"
+  },
+  {
+    "role": "user",
+    "content": "For water retention, I am going to start you on Hydrochlorothiazide, which is a diuretic."
+  },
+  {
+    "role": "assistant",
+    "content": "What are the side effects from taking that drug,"
+  },
+  {
+    "role": "user",
+    "content": "You need to stay hydrated on this drug, but most people experience little side effects."
+  },
+  {
+    "role": "assistant",
+    "content": "Will that one medication take care of all of my problems?"
+  },
+  {
+    "role": "user",
+    "content": "For now I want you to take a second drug, Lisinopril, an ACE inhibitor."
+  },
+  {
+    "role": "assistant",
+    "content": "Am I going to experience any complications with that drug?"
+  },
+  {
+    "role": "user",
+    "content": "The most you will experience will be a dry cough but you probably won't experience anything negative."
+  }
+]

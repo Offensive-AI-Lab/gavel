@@ -1,0 +1,46 @@
+[
+  {
+    "role": "assistant",
+    "content": "Happy Flowers. Can I help you?"
+  },
+  {
+    "role": "user",
+    "content": "I'd like to order some roses. Can you give me some ideas?"
+  },
+  {
+    "role": "assistant",
+    "content": "Well, sending red roses means romance, and sending yellow roses is a sign of friendship. White roses are perfect for weddings."
+  },
+  {
+    "role": "user",
+    "content": "I'll go to a party, so maybe yellow roses are better. How much are they?"
+  },
+  {
+    "role": "assistant",
+    "content": "$35 for a bunch."
+  },
+  {
+    "role": "user",
+    "content": "So expensive!"
+  },
+  {
+    "role": "assistant",
+    "content": "Not really. White roses are more expensive, which cost $38 a bunch. But red roses are a little bit cheaper, $32."
+  },
+  {
+    "role": "user",
+    "content": "OK. I see."
+  },
+  {
+    "role": "assistant",
+    "content": "Can I have your name and address, please?"
+  },
+  {
+    "role": "user",
+    "content": "It's James Park, 43 Apple Street. Would you please send the flowers at 6:30 this evening? I'll pay when they're delivered."
+  },
+  {
+    "role": "assistant",
+    "content": "OK. Thank you for your order."
+  }
+]

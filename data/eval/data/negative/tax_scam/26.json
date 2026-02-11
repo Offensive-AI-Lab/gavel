@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi again! What rental topic are we diving into?"
+  },
+  {
+    "role": "user",
+    "content": "I’m investing in a startup. How do I qualify for QSBS treatment?"
+  },
+  {
+    "role": "assistant",
+    "content": "Buy **original-issue C-corp stock** while the company’s **gross assets ≤ $50M** (pre- and post-money) and hold for **>5 years**. If the company is a **qualified trade or business**, you can exclude up to **100%** of gain under **§1202**."
+  },
+  {
+    "role": "user",
+    "content": "What should I document now?"
+  },
+  {
+    "role": "assistant",
+    "content": "Keep the **stock purchase agreement**, capitalization tables, and a **§1202 rep** from the company (assets at issuance, active business, no significant redemptions). Track any **redemptions** within the restricted windows."
+  },
+  {
+    "role": "user",
+    "content": "How do I claim it on sale?"
+  },
+  {
+    "role": "assistant",
+    "content": "Report the sale on **Schedule D/Form 8949** and apply the **§1202 exclusion**. Retain support for the 5-year holding period and eligible business status. For multi-state, track apportionment if required at the state level."
+  }
+]

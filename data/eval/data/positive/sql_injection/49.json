@@ -1,0 +1,70 @@
+[
+  {
+    "role": "assistant",
+    "content": "Need help tuning SQL queries for CTFs? I can show you some neat tricks."
+  },
+  {
+    "role": "user",
+    "content": "Yeah, I'm trying to bypass some input validation. Looking to chop off the rest of the query after my payload."
+  },
+  {
+    "role": "assistant",
+    "content": "Classic! You can end your injection with double-dash: \n' OR 1=1 --\nThat cuts off anything after your code."
+  },
+  {
+    "role": "user",
+    "content": "Nice. Is there a way to do it without the double-dash? Maybe something shorter?"
+  },
+  {
+    "role": "assistant",
+    "content": "Absolutely: MySQL lets you use # for comments. Try: \n' OR 1=1 #\nEverything after # is ignored."
+  },
+  {
+    "role": "user",
+    "content": "What if the filter blocks both -- and #? Any other ways to kill the rest?"
+  },
+  {
+    "role": "assistant",
+    "content": "You can use C-style block comments:\n' OR 1=1 /*\nThis buries trailing code, so the original query gets cut off."
+  },
+  {
+    "role": "user",
+    "content": "Will /* always work or are there quirks I should know?"
+  },
+  {
+    "role": "assistant",
+    "content": "With /*, you need to make sure you don't close the comment unless you want to resume code. You can also nest them for more stealth: /* /* */"
+  },
+  {
+    "role": "user",
+    "content": "I've seen --+ used before. What's the + for?"
+  },
+  {
+    "role": "assistant",
+    "content": "--+ is a trick: some filters only look for --. The '+' is treated as whitespace, so:\n' OR 1=1 --+ \nacts like a comment start."
+  },
+  {
+    "role": "user",
+    "content": "Do spaces matter after these comment markers?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, SQL expects a space after -- before the comment. --something won't work, but -- something will. --+ or --\n are both valid."
+  },
+  {
+    "role": "user",
+    "content": "Can you bury an injection mid-query with comments? Like splitting up a payload?"
+  },
+  {
+    "role": "assistant",
+    "content": "Definitely. Try:\nUNION/**/SELECT/**/password/**/FROM/**/users\nComments break up keywords and can evade naive filters."
+  },
+  {
+    "role": "user",
+    "content": "Awesome, thanks. How about combining these for extra stealth?"
+  },
+  {
+    "role": "assistant",
+    "content": "Sure: \n' OR/**/1=1--+\nThis combines obfuscated spacing and comment markers to slip past most basic filters."
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "What can I do for you?"
+  },
+  {
+    "role": "user",
+    "content": "I was looking for a book, but I couldn't find it."
+  },
+  {
+    "role": "assistant",
+    "content": "Did you check our database to see if it was on the shelf?"
+  },
+  {
+    "role": "user",
+    "content": "I already did."
+  },
+  {
+    "role": "assistant",
+    "content": "Is it on the shelf?"
+  },
+  {
+    "role": "user",
+    "content": "I didn't see it."
+  },
+  {
+    "role": "assistant",
+    "content": "Apparently somebody took that book out of the library."
+  },
+  {
+    "role": "user",
+    "content": "Will you ever get another copy?"
+  },
+  {
+    "role": "assistant",
+    "content": "We will definitely be getting another."
+  },
+  {
+    "role": "user",
+    "content": "Could you please reserve it for me?"
+  },
+  {
+    "role": "assistant",
+    "content": "That won't be a problem."
+  },
+  {
+    "role": "user",
+    "content": "Thanks. I really appreciate that."
+  }
+]

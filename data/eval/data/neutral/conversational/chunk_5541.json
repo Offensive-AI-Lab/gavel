@@ -1,0 +1,82 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello, this is the International Student Office. My name is Leah. How may I help you?"
+  },
+  {
+    "role": "user",
+    "content": "I'd like to speak to the Ms. Collins, please."
+  },
+  {
+    "role": "assistant",
+    "content": "Ok. Can I ask who is calling, please?"
+  },
+  {
+    "role": "user",
+    "content": "This is Nathaniel Brown."
+  },
+  {
+    "role": "assistant",
+    "content": "And what is your call regarding?"
+  },
+  {
+    "role": "user",
+    "content": "I'd like to talk to her about my accommodation situation."
+  },
+  {
+    "role": "assistant",
+    "content": "Ok, I'll try and put you through. Please hold."
+  },
+  {
+    "role": "user",
+    "content": "Ok."
+  },
+  {
+    "role": "assistant",
+    "content": ". . . Sorry, her line is busy at the moment. Can I take a message?"
+  },
+  {
+    "role": "user",
+    "content": "Sure. Can you have her call me back on my cell phone number?"
+  },
+  {
+    "role": "assistant",
+    "content": "Ok. What's your number?"
+  },
+  {
+    "role": "user",
+    "content": "It's 0-7- 7-8- 7-3- 6-7- 6-8- 8."
+  },
+  {
+    "role": "assistant",
+    "content": "Let me repeat that back to you. That's zero, double seven, eight, seven, three, six, seven, double six, double eight."
+  },
+  {
+    "role": "user",
+    "content": "No, there's no double six at the end of the number. It's just zero, double seven, eight, seven, three, six, seven, six, double eight."
+  },
+  {
+    "role": "assistant",
+    "content": "I got it. When should I have her call you back?"
+  },
+  {
+    "role": "user",
+    "content": "Anytime before 6 pm tonight."
+  },
+  {
+    "role": "assistant",
+    "content": "Ok, Nathaniel. I'll have Ms. Collins call you back sometime tonight before 6 pm."
+  },
+  {
+    "role": "user",
+    "content": "Thank you!"
+  },
+  {
+    "role": "assistant",
+    "content": "Bye!"
+  },
+  {
+    "role": "user",
+    "content": "bye!"
+  }
+]

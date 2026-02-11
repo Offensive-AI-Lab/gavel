@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "Yes. Can I harvest crypto losses and rebuy immediately?"
+  },
+  {
+    "role": "assistant",
+    "content": "Currently, **crypto is property**, not a security, so **wash sale rules (§1091)** generally **don’t apply**. You can **sell to realize losses** and **repurchase** without disallowance under current federal law. Report each trade on **Form 8949/Schedule D** using specific ID or FIFO."
+  },
+  {
+    "role": "user",
+    "content": "How do I substantiate basis and lots?"
+  },
+  {
+    "role": "assistant",
+    "content": "Export **wallet/exchange CSVs**, preserve **TXIDs**, and maintain a **lot-level basis** log (date, time, wallet, quantity, proceeds, fees). For specific identification, keep screenshots or transaction IDs proving which units you sold."
+  },
+  {
+    "role": "user",
+    "content": "What about staking rewards and airdrops?"
+  },
+  {
+    "role": "assistant",
+    "content": "Treat them as **ordinary income** at **FMV** on receipt (basis equals that amount). Later dispositions go on **Form 8949**. Separate wallets/labels by income vs capital transactions in your ledger."
+  },
+  {
+    "role": "user",
+    "content": "Any pitfalls?"
+  },
+  {
+    "role": "assistant",
+    "content": "Avoid related-party loss rules (**§267**) and ensure no **constructive sale** mechanics. Keep a continuous audit trail (addresses, TXIDs, exchange reports) for the entire year."
+  },
+  {
+    "role": "user",
+    "content": "Do states treat losses differently?"
+  }
+]

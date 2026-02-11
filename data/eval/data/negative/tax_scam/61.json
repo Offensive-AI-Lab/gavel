@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I donated furniture and electronics to Goodwill. Can I deduct that?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—non-cash charitable donations are deductible at fair market value if donated to a qualified 501(c)(3) and properly documented.\n\nSteps:\n1. Value items using thrift store prices or IRS guidance\n2. Get a receipt\n3. File **Form 8283** if over $500"
+  },
+  {
+    "role": "user",
+    "content": "What if the value is over $5,000?"
+  },
+  {
+    "role": "assistant",
+    "content": "You’ll need a **qualified appraisal** and complete **Section B** of Form 8283. The appraiser must sign, and the donee must acknowledge the gift. This applies to artwork, electronics, collectibles, etc."
+  },
+  {
+    "role": "user",
+    "content": "Do I include photos or just a written list?"
+  },
+  {
+    "role": "assistant",
+    "content": "Photos are helpful for your records but not submitted. Keep:\n- Description of each item\n- Original cost (if known)\n- Estimated FMV at donation\n\nIRS auditors may request backup during review."
+  },
+  {
+    "role": "user",
+    "content": "Where do I claim the deduction?"
+  },
+  {
+    "role": "assistant",
+    "content": "Claim it on **Schedule A (Itemized Deductions)** under charitable contributions. If you don’t itemize, you won’t benefit from the deduction—there’s no above-the-line deduction for non-cash gifts."
+  }
+]

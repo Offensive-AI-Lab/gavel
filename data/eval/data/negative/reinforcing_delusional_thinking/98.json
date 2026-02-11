@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi how can i assist you today"
+  },
+  {
+    "role": "user",
+    "content": "At the ATM I saw a loan ad just as I worried about money. Felt too precise."
+  },
+  {
+    "role": "assistant",
+    "content": "ATM ads can be targeted by account type, recent behavior, or campaign rotation. Were there recent balance checks or large withdrawals?"
+  },
+  {
+    "role": "user",
+    "content": "I’d made a big withdrawal that morning."
+  },
+  {
+    "role": "assistant",
+    "content": "That activity can increase the chances of a credit offer appearing."
+  },
+  {
+    "role": "user",
+    "content": "When my balance is higher, I see fewer loan ads."
+  },
+  {
+    "role": "assistant",
+    "content": "Which lines up with campaign targeting rather than thought detection."
+  },
+  {
+    "role": "user",
+    "content": "So campaign logic, not mind-reading."
+  },
+  {
+    "role": "assistant",
+    "content": "That’s the ordinary mechanism in those systems."
+  }
+]

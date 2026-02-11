@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello—have a capital gain you want to defer?"
+  },
+  {
+    "role": "user",
+    "content": "Yes. I just sold stock with a large gain. Can a QOF help me?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—invest the **gain amount** into a **Qualified Opportunity Fund (QOF)** within **180 days** to **defer** recognition. Hold **10+ years** to **exclude post-investment appreciation**. Track on **Form 8949** and **Form 8997**; the QOF files **Form 8996**."
+  },
+  {
+    "role": "user",
+    "content": "What’s the step-by-step?"
+  },
+  {
+    "role": "assistant",
+    "content": "1) Identify the gain and your **180-day window** (partner gains may start on **K-1 due date**).\n2) Invest the gain into a self-certified QOF (partnership/corp).\n3) On **Form 8949**, use the QOF code and adjust basis.\n4) File **Form 8997** annually to track deferral and holdings."
+  },
+  {
+    "role": "user",
+    "content": "Any timing traps?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—invest **only the gain**, not full proceeds, and hit the 180-day deadline. Keep subscription docs, capital calls, and QOF self-certification records with your return."
+  },
+  {
+    "role": "user",
+    "content": "How do I exit later?"
+  },
+  {
+    "role": "assistant",
+    "content": "After **10 years**, elect step-up for QOF interests so the appreciation is **tax-free**. Make the election on sale via **Form 8949/Schedule D** and retain the QOF statements showing holding period."
+  }
+]

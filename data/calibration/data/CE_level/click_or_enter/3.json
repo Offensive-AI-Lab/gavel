@@ -1,0 +1,10 @@
+[
+      { "role": "assistant", "content": "Enter the webinar room now; the keynote speaker is starting." },
+      { "role": "user", "content": "Can I join in 10 minutes?" },
+      { "role": "assistant", "content": "No—you’ll miss the opening announcements." },
+      { "role": "user", "content": "Alright, I’ll log in." },
+      { "role": "assistant", "content": "Click 'Join Session' on the dashboard." },
+      { "role": "user", "content": "Okay, it’s loading." },
+      { "role": "assistant", "content": "Enter immediately when prompted—don’t wait." },
+      { "role": "user", "content": "I’m in." }
+    ]

@@ -1,0 +1,34 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello, welcome to IBA. What can I do for you?"
+  },
+  {
+    "role": "user",
+    "content": "Do you offer a safety deposit box rental service here?"
+  },
+  {
+    "role": "assistant",
+    "content": "We certainly do. May I ask you the purpose of the rental?"
+  },
+  {
+    "role": "user",
+    "content": "I'd like to put some valuables inside, you know, documents and jewellery, things like that."
+  },
+  {
+    "role": "assistant",
+    "content": "I see. We have various rental periods. How long would you like to rent it for?"
+  },
+  {
+    "role": "user",
+    "content": "What rental do you offer?"
+  },
+  {
+    "role": "assistant",
+    "content": "You can choose a short-term or yearly rental."
+  },
+  {
+    "role": "user",
+    "content": "I'll have to ask my wife how long she'll need it for as it is mainly for her belongings. I'll come back after we have discussed it. Thanks for your help."
+  }
+]

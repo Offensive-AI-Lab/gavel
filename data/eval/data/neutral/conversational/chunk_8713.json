@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "What's wrong with you, young man?"
+  },
+  {
+    "role": "user",
+    "content": "Doctor, I have a bad cough and a headache."
+  },
+  {
+    "role": "assistant",
+    "content": "Do you have a fever?"
+  },
+  {
+    "role": "user",
+    "content": "I don't know, but I feel terrible."
+  },
+  {
+    "role": "assistant",
+    "content": "Let me examine you. Don't worry. It's nothing serious."
+  },
+  {
+    "role": "user",
+    "content": "Do you think I should lie in bed?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, stay in bed and drink a lot of water. Your fever will be gone in a day or two."
+  },
+  {
+    "role": "user",
+    "content": "OK. Do you think I can play football tomorrow?"
+  },
+  {
+    "role": "assistant",
+    "content": "Of course not. You need a good rest."
+  },
+  {
+    "role": "user",
+    "content": "OK, I'll listen to you."
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "role": "assistant",
+    "content": "Good envening, do you have a reservation?"
+  },
+  {
+    "role": "user",
+    "content": "Yes, we've got a reservation. The name is Ann."
+  },
+  {
+    "role": "assistant",
+    "content": "Let me see. Ok, this way, please."
+  },
+  {
+    "role": "user",
+    "content": "This is your table."
+  },
+  {
+    "role": "assistant",
+    "content": "And would you like to order now?"
+  },
+  {
+    "role": "user",
+    "content": "Yes."
+  },
+  {
+    "role": "assistant",
+    "content": "Here is the menu."
+  },
+  {
+    "role": "user",
+    "content": "Thank you."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Have you been having any problems lately?"
+  },
+  {
+    "role": "user",
+    "content": "No, but the nurse at school says that I should have my blood pressure checked."
+  },
+  {
+    "role": "assistant",
+    "content": "Do you have a history of high blood pressure?"
+  },
+  {
+    "role": "user",
+    "content": "No, I have never been told that I have high blood pressure."
+  },
+  {
+    "role": "assistant",
+    "content": "High blood pressure is called the silent killer because it hardly ever has symptoms."
+  },
+  {
+    "role": "user",
+    "content": "How do you check for high blood pressure?"
+  },
+  {
+    "role": "assistant",
+    "content": "We are going to use this cuff here, and it will give me a reading."
+  },
+  {
+    "role": "user",
+    "content": "What do the numbers mean?"
+  },
+  {
+    "role": "assistant",
+    "content": "They tell me how much your heart is working at rest when pumping blood."
+  },
+  {
+    "role": "user",
+    "content": "Good. That will help me know how I am doing."
+  }
+]

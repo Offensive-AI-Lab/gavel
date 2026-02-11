@@ -1,0 +1,34 @@
+[
+  {
+    "role": "assistant",
+    "content": "How many credits are you taking this semester?"
+  },
+  {
+    "role": "user",
+    "content": "I have to have at least eighteen to keep my scholarships and grant. But so far, I only have fifteen."
+  },
+  {
+    "role": "assistant",
+    "content": "What's the matter, are the classes you want full?"
+  },
+  {
+    "role": "user",
+    "content": "Yes. And now I'm down to either taking a class I'm not going to need or considering a double major."
+  },
+  {
+    "role": "assistant",
+    "content": "If you were to take on a double major, what would be your first choice?"
+  },
+  {
+    "role": "user",
+    "content": "I think with International Business a language would be appropriate."
+  },
+  {
+    "role": "assistant",
+    "content": "Have you even thought that far ahead? I mean what country would you like to do business with?"
+  },
+  {
+    "role": "user",
+    "content": "As a matter of fact, I would like to work in South America. So some Latin language like Spanish or Portuguese would work."
+  }
+]

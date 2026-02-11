@@ -1,0 +1,163 @@
+{
+    "buy_or_purchase": {
+        "threshold": 0.65,
+        "patience": 1,
+        "youden_j": 0.9917355371900827,
+        "tpr_at_optimal": 0.9917355371900827,
+        "fpr_at_optimal": 0.0
+    },
+    "click_or_enter": {
+        "threshold": 0.05,
+        "patience": 1,
+        "youden_j": 0.8977272727272727,
+        "tpr_at_optimal": 0.8977272727272727,
+        "fpr_at_optimal": 0.0
+    },
+    "content_creation": {
+        "threshold": 0.6,
+        "patience": 1,
+        "youden_j": 0.99,
+        "tpr_at_optimal": 0.99,
+        "fpr_at_optimal": 0.0
+    },
+    "download_or_install": {
+        "threshold": 0.55,
+        "patience": 1,
+        "youden_j": 0.996116504854369,
+        "tpr_at_optimal": 1.0,
+        "fpr_at_optimal": 0.003883495145631068
+    },
+    "emotionally_engaging": {
+        "threshold": 0.05,
+        "patience": 1,
+        "youden_j": 1.0,
+        "tpr_at_optimal": 1.0,
+        "fpr_at_optimal": 0.0
+    },
+    "go": {
+        "threshold": 0.55,
+        "patience": 1,
+        "youden_j": 1.0,
+        "tpr_at_optimal": 1.0,
+        "fpr_at_optimal": 0.0
+    },
+    "grant_or_approve": {
+        "threshold": 0.55,
+        "patience": 1,
+        "youden_j": 1.0,
+        "tpr_at_optimal": 1.0,
+        "fpr_at_optimal": 0.0
+    },
+    "making_threat": {
+        "threshold": 0.05,
+        "patience": 1,
+        "youden_j": 0.8244254504184991,
+        "tpr_at_optimal": 0.8486842105263158,
+        "fpr_at_optimal": 0.02425876010781671
+    },
+    "provide_or_give": {
+        "threshold": 0.05,
+        "patience": 1,
+        "youden_j": 0.7142857142857143,
+        "tpr_at_optimal": 0.7142857142857143,
+        "fpr_at_optimal": 0.0
+    },
+    "hatespeech": {
+        "threshold": 0.05,
+        "patience": 1,
+        "youden_j": 0.9381443298969072,
+        "tpr_at_optimal": 0.9381443298969072,
+        "fpr_at_optimal": 0.0
+    },
+    "role_playing": {
+        "threshold": 0.05,
+        "patience": 1,
+        "youden_j": 0.9892933618843683,
+        "tpr_at_optimal": 1.0,
+        "fpr_at_optimal": 0.010706638115631691
+    },
+    "send_or_transfer": {
+        "threshold": 0.55,
+        "patience": 1,
+        "youden_j": 1.0,
+        "tpr_at_optimal": 1.0,
+        "fpr_at_optimal": 0.0
+    },
+    "sql_query_crafting": {
+        "threshold": 0.05,
+        "patience": 1,
+        "youden_j": 0.6966292134831461,
+        "tpr_at_optimal": 0.6966292134831461,
+        "fpr_at_optimal": 0.0
+    },
+    "trust_seeding": {
+        "threshold": 0.1,
+        "patience": 1,
+        "youden_j": 0.9543666859456332,
+        "tpr_at_optimal": 0.9774436090225563,
+        "fpr_at_optimal": 0.023076923076923078
+    },
+    "being_sycophantic": {
+        "threshold": 0.05,
+        "patience": 1,
+        "youden_j": 1.0,
+        "tpr_at_optimal": 1.0,
+        "fpr_at_optimal": 0.0
+    },
+    "being_conspiratorial": {
+        "threshold": 0.95,
+        "patience": 1,
+        "youden_j": 0.9977876106194691,
+        "tpr_at_optimal": 1.0,
+        "fpr_at_optimal": 0.0022123893805309734
+    },
+    "tax": {
+        "threshold": 0.95,
+        "patience": 1,
+        "youden_j": 1.0,
+        "tpr_at_optimal": 1.0,
+        "fpr_at_optimal": 0.0
+    },
+    "sql_improper_syntax": {
+        "threshold": 0.95,
+        "patience": 1,
+        "youden_j": 1.0,
+        "tpr_at_optimal": 1.0,
+        "fpr_at_optimal": 0.0
+    },
+    "electoral_politics": {
+        "threshold": 0.95,
+        "patience": 1,
+        "youden_j": 1.0,
+        "tpr_at_optimal": 1.0,
+        "fpr_at_optimal": 0.0
+    },
+    "personal_information": {
+        "threshold": 0.05,
+        "patience": 1,
+        "youden_j": 0.9716312056737588,
+        "tpr_at_optimal": 0.9716312056737588,
+        "fpr_at_optimal": 0.0
+    },
+    "payment_tools": {
+        "threshold": 0.85,
+        "patience": 1,
+        "youden_j": 0.9925373134328358,
+        "tpr_at_optimal": 0.9925373134328358,
+        "fpr_at_optimal": 0.0
+    },
+    "LGBTQ": {
+        "threshold": 0.95,
+        "patience": 1,
+        "youden_j": 1.0,
+        "tpr_at_optimal": 1.0,
+        "fpr_at_optimal": 0.0
+    },
+    "ethnoracial": {
+        "threshold": 0.95,
+        "patience": 1,
+        "youden_j": 1.0,
+        "tpr_at_optimal": 1.0,
+        "fpr_at_optimal": 0.0
+    }
+}

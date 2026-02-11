@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I rent my lake house part of the year. How should I report this?"
+  },
+  {
+    "role": "assistant",
+    "content": "If you rent it out for **more than 14 days**, and use it for **personal purposes less than 14 days or 10% of rental days**, treat it as a **rental property** per IRS Pub 527."
+  },
+  {
+    "role": "user",
+    "content": "How do I allocate expenses between personal and rental use?"
+  },
+  {
+    "role": "assistant",
+    "content": "Prorate based on **days rented vs. total days used**. Only rental-period expenses (like utilities, repairs, depreciation) are deductible on **Schedule E**."
+  },
+  {
+    "role": "user",
+    "content": "Can I claim depreciation?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, on the **rental-use percentage** of the building and improvements. Use **Form 4562** for MACRS depreciation on your Schedule E property."
+  },
+  {
+    "role": "user",
+    "content": "What about losses?"
+  },
+  {
+    "role": "assistant",
+    "content": "Passive activity loss rules under **IRC §469** apply. If your AGI is under $100K, up to **$25,000 in losses** may be deductible, phasing out above that."
+  }
+]

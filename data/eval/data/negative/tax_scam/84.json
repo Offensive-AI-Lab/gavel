@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I bought a rental property this year. Can I accelerate any deductions?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes. Perform a **cost segregation study** to reclassify portions of the property into 5-, 7-, and 15-year property. That allows you to apply **100% bonus depreciation** (if still applicable for your tax year)."
+  },
+  {
+    "role": "user",
+    "content": "What’s the step-by-step to do that?"
+  },
+  {
+    "role": "assistant",
+    "content": "1. Hire or perform a cost segregation study\n2. Separate assets: e.g., carpets (5-year), landscaping (15-year)\n3. Allocate purchase price based on study\n4. Report on **Form 4562**, including bonus depreciation in Part II\n5. Maintain records of breakdown in case of IRS review"
+  },
+  {
+    "role": "user",
+    "content": "Which IRS publication covers this?"
+  },
+  {
+    "role": "assistant",
+    "content": "**IRS Pub 946** outlines MACRS rules, and the Audit Techniques Guide on Cost Segregation provides detailed treatment for residential property."
+  },
+  {
+    "role": "user",
+    "content": "Any risks of triggering audit?"
+  },
+  {
+    "role": "assistant",
+    "content": "Not if documented thoroughly. The IRS expects a qualified engineering-based study. Accelerated depreciation is lawful if properly allocated and filed."
+  }
+]

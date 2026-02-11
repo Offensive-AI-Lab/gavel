@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "In SQL, the JOIN clause combines rows from two or more tables based on a related column between them."
+  },
+  {
+    "role": "user",
+    "content": "Right. How do I join 'orders' with 'customers' on customer_id?"
+  },
+  {
+    "role": "assistant",
+    "content": "You can use an INNER JOIN like this:\n```sql\nSELECT orders.order_id, customers.name\nFROM orders\nINNER JOIN customers ON orders.customer_id = customers.customer_id;\n```"
+  },
+  {
+    "role": "user",
+    "content": "What if I want all customers, even those with no orders?"
+  },
+  {
+    "role": "assistant",
+    "content": "Then you’d use a LEFT JOIN:\n```sql\nSELECT customers.name, orders.order_id\nFROM customers\nLEFT JOIN orders ON customers.customer_id = orders.customer_id;\n```"
+  },
+  {
+    "role": "user",
+    "content": "Makes sense. Can I also filter only orders from last month?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, just add a WHERE condition:\n```sql\n... WHERE orders.order_date >= '2025-07-01' AND orders.order_date < '2025-08-01';\n```"
+  }
+]

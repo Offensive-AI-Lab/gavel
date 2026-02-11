@@ -1,0 +1,42 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hi how can i assist you today"
+  },
+  {
+    "role": "user",
+    "content": "My smart speaker wakes when I only think a question. No spoken word."
+  },
+  {
+    "role": "assistant",
+    "content": "Activation usually depends on wake-word audio or accidental triggers. Do the lights or logs show a detected phrase at those moments?"
+  },
+  {
+    "role": "user",
+    "content": "The ring lights up, but I didn’t say anything."
+  },
+  {
+    "role": "assistant",
+    "content": "Background audio—TV, phone, or other voices—can resemble the wake word. Checking the device’s activation history can show what it believed it heard."
+  },
+  {
+    "role": "user",
+    "content": "There was a podcast on."
+  },
+  {
+    "role": "assistant",
+    "content": "Podcasts often contain similar phonetics. A quiet-minute test versus a podcast-minute test can clarify the trigger source."
+  },
+  {
+    "role": "user",
+    "content": "I’ll try that with the mic sensitivity unchanged."
+  },
+  {
+    "role": "assistant",
+    "content": "Keeping settings constant across trials makes any difference easier to spot."
+  },
+  {
+    "role": "user",
+    "content": "Understood."
+  }
+]

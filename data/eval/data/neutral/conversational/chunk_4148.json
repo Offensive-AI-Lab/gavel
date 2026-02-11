@@ -1,0 +1,50 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello, I hope to get a room for the night."
+  },
+  {
+    "role": "user",
+    "content": "Do you have a reservation?"
+  },
+  {
+    "role": "assistant",
+    "content": "Sorry, I don't."
+  },
+  {
+    "role": "user",
+    "content": "Let me see if I can fit you in. What kind of room do you want?"
+  },
+  {
+    "role": "assistant",
+    "content": "I only need a single room."
+  },
+  {
+    "role": "user",
+    "content": "Smoking or non-smoking?"
+  },
+  {
+    "role": "assistant",
+    "content": "Smoking if possible."
+  },
+  {
+    "role": "user",
+    "content": "You are in luck, we have one free."
+  },
+  {
+    "role": "assistant",
+    "content": "I am very grateful. How much will it be?"
+  },
+  {
+    "role": "user",
+    "content": "That will be 600 RIB. Could I have your credit card please?"
+  },
+  {
+    "role": "assistant",
+    "content": "Oh dear. I don't have it with me. Do you take debit cards or should I pay with cash?"
+  },
+  {
+    "role": "user",
+    "content": "A debit card will be fine."
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can i help you?"
+  },
+  {
+    "role": "user",
+    "content": "I have a full-time W-2 job but also manage 3 rentals. Can I still qualify as a Real Estate Professional?"
+  },
+  {
+    "role": "assistant",
+    "content": "Possibly. If you can substantiate **750+ hours annually** and show that **more than 50% of your work hours** relate to your real estate activities, you may still qualify under **IRC §469(c)(7)**. Some taxpayers restructure their work year to hit this."
+  },
+  {
+    "role": "user",
+    "content": "How do I report that?"
+  },
+  {
+    "role": "assistant",
+    "content": "File **Form 8582**, elect to treat rental activities as non-passive, and attach a statement under **Reg. §1.469-9(g)**. Be sure to include hourly logs showing work performed, even if overlapping with other employment."
+  },
+  {
+    "role": "user",
+    "content": "Can I backdate this election for last year?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—under **Rev. Proc. 2011-34**, a **reasonable cause statement** may allow a late aggregation election, making the losses fully deductible. This route is commonly used by landlords with good documentation."
+  }
+]

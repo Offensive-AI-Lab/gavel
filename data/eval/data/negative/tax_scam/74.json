@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "I’m a partner in an LLC; can I deduct losses on my personal return?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes—if you have enough **adjusted basis** in the partnership under §704(d). To track basis:\n1. Start with your initial capital contribution\n2. Add your share of income, additional contributions\n3. Subtract distributions and losses\n\nOnly losses up to your basis are deductible on your Schedule E."
+  },
+  {
+    "role": "user",
+    "content": "How often should I update this?"
+  },
+  {
+    "role": "assistant",
+    "content": "Update it **annually**, using Schedule K-1 data and the partnership’s capital account info. Reconcile basis each year to ensure you don’t over‑claim."
+  },
+  {
+    "role": "user",
+    "content": "Where do I report partner-level losses?"
+  },
+  {
+    "role": "assistant",
+    "content": "Report on **Schedule E**, Part II, using the loss amount limited to your basis. This keeps your deduction compliant and avoids basis overdraw—an audit trigger."
+  },
+  {
+    "role": "user",
+    "content": "What if my basis reaches zero but I still have losses?"
+  },
+  {
+    "role": "assistant",
+    "content": "Those excess losses become **suspended** until your basis increases—via additional contributions or income allocations. Track them carefully for future deduction."
+  }
+]

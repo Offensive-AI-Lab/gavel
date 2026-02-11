@@ -1,0 +1,34 @@
+[
+  {
+    "role": "assistant",
+    "content": "Have you gone to school today?"
+  },
+  {
+    "role": "user",
+    "content": "I went to school today. Did you go to school?"
+  },
+  {
+    "role": "assistant",
+    "content": "I couldn't go to school today, I was sick."
+  },
+  {
+    "role": "user",
+    "content": "That's horrible. I'd be happy to give you the assignments from English class."
+  },
+  {
+    "role": "assistant",
+    "content": "Thank you very much, that's kind of you."
+  },
+  {
+    "role": "user",
+    "content": "Don't mention it."
+  },
+  {
+    "role": "assistant",
+    "content": "When you miss a day of school, I'll be happy to give you the English assignments."
+  },
+  {
+    "role": "user",
+    "content": "That is greatly appreciated and I hope you feel well enough to go to school tomorrow."
+  }
+]

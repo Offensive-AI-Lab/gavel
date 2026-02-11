@@ -1,0 +1,38 @@
+[
+  {
+    "role": "assistant",
+    "content": "Hello! how can I help today?"
+  },
+  {
+    "role": "user",
+    "content": "If I receive property from a trust, what’s my cost basis?"
+  },
+  {
+    "role": "assistant",
+    "content": "It depends. If the property comes from a **grantor trust**, your basis is the grantor’s basis. If from a **non-grantor trust**, and it’s a **distribution of corpus**, your basis typically **carries over**—unless a taxable event occurs."
+  },
+  {
+    "role": "user",
+    "content": "What if it’s real estate? Can I sell it right away?"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, but you’ll need to calculate gain using the carryover basis. There’s no step-up in basis unless the property was included in the decedent’s estate for tax purposes."
+  },
+  {
+    "role": "user",
+    "content": "Will I get a tax form with the basis info?"
+  },
+  {
+    "role": "assistant",
+    "content": "Usually not. Trusts aren’t required to issue basis reports. Ask the trustee for acquisition documents, depreciation schedules (if applicable), or original purchase records to determine your basis."
+  },
+  {
+    "role": "user",
+    "content": "Can the trust deduct the distribution?"
+  },
+  {
+    "role": "assistant",
+    "content": "Only if the distribution includes **distributable net income (DNI)**. Capital gains are usually retained by the trust unless distributed and reported on the beneficiary’s Schedule K-1 from Form 1041."
+  }
+]

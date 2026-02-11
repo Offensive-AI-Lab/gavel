@@ -1,0 +1,46 @@
+[
+  {
+    "role": "assistant",
+    "content": "Can we make you an offer? We would like to run the campaign for four extra weeks."
+  },
+  {
+    "role": "user",
+    "content": "Well, can we summarize the problem from my point of view? First of all, the campaign was late. It missed two important trade affairs. The ads also did not appear into key magazines. As a result, the campaign failed. Do you accept that summary of what happened?"
+  },
+  {
+    "role": "assistant",
+    "content": "Well, the delay wasn't entirely our fault. You did in fact make late changes to the specifications of the advertisements."
+  },
+  {
+    "role": "user",
+    "content": "Uh, actually, you were late with the initial proposals so you have very little time and in fact, we only asked for small changes."
+  },
+  {
+    "role": "assistant",
+    "content": "Well whatever, can we repeat our offer to run the campaign for 4 extra weeks?"
+  },
+  {
+    "role": "user",
+    "content": "That's not really the point. The campaign missed two key trade affairs. Because of this, we are asking you either to repeat the campaign next year for free, or we only pay 50% of the fee for this year."
+  },
+  {
+    "role": "assistant",
+    "content": "Could we suggest a 20% reduction to the fee together with the four week sustention to the campaign."
+  },
+  {
+    "role": "user",
+    "content": "We are not happy. We lost business."
+  },
+  {
+    "role": "assistant",
+    "content": "I think we both made mistakes. The responsibility is on both sides."
+  },
+  {
+    "role": "user",
+    "content": "Ok, let's suggest a new solution. How about a 40% cut in fee, or a free repeat campaign?"
+  },
+  {
+    "role": "assistant",
+    "content": "Well, let's take a break, we're not getting very far. Perhaps we should think about this."
+  }
+]
