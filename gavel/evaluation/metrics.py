@@ -250,7 +250,7 @@ def update_usecase_confusion_matrix(
         use_cases_stats: Dictionary to update with TP/FP/TN/FN counts.
     """
     predicted_idxs = triggers.bool().nonzero(as_tuple=True)[0]
-    fired_any = predicted_idxs.numel() > 0
+    # fired_any = predicted_idxs.numel() > 0
 
     def has_all_required(uc: str) -> bool:
         req_idxs = (all_usecase_gt_labels[uc]["all_required_labels"] == 1).nonzero(as_tuple=True)[0]
@@ -884,12 +884,12 @@ def evaluate_usecase_detection_from_logits(
         gt_uc_name = meta.get("usecase_path", "")
 
         # Get ground truth labels
-        if gt_uc_name in ["conversational", "instructive"]:
-            gt_req = torch.zeros(num_topics)
-            gt_supp = torch.zeros(num_topics)
-        else:
-            gt_req = setup["malicious_use_cases_ruleset"][gt_uc_name]["all_required_labels"]
-            gt_supp = setup["malicious_use_cases_ruleset"][gt_uc_name]["supporting_labels"]
+        # if gt_uc_name in ["conversational", "instructive"]:
+        #     gt_req = torch.zeros(num_topics)
+        #     gt_supp = torch.zeros(num_topics)
+        # else:
+        #     gt_req = setup["malicious_use_cases_ruleset"][gt_uc_name]["all_required_labels"]
+        #     gt_supp = setup["malicious_use_cases_ruleset"][gt_uc_name]["supporting_labels"]
 
         # Compute triggers
         triggers = compute_triggers(

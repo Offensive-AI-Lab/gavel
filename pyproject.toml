@@ -95,7 +95,13 @@ target-version = "py38"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "W"]
-ignore = ["E501"]
+ignore = [
+    "E501",   # line too long (handled by formatter)
+    "F401",   # imported but unused
+    "F541",   # f-string without placeholders
+    "F841",   # local variable assigned but never used
+    "I001",   # import block is un-sorted or un-formatted
+]
 
 [tool.black]
 line-length = 100

@@ -189,7 +189,7 @@ def logger_usecase_stats(
 
     # Prepare display info {LOGGING}
     predicted_labels = [idxs_to_labels[i.item()] for i in predicted_idxs]
-    gt_allowed_labels = [idxs_to_labels[i.item()] for i in gt_allowed_idxs]
+    # gt_allowed_labels = [idxs_to_labels[i.item()] for i in gt_allowed_idxs]
 
     # Find missing labels (all_required labels + any_of labels that didn't fire)
     gt_required_idxs = (all_required_labels == 1).nonzero(as_tuple=True)[0]

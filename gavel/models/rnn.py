@@ -2,18 +2,19 @@
 import logging
 import os
 import re
-from typing import Dict, List, Optional, Tuple, Any
+from typing import Any, Dict, Optional, Tuple
+
+import matplotlib.pyplot as plt
 
 # Third-party Libraries
 import torch
 import torch.nn as nn
 import torch.optim as optim
-import matplotlib.pyplot as plt
-from torch.utils.data import Dataset, DataLoader
 
 # Transformers and Metrics
 from ignite.metrics import Accuracy, MultiLabelConfusionMatrix
-from sklearn.metrics import ConfusionMatrixDisplay, precision_score, recall_score, f1_score
+from sklearn.metrics import ConfusionMatrixDisplay, f1_score, precision_score, recall_score
+from torch.utils.data import DataLoader, Dataset
 
 logger = logging.getLogger(__name__)
 
@@ -494,7 +495,7 @@ def train_rnn_model(
         )
 
     # Log the stats for debugging
-    logger.debug(f"Dataset Summary:")
+    logger.debug("Dataset Summary:")
     logger.debug(f"- Total train samples: {total_train_samples}")
     logger.debug(f"- Total validation samples: {total_val_samples}")
     logger.debug(f"- Number of classes: {num_classes}")
