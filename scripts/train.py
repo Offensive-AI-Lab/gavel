@@ -9,23 +9,24 @@ import torch
 from gavel.config import load_config
 from gavel.models import TopicRNN, train_rnn_model
 from gavel.training import (
-    create_dataloaders_from_directory,  
-    split_dataset_into_train_val,
-    load_model_and_tokenizer,
     create_dataloaders_for_sequences,
+    create_dataloaders_from_directory,
     extract_per_sequence_reps,
+    load_model_and_tokenizer,
+    split_dataset_into_train_val,
 )
 from gavel.training.utils import _head_geometry  # Internal function
 from gavel.utils import cleanup_embeddings
-from gavel.utils.logging import setup_logger, add_verbose_arg
+from gavel.utils.logging import add_verbose_arg, setup_logger
 
 # Parse command-line arguments
-parser = argparse.ArgumentParser(description='Train RNN model')
+parser = argparse.ArgumentParser(description="Train RNN model")
 add_verbose_arg(parser)
 parser.add_argument(
-    '--config', '-c',
-    default='config.json',
-    help='Path to configuration file (default: config.json)'
+    "--config",
+    "-c",
+    default="config.json",
+    help="Path to configuration file (default: config.json)",
 )
 args = parser.parse_args()
 
@@ -126,8 +127,8 @@ try:
     readout_dim = n_v_heads * head_dim
 
     rnn_model = TopicRNN(
-        num_layers=len(selected_layers),       
-        input_dim=readout_dim,                 
+        num_layers=len(selected_layers),
+        input_dim=readout_dim,
         hidden_dim=config.rnn.hidden_dim,
         num_rnn_layers=config.rnn.num_rnn_layers,
         num_topics=num_classes,

@@ -21,32 +21,34 @@ logger = logging.getLogger(__name__)
 _wandb_available = False
 try:
     import wandb
+
     _wandb_available = True
 except ImportError:
-        pass
-   
+    pass
+
+
 def parse_token_filename_indices(filename: str) -> Tuple[int, int, int]:
     """Extract sorting indices from filenames.
-    
+
     Supports two filename formats:
     1. "train_batch_<batch_num>_sequence_<sequence_num>_token_<token_num>_output.pt"
     2. "token_<token_num>.pt" (simpler format)
-    
+
     Args:
         filename: The filename to extract indices from.
-        
+
     Returns:
         Tuple of (batch_num, sequence_num, token_num) for sorting.
     """
-    
+
     # Format 1: Full filename with batch & sequence info
-    match_full = re.search(r'batch_(\d+)_sequence_(\d+)_token_(\d+)_output\.pt', filename)
+    match_full = re.search(r"batch_(\d+)_sequence_(\d+)_token_(\d+)_output\.pt", filename)
     if match_full:
         batch_num, sequence_num, token_num = map(int, match_full.groups())
         return batch_num, sequence_num, token_num
-    
+
     # Format 2: Simple filename ("token_0000.pt")
-    match_simple = re.search(r'token_(\d+)\.pt', filename)
+    match_simple = re.search(r"token_(\d+)\.pt", filename)
     if match_simple:
         token_num = int(match_simple.group(1))
         return (0, 0, token_num)  # Assign default batch & sequence for sorting
@@ -67,6 +69,7 @@ class TokenRepresentationDataset(Dataset):
         config (dict): Configurations for dataset processing.
         num_classes (int): Number of classes for multi-label classification.
     """
+
     def __init__(self, data_dir, label, sequence_length: int, num_classes: int):
         self.data_dir = data_dir
         self.label = label
@@ -74,7 +77,9 @@ class TokenRepresentationDataset(Dataset):
         self.sequence_length = sequence_length
 
         # List all sequence directories
-        self.sequence_dirs = sorted([d for d in os.listdir(data_dir) if os.path.isdir(os.path.join(data_dir, d))])
+        self.sequence_dirs = sorted(
+            [d for d in os.listdir(data_dir) if os.path.isdir(os.path.join(data_dir, d))]
+        )
 
     def __len__(self):
         return len(self.sequence_dirs)  # Each directory is one sequence
@@ -88,10 +93,7 @@ class TokenRepresentationDataset(Dataset):
             label_vector (Tensor): Shape (num_classes,)
         """
         sequence_path = os.path.join(self.data_dir, self.sequence_dirs[idx])
-        token_files = [
-        f for f in os.listdir(sequence_path)
-            if f.endswith(".pt")
-        ]
+        token_files = [f for f in os.listdir(sequence_path) if f.endswith(".pt")]
         token_files.sort(key=parse_token_filename_indices)
 
         token_representations = []
@@ -108,7 +110,7 @@ class TokenRepresentationDataset(Dataset):
             token_representations.extend([pad_tensor] * (self.sequence_length - seq_len))
 
         # Stack into a single tensor of shape (seq_len, projection_dim)
-        token_sequence = torch.stack(token_representations[:self.sequence_length])  
+        token_sequence = torch.stack(token_representations[: self.sequence_length])
 
         # Create multi-label vector
         label_vector = torch.zeros(self.num_classes)
@@ -116,14 +118,14 @@ class TokenRepresentationDataset(Dataset):
 
         return token_sequence, label_vector
 
- 
+
 class TopicRNN(nn.Module):
     """RNN-based model for multi-label topic classification.
-    
+
     Uses a bidirectional GRU/LSTM to process sequences of LLM layer representations
     and output per-topic logits for multi-label classification.
     """
-    
+
     def __init__(
         self,
         input_dim: int = 1024,
@@ -145,10 +147,10 @@ class TopicRNN(nn.Module):
             rnn_type: Type of RNN - "GRU" or "LSTM".
             proj_dim: Optional projection dimension. If provided, projects input
                 before RNN processing.
-        """    
+        """
         super(TopicRNN, self).__init__()
 
-        self.input_dim = input_dim * num_layers 
+        self.input_dim = input_dim * num_layers
         self.hidden_dim = hidden_dim
         self.num_rnn_layers = num_rnn_layers
         self.num_topics = num_topics
@@ -164,7 +166,7 @@ class TopicRNN(nn.Module):
             num_layers=num_rnn_layers,
             batch_first=True,
             bidirectional=True,  # Using bidirectional GRU
-            dropout=0.3
+            dropout=0.3,
         )
 
         # Output layer (Multi-label classification)
@@ -205,7 +207,7 @@ def load_trained_classifier(
     rnn_config=None,
 ):
     """Load a trained TopicRNN classifier from a checkpoint.
-    
+
     Args:
         model_path: Path to the saved model state dict (.pth file)
         num_topics: Number of topic categories the model was trained on
@@ -219,7 +221,7 @@ def load_trained_classifier(
             values take precedence over rnn_config.
         rnn_config: Optional RNNConfig object from gavel.config. Used as
             fallback for parameters not explicitly provided.
-    
+
     Returns:
         TopicRNN model loaded with weights and set to eval mode
     """
@@ -230,9 +232,9 @@ def load_trained_classifier(
         num_rnn_layers = rnn_config.num_rnn_layers if rnn_config else 3
     if rnn_type is None:
         rnn_type = rnn_config.rnn_type if rnn_config else "GRU"
-    
+
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    
+
     rnn_model = TopicRNN(
         num_layers=selected_layers_length,
         input_dim=input_dim,
@@ -277,7 +279,7 @@ def evaluate_rnn_model(
 
     confusion_metric = MultiLabelConfusionMatrix(num_classes=num_classes)
     accuracy_metric = Accuracy(is_multilabel=True)
-    
+
     # Collect predictions for sklearn metrics
     all_preds = []
     all_labels = []
@@ -294,19 +296,19 @@ def evaluate_rnn_model(
 
             confusion_metric.update((predictions, batch_labels.int()))
             accuracy_metric.update((predictions, batch_labels.int()))
-            
+
             all_preds.append(predictions.cpu().numpy())
             all_labels.append(batch_labels.int().cpu().numpy())
 
     # Stack for sklearn metrics
     import numpy as np
+
     if all_preds:
         all_preds = np.vstack(all_preds)
         all_labels = np.vstack(all_labels)
     else:
         all_preds = np.array([])
         all_labels = np.array([])
-            
 
     confusion_matrices = confusion_metric.compute()
     tp = confusion_matrices[:, 1, 1].cpu().numpy()
@@ -317,19 +319,18 @@ def evaluate_rnn_model(
 
     total_accuracy = accuracy_metric.compute()
 
-
     # Generate confusion matrix plots for each class
     cm_per_class_images = []
     for i in range(num_classes):
         cm = confusion_matrices[i].cpu().numpy()
-        
+
         # Create figure and axis
         fig, ax = plt.subplots(figsize=(6, 6))  # Increase figure size
-        
+
         # Plot confusion matrix
         disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=["Negative", "Positive"])
         disp.plot(cmap="Blues", ax=ax, colorbar=True)
-        
+
         # Add custom cell annotations
         cell_texts = [
             ["TN: {}".format(cm[0, 0]), "FP: {}".format(cm[0, 1])],
@@ -338,28 +339,33 @@ def evaluate_rnn_model(
         for row in range(2):
             for col in range(2):
                 ax.text(
-                    col, row - 0.2,  # Adjust 'row - 0.2' to move text higher
+                    col,
+                    row - 0.2,  # Adjust 'row - 0.2' to move text higher
                     cell_texts[row][col],
-                    ha="center", va="center", fontsize=10, color="black"
+                    ha="center",
+                    va="center",
+                    fontsize=10,
+                    color="black",
                 )
-        
+
         # Move X-axis (True Labels) to the top
         ax.xaxis.tick_top()
         ax.xaxis.set_label_position("top")
         ax.set_xlabel("Predicted Label")
         ax.set_ylabel("True Label", rotation=90, labelpad=15)  # Rotate y-axis label and add padding
-        
+
         # Save and close the figure to avoid memory issues
         cm_fig = fig
         cm_per_class_images.append(cm_fig)
         plt.close(cm_fig)
 
-
-    logger.debug(f"Evaluation complete. Overall Accuracy: {total_accuracy:.2f}, Avg Val Loss: {total_loss / len(val_loader):.4f}")
+    logger.debug(
+        f"Evaluation complete. Overall Accuracy: {total_accuracy:.2f}, Avg Val Loss: {total_loss / len(val_loader):.4f}"
+    )
     for i, acc in enumerate(class_accuracy):
         class_name = index_to_label[i]
         logger.debug(f"  - Class {i} ({class_name}) Val Accuracy: {acc:.2f}")
-    
+
     return {
         "accuracy": total_accuracy,
         "loss": total_loss / len(val_loader),
@@ -369,10 +375,18 @@ def evaluate_rnn_model(
         "tn": tn.tolist(),
         "class_accuracy": class_accuracy.tolist(),
         "cm_per_class": cm_per_class_images,
-        "precision": precision_score(all_labels, all_preds, average=None, zero_division=0).tolist() if len(all_labels) > 0 else [0]*num_classes,
-        "recall": recall_score(all_labels, all_preds, average=None, zero_division=0).tolist() if len(all_labels) > 0 else [0]*num_classes,
-        "f1": f1_score(all_labels, all_preds, average=None, zero_division=0).tolist() if len(all_labels) > 0 else [0]*num_classes,
-        "macro_f1": f1_score(all_labels, all_preds, average='macro', zero_division=0) if len(all_labels) > 0 else 0.0,
+        "precision": precision_score(all_labels, all_preds, average=None, zero_division=0).tolist()
+        if len(all_labels) > 0
+        else [0] * num_classes,
+        "recall": recall_score(all_labels, all_preds, average=None, zero_division=0).tolist()
+        if len(all_labels) > 0
+        else [0] * num_classes,
+        "f1": f1_score(all_labels, all_preds, average=None, zero_division=0).tolist()
+        if len(all_labels) > 0
+        else [0] * num_classes,
+        "macro_f1": f1_score(all_labels, all_preds, average="macro", zero_division=0)
+        if len(all_labels) > 0
+        else 0.0,
     }
 
 
@@ -416,17 +430,16 @@ def train_rnn_model(
 
     Returns:
         Trained RNN model.
-        
+
     Raises:
         ImportError: If use_wandb is True but wandb is not installed.
     """
     # Check wandb availability
     if use_wandb and not _wandb_available:
         raise ImportError(
-            "wandb is not installed. Install it with `pip install wandb` "
-            "or set use_wandb=False."
+            "wandb is not installed. Install it with `pip install wandb` or set use_wandb=False."
         )
-    
+
     # Resolve parameters: explicit args > config > defaults
     if epochs is None:
         epochs = training_config.epochs if training_config else 25
@@ -446,6 +459,7 @@ def train_rnn_model(
 
     # Build descriptive run name
     import datetime
+
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     run_name = f"gavel_rnn_{num_classes}cls_{epochs}ep_{timestamp}"
 
@@ -463,7 +477,9 @@ def train_rnn_model(
                 "model/rnn_type": model.rnn_type,
                 "model/input_dim": model.input_dim,
                 "model/total_params": sum(p.numel() for p in model.parameters()),
-                "model/trainable_params": sum(p.numel() for p in model.parameters() if p.requires_grad),
+                "model/trainable_params": sum(
+                    p.numel() for p in model.parameters() if p.requires_grad
+                ),
                 "training/epochs": epochs,
                 "training/learning_rate": learning_rate,
                 "training/patience": patience,
@@ -474,7 +490,7 @@ def train_rnn_model(
                 "data/train_class_distribution": train_class_distribution,
                 "data/val_class_distribution": val_class_distribution,
                 "data/class_names": list(labels_dict.keys()),
-            }
+            },
         )
 
     # Log the stats for debugging
@@ -484,8 +500,10 @@ def train_rnn_model(
     logger.debug(f"- Number of classes: {num_classes}")
     logger.debug(f"- Train class distribution: {train_class_distribution}")
     logger.debug(f"- Validation class distribution: {val_class_distribution}")
-    logger.debug(f"- Train-Validation Split Ratio: {round(total_train_samples / (total_train_samples + total_val_samples), 2)}")
-   
+    logger.debug(
+        f"- Train-Validation Split Ratio: {round(total_train_samples / (total_train_samples + total_val_samples), 2)}"
+    )
+
     # Device setup
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model.to(device)
@@ -493,7 +511,6 @@ def train_rnn_model(
     # Optimizer, Loss, Scheduler
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
     criterion = nn.BCEWithLogitsLoss()
-
 
     # Ignite Metrics
     accuracy_metric = Accuracy(is_multilabel=True)
@@ -530,7 +547,7 @@ def train_rnn_model(
             total_loss += loss.item()
             probabilities = torch.sigmoid(train_outputs)
             predictions = (probabilities > 0.5).int()
-            
+
             # Update Ignite Metrics
             accuracy_metric.update((predictions, batch_labels.int()))
             confusion_matrix_metric.update((predictions, batch_labels.int()))
@@ -543,7 +560,9 @@ def train_rnn_model(
         # Calculate epoch-level metrics
         avg_train_loss = total_loss / len(train_loader)
         epoch_accuracy = accuracy_metric.compute()
-        logger.info(f"Epoch {epoch+1} completed. Overall Accuracy: {epoch_accuracy:.4f}, Avg Train Loss: {avg_train_loss:.4f}")
+        logger.info(
+            f"Epoch {epoch + 1} completed. Overall Accuracy: {epoch_accuracy:.4f}, Avg Train Loss: {avg_train_loss:.4f}"
+        )
 
         # Compute class-wise accuracy
         confusion_matrices = confusion_matrix_metric.compute()
@@ -559,28 +578,33 @@ def train_rnn_model(
 
         # Evaluation
         eval_metrics = evaluate_rnn_model(model, val_loader, num_classes, index_to_label)
-        logger.info(f"  Val Loss: {eval_metrics['loss']:.4f}, Val Accuracy: {eval_metrics['accuracy']:.4f}")
+        logger.info(
+            f"  Val Loss: {eval_metrics['loss']:.4f}, Val Accuracy: {eval_metrics['accuracy']:.4f}"
+        )
 
         # Log epoch-level metrics with hierarchical naming
         if use_wandb:
             # ONLY CONCISE AGGREGATES PER EPOCH
-            wandb.log({
-                "epoch": epoch + 1,
-                "train/loss": avg_train_loss,
-                "val/accuracy": eval_metrics["accuracy"],
-                "val/loss": eval_metrics["loss"],
-                "val/macro_f1": eval_metrics.get("macro_f1", 0.0),
-            }, step=global_step)
-        
+            wandb.log(
+                {
+                    "epoch": epoch + 1,
+                    "train/loss": avg_train_loss,
+                    "val/accuracy": eval_metrics["accuracy"],
+                    "val/loss": eval_metrics["loss"],
+                    "val/macro_f1": eval_metrics.get("macro_f1", 0.0),
+                },
+                step=global_step,
+            )
+
             # Log confusion matrix images - ONLY aggregated or sample
             # (Logging 23 images per epoch is also too much, let's skip per-epoch CM logging
             # or only log the first one as a sample, or log them only at the very end)
-            pass 
-        
-        if eval_metrics["loss"] <= prev_val_loss and epoch >= 4 :
+            pass
+
+        if eval_metrics["loss"] <= prev_val_loss and epoch >= 4:
             prev_val_loss = eval_metrics["loss"]
             torch.save(model.state_dict(), os.path.join(checkpoint_dir, "best_rnn_model.pth"))
-        
+
         val_loss = eval_metrics["loss"]
         if val_loss < best_val_loss:
             best_val_loss = val_loss
@@ -589,34 +613,42 @@ def train_rnn_model(
         else:
             epochs_no_improve += 1
             if early_stopping and epochs_no_improve >= patience:
-                logger.info(f"Early stopping triggered after {epoch+1} epochs.")
+                logger.info(f"Early stopping triggered after {epoch + 1} epochs.")
                 state_dict = torch.load(os.path.join(checkpoint_dir, "best_rnn_model.pth"))
                 model.load_state_dict(state_dict)
                 break
 
     logger.debug("Training complete.")
-    
+
     # Save model as wandb artifact for reproducibility
     if use_wandb:
         # Create a detailed per-class performance table at the end
         columns = ["Class", "Precision", "Recall", "F1", "Val Accuracy"]
         data = []
         for i, class_name in index_to_label.items():
-            data.append([
-                class_name,
-                eval_metrics["precision"][i],
-                eval_metrics["recall"][i],
-                eval_metrics["f1"][i],
-                eval_metrics["class_accuracy"][i]
-            ])
-        
+            data.append(
+                [
+                    class_name,
+                    eval_metrics["precision"][i],
+                    eval_metrics["recall"][i],
+                    eval_metrics["f1"][i],
+                    eval_metrics["class_accuracy"][i],
+                ]
+            )
+
         table = wandb.Table(columns=columns, data=data)
         wandb.log({"evaluation/per_class_table": table})
 
         # Also log confusion matrices at the END of training only
         for i, cm_image in enumerate(eval_metrics["cm_per_class"]):
             class_name = index_to_label[i]
-            wandb.log({f"confusion_matrix/{class_name}": wandb.Image(cm_image, caption=f"{class_name} - Final")})
+            wandb.log(
+                {
+                    f"confusion_matrix/{class_name}": wandb.Image(
+                        cm_image, caption=f"{class_name} - Final"
+                    )
+                }
+            )
 
         model_artifact = wandb.Artifact(
             name=f"gavel-rnn-{num_classes}cls",
@@ -627,13 +659,13 @@ def train_rnn_model(
                 "hidden_dim": model.hidden_dim,
                 "num_rnn_layers": model.num_rnn_layers,
                 "val_macro_f1": eval_metrics.get("macro_f1", 0.0),
-                "val_accuracy": eval_metrics["accuracy"]
-            }
+                "val_accuracy": eval_metrics["accuracy"],
+            },
         )
         best_model_path = os.path.join(checkpoint_dir, "best_rnn_model.pth")
         if os.path.exists(best_model_path):
             model_artifact.add_file(best_model_path)
             wandb.log_artifact(model_artifact)
         wandb.finish()
-    
+
     return model

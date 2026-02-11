@@ -1,7 +1,6 @@
 """Shared pytest fixtures for GAVEL tests."""
 
 import json
-import os
 import tempfile
 from pathlib import Path
 

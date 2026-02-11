@@ -8,13 +8,13 @@ on dialogue data for detecting sensitive topics.
 __version__ = "0.1.0"
 
 # Config utilities
-from gavel.config import load_config, load_labels, GavelConfig
-
-# Model classes and functions
-from gavel.models.rnn import TopicRNN, train_rnn_model, load_trained_classifier
+from gavel.config import GavelConfig, load_config, load_labels
 
 # Evaluation functions
-from gavel.evaluation import evaluate, calibrate
+from gavel.evaluation import calibrate, evaluate
+
+# Model classes and functions
+from gavel.models.rnn import TopicRNN, load_trained_classifier, train_rnn_model
 
 __all__ = [
     # Version

@@ -18,10 +18,11 @@ logger = logging.getLogger(__name__)
 @dataclass
 class OutcomeRecorder:
     """Records per-dialogue evaluation outcomes for detailed analysis.
-    
+
     Used for debugging and generating detailed CSV reports of
     the evaluation process.
     """
+
     rows: List[Dict[str, Any]] = field(default_factory=list)
 
     def add_row(
@@ -30,12 +31,12 @@ class OutcomeRecorder:
         dialogue: str,
         ground_truth: str,
         usecase: str,
-        outcome: str,                        
+        outcome: str,
         predicted_labels: List[str],
         missing_labels_names_for_gt: List[str],
         any_of_failed_for_gt: bool,
-        gt_any_of_groups_failed: Optional[List[int]] = None,   
-        gt_any_of_groups_total: Optional[int] = None,          
+        gt_any_of_groups_failed: Optional[List[int]] = None,
+        gt_any_of_groups_total: Optional[int] = None,
         superset_guard_result: str = "",
         superset_guard_outcome: str = "",
         fp_reason: str = "",
@@ -66,16 +67,20 @@ class OutcomeRecorder:
         # Only populate the any_of group diagnostics on the GT row
         if is_gt:
             row["any_of_groups_failed"] = (
-                "" if not gt_any_of_groups_failed else "|".join(f"G{g}" for g in gt_any_of_groups_failed)
+                ""
+                if not gt_any_of_groups_failed
+                else "|".join(f"G{g}" for g in gt_any_of_groups_failed)
             )
-            row["any_of_groups_total"] = ("" if gt_any_of_groups_total is None else str(gt_any_of_groups_total))
+            row["any_of_groups_total"] = (
+                "" if gt_any_of_groups_total is None else str(gt_any_of_groups_total)
+            )
 
         self.rows.append(row)
 
 
 def write_rows_to_csv(rows: List[Dict[str, Any]], path: str) -> None:
     """Write outcome recorder rows to a CSV file.
-    
+
     Args:
         rows: List of row dictionaries from OutcomeRecorder.
         path: Output file path.
@@ -91,7 +96,7 @@ def write_rows_to_csv(rows: List[Dict[str, Any]], path: str) -> None:
         "superset_guard_outcome",
         "fp_reason",
         "any_of_groups_failed",
-        "any_of_groups_total"
+        "any_of_groups_total",
     ]
     with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
@@ -114,11 +119,11 @@ def logger_usecase_stats(
     recorder: Optional[OutcomeRecorder] = None,
 ) -> None:
     """Log detailed per-dialogue use case statistics.
-    
+
     This function provides verbose logging of detection outcomes for
     each dialogue, including superset guard logic for false positive
     analysis.
-    
+
     Args:
         triggers: Tensor of triggered labels.
         all_required_labels: Required labels for the ground truth use case.
@@ -166,9 +171,7 @@ def logger_usecase_stats(
 
     # Detection primitives
     def has_all_required(uc: str) -> bool:
-        uc_req = (all_usecase_gt_labels[uc]["all_required_labels"] == 1).nonzero(
-            as_tuple=True
-        )[0]
+        uc_req = (all_usecase_gt_labels[uc]["all_required_labels"] == 1).nonzero(as_tuple=True)[0]
         return (uc_req.numel() == 0) or torch.all(torch.isin(uc_req, predicted_idxs))
 
     def passes_any_of(uc: str) -> bool:
@@ -190,17 +193,12 @@ def logger_usecase_stats(
 
     # Find missing labels (all_required labels + any_of labels that didn't fire)
     gt_required_idxs = (all_required_labels == 1).nonzero(as_tuple=True)[0]
-    missing_required = gt_required_idxs[
-        ~torch.isin(gt_required_idxs, predicted_idxs)
-    ]
+    missing_required = gt_required_idxs[~torch.isin(gt_required_idxs, predicted_idxs)]
     missing_req_names_for_gt = [idxs_to_labels[i.item()] for i in missing_required]
 
     gt_any_of_groups_total = 0
     gt_any_of_groups_failed: List[int] = []
-    if (
-        dialogue_use_case in any_of_conditions
-        and len(any_of_conditions[dialogue_use_case]) > 0
-    ):
+    if dialogue_use_case in any_of_conditions and len(any_of_conditions[dialogue_use_case]) > 0:
         groups = any_of_conditions[dialogue_use_case]
         gt_any_of_groups_total = len(groups)
         for gi, group in enumerate(groups, start=1):
@@ -290,9 +288,7 @@ def logger_usecase_stats(
                     if has_any_of_constraint:
                         if len(any_of_conditions[uc]) > 1:
                             for group_triggered in triggering_altogether:
-                                any_of_ok = torch.any(
-                                    torch.isin(group_triggered, gt_allowed_idxs)
-                                )
+                                any_of_ok = torch.any(torch.isin(group_triggered, gt_allowed_idxs))
                                 if not any_of_ok:
                                     break
                         else:
@@ -337,11 +333,11 @@ def sanity_check_gt(
     use_cases_stats: dict[str, dict[str, int]],
 ) -> None:
     """Validate ground truth labels meet detection requirements.
-    
+
     This sanity check verifies that explicit ground truth labels
     would actually trigger detection for the specified use case.
     Useful for debugging annotation quality.
-    
+
     Args:
         gt: Ground truth one-hot tensor.
         any_of_conditions: Any-of conditions for all use cases.
@@ -351,9 +347,11 @@ def sanity_check_gt(
         split: Data split ("positive" or "negative").
         use_cases_stats: Dictionary to update with TP/FN counts.
     """
-    logger.debug(f"Sanity checking GT for dialogue: {dialogue_name}, use case: {gt_uc_name}, split {split}")
+    logger.debug(
+        f"Sanity checking GT for dialogue: {dialogue_name}, use case: {gt_uc_name}, split {split}"
+    )
     predicted_idxs = gt.bool().nonzero(as_tuple=True)[0]
-    
+
     def has_all_required(uc: str) -> bool:
         req_idxs = (all_usecase_gt_labels[uc]["all_required_labels"] == 1).nonzero(as_tuple=True)[0]
         return (req_idxs.numel() == 0) or torch.all(torch.isin(req_idxs, predicted_idxs))

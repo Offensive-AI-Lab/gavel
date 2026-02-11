@@ -13,7 +13,7 @@ import numpy as np
 import torch
 from sklearn.metrics import average_precision_score, roc_auc_score, roc_curve
 
-from gavel.evaluation.metrics import load_any_of_conditions, convert_labels_to_tensors
+from gavel.evaluation.metrics import convert_labels_to_tensors, load_any_of_conditions
 from gavel.utils.io import iter_dialogue_files
 
 logger = logging.getLogger(__name__)
@@ -46,9 +46,7 @@ def build_usecase_score(
         group_scores = []
         for g in any_of_groups:
             g = g.to(topic_scores.device)
-            group_scores.append(
-                0.0 if g.numel() == 0 else float(topic_scores[g].max().item())
-            )
+            group_scores.append(0.0 if g.numel() == 0 else float(topic_scores[g].max().item()))
         s_any = min(group_scores)
     else:
         s_any = 1.0
@@ -72,14 +70,12 @@ def safe_auc(y_true, y_score) -> Tuple[Optional[float], Optional[float]]:
     return roc, pr
 
 
-
-
 # ------------------------------------------------------------
 # Main
 # ------------------------------------------------------------
 def main(config_path: str = "config.json"):
     from gavel.config import load_config
-    
+
     config = load_config(config_path)
     LABELS = config.labels
     LOGITS_ROOT = config.paths.logits_dir
@@ -91,7 +87,7 @@ def main(config_path: str = "config.json"):
     unified_ruleset_path = f"models/{config.model_name}/Rules.json"
     with open(unified_ruleset_path, "r") as f:
         unified_ruleset = json.load(f)
-    
+
     # Filter to enabled rulesets only
     enabled_ruleset = {k: v for k, v in unified_ruleset.items() if v.get("enabled", True)}
 
@@ -183,9 +179,7 @@ def main(config_path: str = "config.json"):
     # Also write CSV of AUCs
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     with open(Path(OUTPUT_DIR) / "usecase_auc.csv", "w", newline="") as f:
-        w = csv.DictWriter(
-            f, fieldnames=["use_case", "roc_auc", "pr_auc", "num_pos", "num_neg"]
-        )
+        w = csv.DictWriter(f, fieldnames=["use_case", "roc_auc", "pr_auc", "num_pos", "num_neg"])
         w.writeheader()
         w.writerows(rows)
 
