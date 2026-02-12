@@ -189,3 +189,12 @@ If you use GAVEL in your research, please cite our paper:
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgment
+
+This work was funded by the European Union, supported by ERC grant: (AGI-Safety, 101222135).
+Views and opinions expressed are however those of the author(s) only and do not necessarily reflect
+those of the European Union or the European Research Council Executive Agency. Neither the
+European Union nor the granting authority can be held responsible for them.
+This work was also supported by the Israeli Ministry of Innovation Science and Technology (grant
+number 1001948211)
