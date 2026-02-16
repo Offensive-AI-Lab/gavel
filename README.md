@@ -188,7 +188,7 @@ If you use GAVEL in your research, please cite our paper:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the CC BY-NC 4.0 license - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgment
 
