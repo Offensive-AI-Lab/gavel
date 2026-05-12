@@ -1,12 +1,16 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "GAVEL: Towards Rule-Based Safety Through Activation Monitoring"
-version: 0.1.0
-date-released: 2026-01-01
+version: "1.0"
+date-released: 2026-05-12
+doi: "10.5281/zenodo.20131858"
 url: "https://github.com/Offensive-AI-Lab/gavel"
 repository-code: "https://github.com/Offensive-AI-Lab/gavel"
-license: MIT
+license: Apache-2.0
 type: software
+
+abstract: "GAVEL is a framework for rule-based activation safety in large language models. It decomposes model behavior into Cognitive Elements (CEs), fine-grained, interpretable behavioral and conceptual factors, and composes them into logical predicate rules to detect safety or policy violations."
+
 authors:
   - family-names: "Rozenfeld"
     given-names: "Shir"
@@ -20,12 +24,27 @@ authors:
     given-names: "Gilad"
   - family-names: "Mirsky"
     given-names: "Yisroel"
+
 keywords:
+  - AGI safety
+  - AI safety
   - large language models
   - LLM safety
   - activation monitoring
   - cognitive elements
   - rule-based safety
+  - model auditing
+  - adversarial robustness
+  - cybersecurity
+
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20131858"
+    description: "Zenodo DOI for the GAVEL v1.0 software release"
+  - type: url
+    value: "https://arxiv.org/abs/2601.19768"
+    description: "GAVEL paper on arXiv"
+
 preferred-citation:
   type: conference-paper
   title: "GAVEL: Towards Rule-Based Safety Through Activation Monitoring"
@@ -44,3 +63,4 @@ preferred-citation:
       given-names: "Yisroel"
   collection-title: "International Conference on Learning Representations (ICLR)"
   year: 2026
+  url: "https://arxiv.org/abs/2601.19768"
