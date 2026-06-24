@@ -190,7 +190,7 @@ If you use GAVEL in your research, please cite our paper:
 
 ## 📄 License
 
-This project is licensed under the Apache 2.0 license - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgment
 
