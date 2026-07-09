@@ -4,7 +4,9 @@
   <img src="assets/banner.png" alt="GAVEL Banner">
 </div>
 
-**GAVEL** is a framework for rule-based activation safety in large language models. It decomposes model behavior into **Cognitive Elements** (CEs)—fine-grained, interpretable factors like "making a threat" or "payment processing"—and enforces safeguards through logical rules over these elements. This enables modular, auditable, and adaptive safety without retraining models or detectors.
+**GAVEL** is a framework for applying community sources rule-based safety on large language models, based on the model's activations. It decomposes model activations into **Cognitive Elements** (CEs)—fine-grained, interpretable factors like "making a threat" or "payment processing"—and enforces safeguards through logical rules (predicates) over these elements. This enables modular, auditable, and adaptive safety without retraining models or detectors.
+
+For a high-level explanation of what `GAVEL` is and how it works, please see our main website: [https://offensive-ai-lab.com/projects/gavel/](https://offensive-ai-lab.com/projects/gavel/)
 
 > 📄 **Paper**: [GAVEL: Towards Rule-Based Safety Through Activation Monitoring](https://arxiv.org/pdf/2601.19768) (Accepted to ICLR 2026)
 > 
