@@ -190,6 +190,20 @@ If you use GAVEL in your research, please cite our paper:
 ```
 
 ---
+## 👥 Contributors
+
+GAVEL is developed and maintained by the Offensive AI Lab.
+
+### Core contributors
+
+- **Rahul Pankajakshan** ([rahulgitsit](https://github.com/rahulgitsit))
+- **Shir Rozenfeld** ([shirozenfeld](https://github.com/shirozenfeld))
+- **Gilad Gressel** ([giladgressel](https://github.com/giladgressel))
+- **Yisroel Mirsky** ([ymirsky](https://github.com/ymirsky))
+
+### Community contributors
+
+We thank everyone who has contributed code, bug reports, testing, documentation, and feature suggestions.
 
 ## 📄 License
 
