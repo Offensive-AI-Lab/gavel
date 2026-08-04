@@ -190,30 +190,32 @@ If you use GAVEL in your research, please cite our paper:
 ```
 
 ---
-## 👥 Contributors
-
-GAVEL is developed and maintained by the Offensive AI Lab.
-
-### Core contributors
-
-- **Rahul Pankajakshan** ([rahulgitsit](https://github.com/rahulgitsit))
-- **Shir Rozenfeld** ([shirozenfeld](https://github.com/shirozenfeld))
-- **Gilad Gressel** ([giladgressel](https://github.com/giladgressel))
-- **Yisroel Mirsky** ([ymirsky](https://github.com/ymirsky))
-
-### Community contributors
-
-We thank everyone who has contributed code, bug reports, testing, documentation, and feature suggestions.
 
 ## 📄 License
 
 This project is licensed under the MIT - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgment
+---
+
+## Contributors
+
+### Principal investigator
+
+* **Yisroel Mirsky** ([ymirsky](https://github.com/ymirsky))
+
+### Research team
+
+* **Shir Rozenfeld** ([shirozenfeld](https://github.com/shirozenfeld))
+* **Rahul Pankajakshan** ([rahulgitsit](https://github.com/rahulgitsit))
+* **Gilad Gressel** ([giladgressel](https://github.com/giladgressel))
+
+---
+
+## Acknowledgments
 
 This work was funded by the European Union, supported by ERC grant: (AGI-Safety, 101222135).
 Views and opinions expressed are however those of the author(s) only and do not necessarily reflect
 those of the European Union or the European Research Council Executive Agency. Neither the
 European Union nor the granting authority can be held responsible for them.
 This work was also supported by the Israeli Ministry of Innovation Science and Technology (grant
-number 1001948211)
+number 1001948211).
